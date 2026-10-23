@@ -1,0 +1,7 @@
+/cmake-build-*
+*.iml
+/.idea
+/Granite
+/build-steamrt
+/steamrt-output
+.DS_Store

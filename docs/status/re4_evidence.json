@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "title": "تغطية التحقق من RE4",
+  "items": [
+    {"name": "الحزمة الأصلية للرسم", "scope": "إعادة حزمة TEXFLUSH/FINISH المسجلة على CPU وVulkan؛ لا تشمل استمرار رسم اللعبة", "state": "verified", "evidence": [{"path": "artifacts/verification/review-20261013-fence-extract.json", "checks": {"passed": {"eq": true}, "replay_exit": {"eq": 0}, "replay_result.cpu_finish": {"eq": true}, "replay_result.gpu_finish_callbacks": {"eq": 1}}}]},
+    {"name": "وصول الصوت إلى السماعة", "scope": "جلسة الاختبار المعزول مفتوحة، تسجيل ناجح، مطابقة أول 60 ثانية للمصدر الداخلي؛ لا تشمل جودة كل الصوت أو تزامنه", "state": "verified", "evidence": [{"path": "artifacts/verification/review-20261013-unmuted-fence-v2-identity.json", "checks": {"session_enabled": {"eq": true}, "capture_exit": {"eq": 0}}}, {"path": "artifacts/verification/review-20261013-unmuted-fence-v2-source.json", "checks": {"correlation": {"gte": 0.95}, "compared_seconds": {"gte": 50}}}]},
+    {"name": "استمرار رسم اللعبة والحركة", "scope": "تجاوز موضع انتظار FINISH واستمرار تغير المشهد مع الإدخال", "state": "incomplete", "reason": "تعليق مثبت عند 6130؛ الحزمة الجديدة لا تنتج callback"},
+    {"name": "الشخصية والصحة والأسلحة", "scope": "ظهور ليون والواجهة واختبار الصحة والأسلحة والحركة", "state": "incomplete", "reason": "الشخصية وواجهة الصحة غير ظاهرتين في لقطة الغابة المرصودة"},
+    {"name": "سرعة اللعب الطبيعية", "scope": "قياس مشهد لعب حي متكرر دون بناء متزامن أو عدادات متقدمة أثناء تعليق الرسم", "state": "incomplete", "reason": "بطء اللعبة مرصود؛ استمرار ساعات الضيف وحده لا يثبت السرعة"},
+    {"name": "الصوت والكتسينات", "scope": "سرعة الكلام والموسيقى، القناتان، التقطيع، وتزامن الشفاه والفيديو عبر المشاهد", "state": "incomplete", "reason": "وصول الصوت مثبت لكن جودة وتزامن جميع المشاهد غير مكتملين"},
+    {"name": "القتال والعالم", "scope": "التصادم والأعداء والضرر والأبواب والمناطق والتقدم", "state": "unverified", "reason": "لا يوجد اختبار لعب متكامل يثبت هذه المتطلبات بعد"},
+    {"name": "حفظ التقدم وإعادة تحميله", "scope": "حفظ تقدم لعب فعلي ثم إعادة تشغيل وتحميله ومقارنة الحالة", "state": "unverified", "reason": "حفظ إعدادات النظام لا يثبت حفظ تقدم الحملة"},
+    {"name": "الحملة والاستقرار والحزمة النهائية", "scope": "تغطية المراحل والنهايات، تشغيل ممتد، تثبيت الإصلاحات واختبار الحزمة المنشورة", "state": "unverified", "reason": "الحزمة المثبتة لم تستبدل بمشغلات التشخيص؛ الحملة الكاملة غير مثبتة"}
+  ]
+}

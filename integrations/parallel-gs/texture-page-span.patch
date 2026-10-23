@@ -1,0 +1,60 @@
+diff --git a/gs/gs_util.cpp b/gs/gs_util.cpp
+index 4feb3bd..c8a5588 100644
+--- a/gs/gs_util.cpp
++++ b/gs/gs_util.cpp
+@@ -7,6 +7,10 @@
+ #include "gs_renderer.hpp"
+ #include "shaders/data_structures.h"
+ #include "shaders/swizzle_utils.h"
++#include <algorithm>
++#include <atomic>
++#include <cstdio>
++#include <cstdlib>
+ 
+ namespace ParallelGS
+ {
+@@ -175,8 +179,8 @@ PageRect compute_page_rect(uint32_t base_256, uint32_t x, uint32_t y,
+ 	uint32_t block_offset = base_256 % BlocksPerPage;
+ 
+ 	// Get maximum block index observed in the spill block region.
+-	uint32_t max_block_x = ((width - 1) >> layout.block_width_log2) % BlocksPerPage;
+-	uint32_t max_block_y = ((height - 1) >> layout.block_height_log2) % BlocksPerPage;
++	uint32_t max_block_x = (width - 1) >> layout.block_width_log2;
++	uint32_t max_block_y = (height - 1) >> layout.block_height_log2;
+ 
+ 	// Have to analyze if we need to consider straddle behavior within a page.
+ 	// Also, do fine-grained tracking for single page rects.
+@@ -186,10 +190,24 @@ PageRect compute_page_rect(uint32_t base_256, uint32_t x, uint32_t y,
+ 	{
+ 		uint32_t min_block_x = x >> layout.block_width_log2;
+ 		uint32_t min_block_y = y >> layout.block_height_log2;
++		static const bool trace_wrap = std::getenv("PS2X_GS_PAGE_TRACE") != nullptr;
++		static std::atomic<unsigned> wrap_logs{0};
++		if (trace_wrap && (max_block_x % BlocksPerPage < min_block_x ||
++		                   max_block_y % BlocksPerPage < min_block_y) &&
++		    wrap_logs.fetch_add(1, std::memory_order_relaxed) < 8)
++			std::fprintf(stderr, "[gs:page-wrap] base=%u x=%u y=%u width=%u height=%u psm=%u blocks=%u..%u/%u..%u\n",
++			             base_256, x, y, width, height, psm, min_block_x, max_block_x, min_block_y, max_block_y);
++		// Swizzled block indices repeat once per page along each axis.
++		// Subtract before bounding the span: reducing the end coordinate
++		// modulo 32 first can put it below the start and underflow the count.
++		// One full axis period has exactly the same union mask as more periods.
++		uint32_t count_x = std::min(max_block_x - min_block_x + 1,
++		                            layout.page_width / layout.block_width);
++		uint32_t count_y = std::min(max_block_y - min_block_y + 1,
++		                            layout.page_height / layout.block_height);
+ 		uint64_t block_mask = swizzle_block_mask_PS2(block_offset,
+ 		                                             min_block_x, min_block_y,
+-		                                             max_block_x - min_block_x + 1,
+-		                                             max_block_y - min_block_y + 1,
++		                                             count_x, count_y,
+ 		                                             psm);
+ 
+ 		auto hi_mask = uint32_t(block_mask >> 32);
+@@ -375,4 +393,4 @@ bool triangles_form_parallelogram(const VertexPosition *pos, const VertexAttribu
+ 
+ 	return true;
+ }
+-}
+\ No newline at end of file
++}

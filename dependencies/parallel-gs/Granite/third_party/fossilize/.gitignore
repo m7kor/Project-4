@@ -1,0 +1,9 @@
+*.so
+*.a
+*.o
+/cmake-build-debug
+/cmake-build-release
+.idea
+*.iml
+out
+CMakeUserPresets.json

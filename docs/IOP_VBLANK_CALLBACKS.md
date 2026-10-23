@@ -1,0 +1,21 @@
+# IOP VBlank callback delivery
+
+RE4's original PADMAN registers a start callback at `0x1df24` and an end callback at `0x1df10`. The previous implementation returned success for registration and release without storing either callback. The observed start handler increments counters and signals the native pad event flag; without execution, native pad transfers never reached the host input sampler.
+
+The service now stores phase, priority, function, userdata and GP. It runs callbacks at the existing NTSC field cadence, including while the IOP scheduler is idle. Callbacks enter the same interrupt-context guard as DMA handlers, so QueryIntrContext reports ISR execution and registration/release from an ISR returns -100. Lower priorities execute first; equal priorities keep registration order. Completed callbacks returning zero are removed. Incomplete calls cannot silently unregister themselves.
+
+The service respects global CPU interrupt control and explicitly disabled start/end IRQ lines. Pending phases coalesce while masked and retain chronological ordering when enabled again. The HLE ROM service owns its IRQ lines by default; this does not synthesize raw CPU exception delivery or override registered hardware IRQ handlers. Reset discards callback registrations and pending phases. The fixed ROM list has 14 client slots after reserving two internal wait handlers; duplicate, absent-release and capacity errors follow PS2SDK.
+
+Existing VBlank wait imports remain scheduler waits. End timing still uses the project's existing period/16 phase model; accurate GS-driven start/end synchronization remains a broader timing verification requirement.
+
+Primary references: [PS2SDK vblank service](https://github.com/ps2dev/ps2sdk/blob/master/iop/system/vblank/src/vblank.c), [callback ABI](https://github.com/ps2dev/ps2sdk/blob/master/iop/system/vblank/include/vblank.h), [kernel error values](https://github.com/ps2dev/ps2sdk/blob/master/iop/kernel/include/kerr.h), and [PADMAN frame callbacks](https://github.com/ps2dev/ps2sdk/blob/master/iop/input/padman/src/padInit.c).
+
+## Verification
+
+Build `artifacts/verification/build-vblank-callbacks.log` succeeded in 141.6 seconds. `artifacts/verification/vblank-callbacks-final.json` records 480/480 C++ and 101/101 Python tests, plus three tooling checks. New tests exercise priority and phase order, userdata/GP, global/line masking, one-shot and recurring callbacks, incomplete calls, exception unwinding, reset, capacity and release errors. A synthetic IRX registers through its real VBlank import table and executes its real MIPS callback from the idle scheduler, observing QueryIntrContext=1 on two successive fields.
+
+These tests do not prove native gameplay, system-data creation, save/load or complete game compatibility. Runtime acceptance must be recorded separately.
+
+Run `20261007T223933Z-c0e8d3b9` produced 110 frames in 241.484 seconds before the configured timeout. All 64 bounded VBlank trace samples completed with result 1, alternating the original PADMAN start/end handlers. No replay button transitions occurred and the system-data prompt remained unchanged. The native card stayed entirely FF; no save/write success is claimed. Evidence: `artifacts/research/20261007/vblank-native-runtime-proof.json`. All eight original game files passed the repeated hash audit in `game-file-preservation-vblank.json`.
+
+A second targeted run, `20261007T224455Z-574a64bb`, captured four original PADMAN RPC calls through SID `0x80000100`, function 1, native server `0x24e9c`. Its commands were version 0x12, init 0x10 and open 0x1 for ports 0 and 1. The actual version reply is **0x422**, init succeeds with 1, and both opens succeed with 1, returning native IOP pad buffers `0x25ac0` and `0x261d0` for EE buffers `0x451400` and `0x451500`. This rules out the proposed version/binding/port-open failure for these runs. The snapshots precede the first VBlank callbacks and cannot prove later transfer-thread activity. Evidence: `artifacts/research/20261007/padman-native-rpc-proof.json` and bounded native worker disassemblies in the same directory. Next: trace the event-flag handshake between the native callback, transfer worker, SIO2 task and DMA completion, then prove actual controller packets reach the host sampler.

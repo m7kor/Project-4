@@ -1,0 +1,4 @@
+# Local build artefacts. Never commit these.
+out/
+deps/
+recomp/generated/

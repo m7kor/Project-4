@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/mdqinc/SDL_GameControllerDB",
+  "commit": "c1d5289a1f713b30a2c121e9fe6529d39360be0f",
+  "files": [
+    {
+      "name": "gamecontrollerdb.txt",
+      "url": "https://raw.githubusercontent.com/mdqinc/SDL_GameControllerDB/c1d5289a1f713b30a2c121e9fe6529d39360be0f/gamecontrollerdb.txt",
+      "sha256": "e606134678e6b3fdbdec9081289a1f0ba3e25d53b59b2aa3cdfe69bf491ad18f",
+      "bytes": 609830
+    },
+    {
+      "name": "LICENSE",
+      "url": "https://raw.githubusercontent.com/mdqinc/SDL_GameControllerDB/c1d5289a1f713b30a2c121e9fe6529d39360be0f/LICENSE",
+      "sha256": "97f35b302b361680ec1e891e95d2d52097bb95abff361434916d99dc1305f127",
+      "bytes": 884
+    }
+  ],
+  "embedded_header": {
+    "path": "core\\ps2xRuntime\\src\\lib\\ps2_gamepad_mappings.h",
+    "sha256": "650644ccd50478e3ab261efe29c7352b842d696b3ea3d6f2a6a5cd62f9a0cb59",
+    "entries": 2279
+  }
+}

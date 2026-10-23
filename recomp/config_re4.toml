@@ -1,0 +1,102 @@
+# Lodestone-generated config for Resident Evil 4 (USA) — SLUS_211.34
+# Generated from analysis/analysis.json. Source of truth: profiles/SLUS-211.34/
+#
+# Everything here is measured or copied from upstream defaults. Nothing guessed.
+# stubs stays EMPTY until a trace proves which call faults — see dead_ends#0003.
+
+[general]
+input = "game/Resident Evil 4 (USA)/SLUS_211.34"
+output = "recomp/generated/SLUS_211.34"
+ghidra_output = "analysis/functions.csv"
+single_file_output = false
+low_memory_mode = false
+output_worker_threads = 0
+patch_syscalls = false
+patch_cop0 = true
+patch_cache = true
+stubs = []
+skip = []
+untracked_stubs = []
+
+# LODESTONE PATCH 18 — code that is not in the image where the guest runs it.
+#
+# Every number below is read out of the guest's own syscall 0x5A calls, not
+# guessed. Three copies happen during RE4 boot; see analysis/boot-trace-re4-*.txt:
+#
+#   [syscall] id=0x5a pc=0x2a2048 a0=0x80076000 a1=0x32b4b0 a2=0x740
+#   [syscall] id=0x5a pc=0x2a2048 a0=0x82000    a1=0x32bbf0 a2=0x28
+#   [syscall] id=0x5a pc=0x2a4368 a0=0x80075000 a1=0x32bc90 a2=0x330
+#
+# The copies at 0x80076000 and 0x80075000 are then registered as syscall
+# handlers, which is where the runtime stopped with
+# `[syscall-override:missing-handler] id=0x5b handler=0x80076000`.
+#
+# There is no ELF section at those load addresses, so the bytes can only be
+# recompiled if they are presented as code at their LOAD address rather than at
+# the file address the game happens to keep them in.
+#
+# The third copy (0x32BBF0 -> 0x82000) is deliberately absent: 0x82000 is the
+# kernel patch scratch, below the dense function table the runtime can dispatch
+# at all ([0x100000, 0x2ef914)), and it is handled natively.
+#
+# MEASURED 2026-10-05: a runtime_code region makes the BYTES readable at the
+# load address. It does NOT create a function there. A recompile with these two
+# regions and no entry_points emitted nothing for either address, and the
+# dispatcher still reports `[syscall-override:missing-handler] id=0x5b
+# handler=0x80076000`. The bytes and the function are two separate requirements.
+#
+# entry_points is the existing mechanism for the second one: an address that is
+# a valid executable target but which no map owns, so the recompiler synthesizes
+# a standalone function bounded by the next known one (discoverAdditionalEntry-
+# Targets -> collectInternalEntryTargetsImpl). Both addresses come from the
+# guest's own SetSyscall calls, not from a guess:
+#
+#   [syscall] id=0x74 pc=0x2a2038 a0=0xfc a1=0x80076000
+#   [syscall] id=0x74 pc=0x2a43c0 a0=0x55 a1=0x80075000
+# Native capture 20261006T142429Z-461d58c6 calls 0x299178 from 0x2AA698.
+# It is inside the mapped 0x299168 owner: enter at the real prologue, skipping
+# earlier stack adjustments that belong to preceding continuations.
+# Native async card Format capture 20261008T150716Z-354d0f29 returned successfully
+# and the original EE RPC_END dispatcher called 0x2A9020 from 0x29EFCC.
+# This callback owns a real 16-byte prologue and tail-calls SignalSema; it is
+# absent from the heuristic function map (gap 0x2A9018..0x2A9048).
+# Native run 20261011T130936Z-dcf281ed (after the jeep scene, vsync ~18500)
+# faults with missing-target: JALR from 0x29844C to 0x282C78. Ghidra sees a
+# whole function there (0x282C78..0x2833DB) whose address FUN_00282BC8 passes
+# as a callback; the heuristic map leaves the gap 0x282C74..0x282D00.
+# tools/diagnostics/dispatch_coverage.py --xrefs (2026-10-11): Ghidra function
+# entries with no dispatch entry whose address is taken as data (PARAM/DATA
+# refs: callbacks) or reached by a computed call. Same class as 0x282C78;
+# registered before they fault. Evidence: artifacts/research/20261011/dispatch_gaps.json
+# EE libsif's RPC CALL request handler (system command 0x8000000A) is
+# registered as a pointer in the SIF command table (0x462FC0 + 10*12) and
+# reached only by JALR from the SIF0 interrupt handler at 0x2A4278. Native run
+# 20261011T233128Z-73b861cf faults missing-target there; without it no IOP
+# client (MCMAN fast read -> libmc server 0x80000400) can call an EE server.
+entry_points = ["re4_alarm_patch@0x80076000", "re4_alarm_patch_2@0x80075000", "re4_disc_callback@0x299178", "re4_card_rpc_end@0x2A9020", "re4_jeep_callback@0x282C78", "re4_ptr_1d4a18@0x1D4A18", "re4_ptr_1df308@0x1DF308", "re4_ptr_268678@0x268678", "re4_ptr_2c0e10@0x2C0E10", "re4_ptr_2c7ba0@0x2C7BA0", "re4_ptr_2e6740@0x2E6740", "re4_ptr_1bb218@0x1BB218", "re4_sif_rpc_call@0x29F3F8"]
+[[runtime_code]]
+name      = "re4_alarm_patch"
+elf_src   = 0x0032B4B0
+load_addr = 0x80076000
+size      = 0x740
+
+[[runtime_code]]
+name      = "re4_alarm_patch_2"
+elf_src   = 0x0032BC90
+load_addr = 0x80075000
+size      = 0x330
+
+[ghidra_export]
+# Re-measured 2026-10-05 from analysis/analysis.json. The session-2 figures
+# (5,904 / 39.75% / median 44) sat here until then; session-4's (7,977 / 94.69%)
+# lasted one session and were also wrong — see dead_ends.jsonl#0059 and #0063.
+# 8,297 -> 8,544 across three passes: the DQ8 closure invariant, runtime-trace seeding, and end-extension past a call's return address: every PC-relative branch target must
+# be a registered entry (dead_ends.jsonl#0086).
+source = "lodestone analyze"
+function_count = 8574
+median_bytes = 88
+byte_coverage_pct = 96.87
+syscall_sites = 155
+overlays = 93
+closure_unresolved = "see analysis.json -> closure.unresolved_targets; a non-empty list means a branch still lands in an empty address"
+caveat = "our map, not Ghidra's. Ghidra remains the authority and WILL differ; nothing here has been checked against an external oracle."

@@ -1,0 +1,4183 @@
+{
+  "elf": "game\\Resident Evil 4 (USA)\\SLUS_211.34",
+  "entry": "0x00100008",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": "0x00100000",
+      "size": 2029852,
+      "flags": 6,
+      "type": 1,
+      "is_code": true
+    },
+    {
+      "name": ".reginfo",
+      "addr": "0x00000000",
+      "size": 24,
+      "flags": 0,
+      "type": 1879048198,
+      "is_code": false
+    },
+    {
+      "name": ".data",
+      "addr": "0x002EF980",
+      "size": 454416,
+      "flags": 7,
+      "type": 1,
+      "is_code": true
+    },
+    {
+      "name": ".sndata",
+      "addr": "0x0035E900",
+      "size": 300000,
+      "flags": 3,
+      "type": 1,
+      "is_code": false
+    },
+    {
+      "name": ".DVP.overlay..0x0.4171299443.22.0",
+      "addr": "0x00000000",
+      "size": 704,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x0.4171364979.20.0",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x800.4171364979.505.1",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1000.4171364979.1061.2",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1800.4171364979.495.3",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2000.4171364979.320.4",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2800.4171364979.665.5",
+      "addr": "0x00000000",
+      "size": 432,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3000.4171364979.26.6",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3800.4171364979.737.7",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x0.4233163395.20.0",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x800.4233163395.491.1",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1000.4233163395.444.2",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1800.4233163395.300.3",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2000.4233163395.639.4",
+      "addr": "0x00000000",
+      "size": 560,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3000.4233163395.26.5",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3800.4233163395.737.6",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x0.3306114147.20.0",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x800.3306114147.499.1",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1000.3306114147.446.2",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1800.3306114147.301.3",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2000.3306114147.642.4",
+      "addr": "0x00000000",
+      "size": 552,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3000.3306114147.26.5",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3800.3306114147.737.6",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x0.4171360227.20.0",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x800.4171360227.94.1",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1000.4171360227.548.2",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1800.4171360227.369.3",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2000.4171360227.707.4",
+      "addr": "0x00000000",
+      "size": 112,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3000.4171360227.26.5",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3800.4171360227.737.6",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x0.4233163411.20.0",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x800.4233163411.509.1",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1000.4233163411.415.2",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1800.4233163411.284.3",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2000.4233163411.627.4",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3000.4233163411.26.5",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3800.4233163411.737.6",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x0.4171360259.20.0",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x800.4171360259.457.1",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1000.4171360259.538.2",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1800.4171360259.362.3",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2000.4171360259.701.4",
+      "addr": "0x00000000",
+      "size": 160,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3000.4171360259.26.5",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3800.4171360259.737.6",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x0.4264065667.20.0",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x800.4264065667.468.1",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1000.4264065667.327.2",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1800.4264065667.177.3",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2000.4264065667.565.4",
+      "addr": "0x00000000",
+      "size": 1136,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3000.4264065667.26.5",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3800.4264065667.737.6",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x0.4264065683.22.0",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x800.4264065683.458.1",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1000.4264065683.270.2",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1800.4264065683.129.3",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2000.4264065683.503.4",
+      "addr": "0x00000000",
+      "size": 1440,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3000.4264065683.28.5",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3800.4264065683.737.6",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x0.4047719235.20.0",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x800.4047719235.409.1",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1000.4047719235.294.2",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1800.4047719235.155.3",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2000.4047719235.525.4",
+      "addr": "0x00000000",
+      "size": 1272,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3000.4047719235.26.5",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3800.4047719235.737.6",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x0.1140981731.24.0",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x800.1140981731.434.1",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1000.1140981731.371.2",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1800.1140981731.255.3",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2000.1140981731.602.4",
+      "addr": "0x00000000",
+      "size": 840,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3000.1140981731.30.5",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3800.1140981731.737.6",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x0.1140981763.24.0",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x800.1140981763.458.1",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1000.1140981763.359.2",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1800.1140981763.244.3",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2000.1140981763.594.4",
+      "addr": "0x00000000",
+      "size": 904,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3000.1140981763.30.5",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3800.1140981763.737.6",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x0.1140979619.24.0",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x800.1140979619.436.1",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1000.1140979619.289.2",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1800.1140979619.147.3",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2000.1140979619.520.4",
+      "addr": "0x00000000",
+      "size": 1312,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3000.1140979619.30.5",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3800.1140979619.737.6",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x0.4233167507.20.0",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x800.4233167507.450.1",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1000.4233167507.114.2",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x1800.4233167507.35.3",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x2000.4233167507.388.4",
+      "addr": "0x00000000",
+      "size": 2032,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3000.4233167507.26.5",
+      "addr": "0x00000000",
+      "size": 2048,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".DVP.overlay..0x3800.4233167507.737.6",
+      "addr": "0x00000000",
+      "size": 656,
+      "flags": 5,
+      "type": 2147480609,
+      "is_code": true
+    },
+    {
+      "name": ".rodata",
+      "addr": "0x003A7D00",
+      "size": 139352,
+      "flags": 2,
+      "type": 1,
+      "is_code": false
+    },
+    {
+      "name": ".gcc_except_table",
+      "addr": "0x003C9D80",
+      "size": 92,
+      "flags": 3,
+      "type": 1,
+      "is_code": false
+    },
+    {
+      "name": ".sdata",
+      "addr": "0x003C9E00",
+      "size": 296,
+      "flags": 268435459,
+      "type": 1,
+      "is_code": false
+    },
+    {
+      "name": ".sbss",
+      "addr": "0x003C9F80",
+      "size": 36,
+      "flags": 268435459,
+      "type": 8,
+      "is_code": false
+    },
+    {
+      "name": ".DVP.ovlytab",
+      "addr": "0x00000000",
+      "size": 1116,
+      "flags": 1,
+      "type": 2147480608,
+      "is_code": false
+    },
+    {
+      "name": ".DVP.ovlystrtab",
+      "addr": "0x00000000",
+      "size": 3465,
+      "flags": 0,
+      "type": 3,
+      "is_code": false
+    },
+    {
+      "name": ".bss",
+      "addr": "0x003CA000",
+      "size": 879192,
+      "flags": 3,
+      "type": 8,
+      "is_code": false
+    },
+    {
+      "name": ".shstrtab",
+      "addr": "0x00000000",
+      "size": 3595,
+      "flags": 0,
+      "type": 3,
+      "is_code": false
+    }
+  ],
+  "overlays": {
+    "count": 93,
+    "total_bytes": 155808,
+    "tables": [
+      ".DVP.ovlytab",
+      ".DVP.ovlystrtab"
+    ],
+    "sections": [
+      {
+        "name": ".DVP.overlay..0x0.4171299443.22.0",
+        "addr": "0x00000000",
+        "size": 704
+      },
+      {
+        "name": ".DVP.overlay..0x0.4171364979.20.0",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x800.4171364979.505.1",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1000.4171364979.1061.2",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1800.4171364979.495.3",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2000.4171364979.320.4",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2800.4171364979.665.5",
+        "addr": "0x00000000",
+        "size": 432
+      },
+      {
+        "name": ".DVP.overlay..0x3000.4171364979.26.6",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x3800.4171364979.737.7",
+        "addr": "0x00000000",
+        "size": 656
+      },
+      {
+        "name": ".DVP.overlay..0x0.4233163395.20.0",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x800.4233163395.491.1",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1000.4233163395.444.2",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1800.4233163395.300.3",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2000.4233163395.639.4",
+        "addr": "0x00000000",
+        "size": 560
+      },
+      {
+        "name": ".DVP.overlay..0x3000.4233163395.26.5",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x3800.4233163395.737.6",
+        "addr": "0x00000000",
+        "size": 656
+      },
+      {
+        "name": ".DVP.overlay..0x0.3306114147.20.0",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x800.3306114147.499.1",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1000.3306114147.446.2",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1800.3306114147.301.3",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2000.3306114147.642.4",
+        "addr": "0x00000000",
+        "size": 552
+      },
+      {
+        "name": ".DVP.overlay..0x3000.3306114147.26.5",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x3800.3306114147.737.6",
+        "addr": "0x00000000",
+        "size": 656
+      },
+      {
+        "name": ".DVP.overlay..0x0.4171360227.20.0",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x800.4171360227.94.1",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1000.4171360227.548.2",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1800.4171360227.369.3",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2000.4171360227.707.4",
+        "addr": "0x00000000",
+        "size": 112
+      },
+      {
+        "name": ".DVP.overlay..0x3000.4171360227.26.5",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x3800.4171360227.737.6",
+        "addr": "0x00000000",
+        "size": 656
+      },
+      {
+        "name": ".DVP.overlay..0x0.4233163411.20.0",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x800.4233163411.509.1",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1000.4233163411.415.2",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1800.4233163411.284.3",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2000.4233163411.627.4",
+        "addr": "0x00000000",
+        "size": 656
+      },
+      {
+        "name": ".DVP.overlay..0x3000.4233163411.26.5",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x3800.4233163411.737.6",
+        "addr": "0x00000000",
+        "size": 656
+      },
+      {
+        "name": ".DVP.overlay..0x0.4171360259.20.0",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x800.4171360259.457.1",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1000.4171360259.538.2",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1800.4171360259.362.3",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2000.4171360259.701.4",
+        "addr": "0x00000000",
+        "size": 160
+      },
+      {
+        "name": ".DVP.overlay..0x3000.4171360259.26.5",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x3800.4171360259.737.6",
+        "addr": "0x00000000",
+        "size": 656
+      },
+      {
+        "name": ".DVP.overlay..0x0.4264065667.20.0",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x800.4264065667.468.1",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1000.4264065667.327.2",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1800.4264065667.177.3",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2000.4264065667.565.4",
+        "addr": "0x00000000",
+        "size": 1136
+      },
+      {
+        "name": ".DVP.overlay..0x3000.4264065667.26.5",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x3800.4264065667.737.6",
+        "addr": "0x00000000",
+        "size": 656
+      },
+      {
+        "name": ".DVP.overlay..0x0.4264065683.22.0",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x800.4264065683.458.1",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1000.4264065683.270.2",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1800.4264065683.129.3",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2000.4264065683.503.4",
+        "addr": "0x00000000",
+        "size": 1440
+      },
+      {
+        "name": ".DVP.overlay..0x3000.4264065683.28.5",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x3800.4264065683.737.6",
+        "addr": "0x00000000",
+        "size": 656
+      },
+      {
+        "name": ".DVP.overlay..0x0.4047719235.20.0",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x800.4047719235.409.1",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1000.4047719235.294.2",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1800.4047719235.155.3",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2000.4047719235.525.4",
+        "addr": "0x00000000",
+        "size": 1272
+      },
+      {
+        "name": ".DVP.overlay..0x3000.4047719235.26.5",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x3800.4047719235.737.6",
+        "addr": "0x00000000",
+        "size": 656
+      },
+      {
+        "name": ".DVP.overlay..0x0.1140981731.24.0",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x800.1140981731.434.1",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1000.1140981731.371.2",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1800.1140981731.255.3",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2000.1140981731.602.4",
+        "addr": "0x00000000",
+        "size": 840
+      },
+      {
+        "name": ".DVP.overlay..0x3000.1140981731.30.5",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x3800.1140981731.737.6",
+        "addr": "0x00000000",
+        "size": 656
+      },
+      {
+        "name": ".DVP.overlay..0x0.1140981763.24.0",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x800.1140981763.458.1",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1000.1140981763.359.2",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1800.1140981763.244.3",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2000.1140981763.594.4",
+        "addr": "0x00000000",
+        "size": 904
+      },
+      {
+        "name": ".DVP.overlay..0x3000.1140981763.30.5",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x3800.1140981763.737.6",
+        "addr": "0x00000000",
+        "size": 656
+      },
+      {
+        "name": ".DVP.overlay..0x0.1140979619.24.0",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x800.1140979619.436.1",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1000.1140979619.289.2",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1800.1140979619.147.3",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2000.1140979619.520.4",
+        "addr": "0x00000000",
+        "size": 1312
+      },
+      {
+        "name": ".DVP.overlay..0x3000.1140979619.30.5",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x3800.1140979619.737.6",
+        "addr": "0x00000000",
+        "size": 656
+      },
+      {
+        "name": ".DVP.overlay..0x0.4233167507.20.0",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x800.4233167507.450.1",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1000.4233167507.114.2",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x1800.4233167507.35.3",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x2000.4233167507.388.4",
+        "addr": "0x00000000",
+        "size": 2032
+      },
+      {
+        "name": ".DVP.overlay..0x3000.4233167507.26.5",
+        "addr": "0x00000000",
+        "size": 2048
+      },
+      {
+        "name": ".DVP.overlay..0x3800.4233167507.737.6",
+        "addr": "0x00000000",
+        "size": 656
+      }
+    ]
+  },
+  "stats": {
+    "code_bytes": 2029852,
+    "functions": 8446,
+    "covered_bytes": 1999600,
+    "coverage_pct": 98.51,
+    "by_kind": {
+      "entry": 1,
+      "jal": 4792,
+      "materialised": 262,
+      "jalr": 2,
+      "jump": 214,
+      "orphan_ref": 443,
+      "callback": 2401,
+      "multi_target": 50,
+      "hole_prologue": 32,
+      "branch_target": 127,
+      "runtime_fault": 6,
+      "fallthrough": 116
+    },
+    "multi_target_added": 0,
+    "hole_prologue_added": 0,
+    "hole_prologue_rejected": 6934,
+    "closure_added": 134,
+    "closure_unresolved": 0,
+    "runtime_fault_added": 7,
+    "runtime_fault_unresolved": 0,
+    "ends_extended": 130,
+    "false_entries_demoted": 26,
+    "fallthrough_entries": 116,
+    "median_fn_bytes": 96,
+    "max_fn_bytes": 11616,
+    "syscall_sites": 155,
+    "distinct_syscall_ids": 1
+  },
+  "syscall_ids": {
+    "0x00000": {
+      "name": null,
+      "id_source": "instruction code field; register syscall ID not inferred",
+      "count": 155
+    }
+  },
+  "triage": {
+    "unmapped_entry_candidates": 7751,
+    "with_prologue": 7740,
+    "entries": [
+      {
+        "addr": "0x002B08E0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": null,
+        "prologue": true,
+        "jump_sites": 14
+      },
+      {
+        "addr": "0x00176218",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": null,
+        "prologue": true,
+        "jump_sites": 9
+      },
+      {
+        "addr": "0x002B0910",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": null,
+        "prologue": true,
+        "jump_sites": 2
+      },
+      {
+        "addr": "0x001006B0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00100288",
+        "prologue": true
+      },
+      {
+        "addr": "0x00100728",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001006B8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010073C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": null,
+        "prologue": true
+      },
+      {
+        "addr": "0x00100758",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00100748",
+        "prologue": true
+      },
+      {
+        "addr": "0x00100768",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00100748",
+        "prologue": true
+      },
+      {
+        "addr": "0x00100780",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00100748",
+        "prologue": true
+      },
+      {
+        "addr": "0x00100838",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001007A8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010084C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001007A8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00100A08",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00100858",
+        "prologue": true
+      },
+      {
+        "addr": "0x00100A44",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00100A10",
+        "prologue": true
+      },
+      {
+        "addr": "0x00100A70",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00100A50",
+        "prologue": true
+      },
+      {
+        "addr": "0x00100F3C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00100A78",
+        "prologue": true
+      },
+      {
+        "addr": "0x00100FB8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00100F48",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010102C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00100FC0",
+        "prologue": true
+      },
+      {
+        "addr": "0x001010A4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00101038",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010111C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001010B0",
+        "prologue": true
+      },
+      {
+        "addr": "0x001011D4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00101128",
+        "prologue": true
+      },
+      {
+        "addr": "0x001015B4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001011E0",
+        "prologue": true
+      },
+      {
+        "addr": "0x001015F8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001015C0",
+        "prologue": true
+      },
+      {
+        "addr": "0x001017E0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00101600",
+        "prologue": true
+      },
+      {
+        "addr": "0x00101A00",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001017E8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00101C78",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00101A08",
+        "prologue": true
+      },
+      {
+        "addr": "0x001020F0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00101C80",
+        "prologue": true
+      },
+      {
+        "addr": "0x00102314",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00102100",
+        "prologue": true
+      },
+      {
+        "addr": "0x00102524",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00102320",
+        "prologue": true
+      },
+      {
+        "addr": "0x001028B8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00102530",
+        "prologue": true
+      },
+      {
+        "addr": "0x00102964",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001028C0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00102974",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00102970",
+        "prologue": true
+      },
+      {
+        "addr": "0x00102998",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00102980",
+        "prologue": true
+      },
+      {
+        "addr": "0x00102AD0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001029A0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00102C48",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00102AD8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00102C74",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00102C50",
+        "prologue": true
+      },
+      {
+        "addr": "0x00102E98",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00102C80",
+        "prologue": true
+      },
+      {
+        "addr": "0x00102F08",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00102EB0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00103040",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00102F10",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010314C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00103048",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010329C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00103158",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010410C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001032B0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010488C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00104118",
+        "prologue": true
+      },
+      {
+        "addr": "0x001048A4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00104898",
+        "prologue": true
+      },
+      {
+        "addr": "0x001048D8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001048B0",
+        "prologue": true
+      },
+      {
+        "addr": "0x001048EC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001048E0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00104904",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001048F8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00104D48",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00104910",
+        "prologue": true
+      },
+      {
+        "addr": "0x00104ECC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00104D50",
+        "prologue": true
+      },
+      {
+        "addr": "0x001052D8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00104ED8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105318",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001052E0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105368",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105320",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010543C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105370",
+        "prologue": true
+      },
+      {
+        "addr": "0x001054A8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105448",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010553C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001054B8",
+        "prologue": true
+      },
+      {
+        "addr": "0x001055E0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105548",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105644",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001055E8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105688",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105650",
+        "prologue": true
+      },
+      {
+        "addr": "0x001056C8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105690",
+        "prologue": true
+      },
+      {
+        "addr": "0x001056E4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001056D0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105780",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001056F0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105818",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105788",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105834",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105820",
+        "prologue": true
+      },
+      {
+        "addr": "0x001058C4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105840",
+        "prologue": true
+      },
+      {
+        "addr": "0x001058D8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001058D0",
+        "prologue": true
+      },
+      {
+        "addr": "0x001058FC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001058E0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105904",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001058E0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105914",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105910",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105960",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105928",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010598C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105968",
+        "prologue": true
+      },
+      {
+        "addr": "0x001059D4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105968",
+        "prologue": true
+      },
+      {
+        "addr": "0x001059E8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105968",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105A30",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001059F0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105A44",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001059F0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105A7C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105A50",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105A84",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105A50",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105AB8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105A50",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105AF4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105AC0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105B00",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105AC0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105B38",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105B28",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105D24",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105B40",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105D68",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105D30",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105DB8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105D70",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105E8C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105DC0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105F80",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105E98",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105FB8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105F90",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105FD8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105FC0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00105FF8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00105FE0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00106024",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00106000",
+        "prologue": true
+      },
+      {
+        "addr": "0x00106074",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00106030",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010609C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00106080",
+        "prologue": true
+      },
+      {
+        "addr": "0x00106148",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001060A8",
+        "prologue": true
+      },
+      {
+        "addr": "0x001066C8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00106150",
+        "prologue": true
+      },
+      {
+        "addr": "0x00107128",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001066D0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00107700",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00107130",
+        "prologue": true
+      },
+      {
+        "addr": "0x00107B6C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00107708",
+        "prologue": true
+      },
+      {
+        "addr": "0x00107BDC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00107B78",
+        "prologue": true
+      },
+      {
+        "addr": "0x00107CB4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00107BE8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00108544",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00107CC0",
+        "prologue": true
+      },
+      {
+        "addr": "0x001088C8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00108550",
+        "prologue": true
+      },
+      {
+        "addr": "0x00108938",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001088D0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00109428",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00108940",
+        "prologue": true
+      },
+      {
+        "addr": "0x00109438",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00109430",
+        "prologue": true
+      },
+      {
+        "addr": "0x00109874",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00109440",
+        "prologue": true
+      },
+      {
+        "addr": "0x00109970",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00109880",
+        "prologue": true
+      },
+      {
+        "addr": "0x00109A78",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00109978",
+        "prologue": true
+      },
+      {
+        "addr": "0x00109B30",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00109A80",
+        "prologue": true
+      },
+      {
+        "addr": "0x00109DBC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00109B40",
+        "prologue": true
+      },
+      {
+        "addr": "0x00109F44",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00109DC8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00109FF0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00109F50",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010A1A8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00109FF8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010A1C0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010A1B0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010A310",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010A1C8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010A484",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010A318",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010A4F4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010A490",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010A5C0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010A500",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010A604",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010A5C8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010A644",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010A610",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010A668",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010A650",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010A760",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010A670",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010A8C4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010A768",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010A93C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010A8D0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010AA94",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010A948",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010AD00",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010AAA0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010ADFC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010AD08",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010AEA4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010AE08",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010B45C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010AEB0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010B5A4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010B468",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010B688",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010B5B0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010B744",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010B690",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010B9F8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010B750",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010BF88",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010BA00",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010BFF0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010BF90",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010C08C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010BFF8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010C0F0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010C0A0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010C220",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010C0F8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010C290",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010C228",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010C2E0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010C298",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010C328",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010C2E8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010CF18",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010C330",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010CF54",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010CF20",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010D11C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010CF60",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010D608",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010D128",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010D78C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010D610",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010D8C4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010D798",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010D918",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010D8D0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010DA14",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010D920",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010DD2C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010DA20",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010DE64",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010DD38",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010DEA8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010DE70",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010DF30",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010DEB8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010DFA0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010DF68",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E040",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010DFA8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E0EC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E048",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E1C0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E0F8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E28C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E1C8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E31C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E298",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E430",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E328",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E464",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E448",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E4C0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E470",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E4FC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E4C8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E544",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E508",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E5B0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E558",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E650",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E5B8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E684",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E658",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E6AC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E698",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E6C4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E698",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E6CC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E698",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E708",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E6D8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E724",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E710",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E740",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E710",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E748",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E710",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E7F4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E770",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E880",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E800",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E8AC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E890",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010E908",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E8B8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010EBAC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010E920",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010EE38",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010EBB8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010EE68",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010EE40",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010EE9C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010EE70",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010EEB8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010EEA8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010EF0C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010EEC0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010F09C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010EF18",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010F1A0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010F0A8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010F298",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010F1A8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010F340",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010F2A0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010F410",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010F348",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010F4D8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010F418",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010F610",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010F4E0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010F880",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010F618",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010F8AC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010F890",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010F908",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010F8B8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010FB88",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010F920",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010FCB8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010FC10",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010FE00",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010FCC0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010FE58",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010FE08",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010FE70",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010FE60",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010FEA4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010FE78",
+        "prologue": true
+      },
+      {
+        "addr": "0x0010FFEC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010FEB0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00110018",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0010FFF8",
+        "prologue": true
+      },
+      {
+        "addr": "0x001100D8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00110020",
+        "prologue": true
+      },
+      {
+        "addr": "0x00110160",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001100E0",
+        "prologue": true
+      },
+      {
+        "addr": "0x001101C0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00110168",
+        "prologue": true
+      },
+      {
+        "addr": "0x00110364",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001101D8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00110460",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00110378",
+        "prologue": true
+      },
+      {
+        "addr": "0x001104AC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00110468",
+        "prologue": true
+      },
+      {
+        "addr": "0x00110508",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001104B8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00110854",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00110520",
+        "prologue": true
+      },
+      {
+        "addr": "0x00110894",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00110860",
+        "prologue": true
+      },
+      {
+        "addr": "0x00110E4C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011094C",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011105C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00110E58",
+        "prologue": true
+      },
+      {
+        "addr": "0x00111078",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00111068",
+        "prologue": true
+      },
+      {
+        "addr": "0x001110AC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00111080",
+        "prologue": true
+      },
+      {
+        "addr": "0x001111C4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001110B8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011133C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001111D0",
+        "prologue": true
+      },
+      {
+        "addr": "0x001113F0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00111348",
+        "prologue": true
+      },
+      {
+        "addr": "0x00111450",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001113F8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00111DA0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00111458",
+        "prologue": true
+      },
+      {
+        "addr": "0x00112254",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00111DA8",
+        "prologue": true
+      },
+      {
+        "addr": "0x001125B8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00112260",
+        "prologue": true
+      },
+      {
+        "addr": "0x00112D68",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001125C0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00113318",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00112D70",
+        "prologue": true
+      },
+      {
+        "addr": "0x001135AC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00113320",
+        "prologue": true
+      },
+      {
+        "addr": "0x00113808",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001135B8",
+        "prologue": true
+      },
+      {
+        "addr": "0x001139B8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00113810",
+        "prologue": true
+      },
+      {
+        "addr": "0x00114058",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001139C0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00114508",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00114060",
+        "prologue": true
+      },
+      {
+        "addr": "0x00114AA8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00114510",
+        "prologue": true
+      },
+      {
+        "addr": "0x00114BB0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00114AB0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00114E30",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00114BB8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00115198",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00114E38",
+        "prologue": true
+      },
+      {
+        "addr": "0x001153C0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001151A0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00115654",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001153C8",
+        "prologue": true
+      },
+      {
+        "addr": "0x001156A8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00115660",
+        "prologue": true
+      },
+      {
+        "addr": "0x001158DC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001156B0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00115B10",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001158E8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00115CE4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00115B18",
+        "prologue": true
+      },
+      {
+        "addr": "0x00115F30",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00115CF0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116178",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00115F38",
+        "prologue": true
+      },
+      {
+        "addr": "0x001163C4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116180",
+        "prologue": true
+      },
+      {
+        "addr": "0x001165E4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001163D0",
+        "prologue": true
+      },
+      {
+        "addr": "0x001167E4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001165F0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116A44",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001167F0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116A60",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116A50",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116A74",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116A68",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116A8C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116A80",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116AA4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116A98",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116AC0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116AB0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116AE0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116AC8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116AF0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116AE8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116B00",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116AF8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116B10",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116B08",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116B20",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116B18",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116B60",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116B28",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116BA4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116B68",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116C1C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116BB0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116C98",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116C28",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116CC4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116CA0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116CD4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116CA0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116D14",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116CE8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116D48",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116D20",
+        "prologue": true
+      },
+      {
+        "addr": "0x00116FE0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116D50",
+        "prologue": true
+      },
+      {
+        "addr": "0x001172E8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00116FE8",
+        "prologue": true
+      },
+      {
+        "addr": "0x001175E0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001172F0",
+        "prologue": true
+      },
+      {
+        "addr": "0x001176D8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001175E8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00117778",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001176E0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00117AF0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00117780",
+        "prologue": true
+      },
+      {
+        "addr": "0x00117C08",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00117B00",
+        "prologue": true
+      },
+      {
+        "addr": "0x00117C54",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00117C10",
+        "prologue": true
+      },
+      {
+        "addr": "0x00117CB0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00117C60",
+        "prologue": true
+      },
+      {
+        "addr": "0x00117DEC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00117CC8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00117E6C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00117DF8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011818C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00117E78",
+        "prologue": true
+      },
+      {
+        "addr": "0x001181C0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00118198",
+        "prologue": true
+      },
+      {
+        "addr": "0x001181EC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001181C8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00118270",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001181F8",
+        "prologue": true
+      },
+      {
+        "addr": "0x001184C8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00118278",
+        "prologue": true
+      },
+      {
+        "addr": "0x001184F8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001184D0",
+        "prologue": true
+      },
+      {
+        "addr": "0x001185B4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00118500",
+        "prologue": true
+      },
+      {
+        "addr": "0x001185E4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001185C0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011860C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001185C0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011868C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00118618",
+        "prologue": true
+      },
+      {
+        "addr": "0x00118740",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00118698",
+        "prologue": true
+      },
+      {
+        "addr": "0x00118790",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00118748",
+        "prologue": true
+      },
+      {
+        "addr": "0x001188E0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00118798",
+        "prologue": true
+      },
+      {
+        "addr": "0x00118908",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001188E8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00118934",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00118910",
+        "prologue": true
+      },
+      {
+        "addr": "0x00118964",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00118940",
+        "prologue": true
+      },
+      {
+        "addr": "0x00118B78",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00118970",
+        "prologue": true
+      },
+      {
+        "addr": "0x00118FB8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00118B80",
+        "prologue": true
+      },
+      {
+        "addr": "0x00119300",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00118FC0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011934C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00119308",
+        "prologue": true
+      },
+      {
+        "addr": "0x00119368",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00119354",
+        "prologue": true
+      },
+      {
+        "addr": "0x00119384",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00119370",
+        "prologue": true
+      },
+      {
+        "addr": "0x001193A0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011938C",
+        "prologue": true
+      },
+      {
+        "addr": "0x001193BC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001193A8",
+        "prologue": true
+      },
+      {
+        "addr": "0x001193D8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001193C4",
+        "prologue": true
+      },
+      {
+        "addr": "0x001195E8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001193E8",
+        "prologue": true
+      },
+      {
+        "addr": "0x001199C4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001195F0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00119A44",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001199D0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00119A64",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00119A50",
+        "prologue": true
+      },
+      {
+        "addr": "0x00119C54",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00119A70",
+        "prologue": true
+      },
+      {
+        "addr": "0x00119E20",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00119C60",
+        "prologue": true
+      },
+      {
+        "addr": "0x00119E40",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00119E28",
+        "prologue": true
+      },
+      {
+        "addr": "0x00119E9C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00119E48",
+        "prologue": true
+      },
+      {
+        "addr": "0x00119EF8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00119E48",
+        "prologue": true
+      },
+      {
+        "addr": "0x00119F3C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00119F00",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011A04C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00119F48",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011A0DC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011A058",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011A16C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011A0E8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011A1D8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011A178",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011A230",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011A1E0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011A404",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011A238",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011A79C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011A410",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011AF2C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011A7A8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011B59C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011AF38",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011BCF4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011B5A8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011C2D4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011BD00",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011C624",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011C2E0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011D70C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011C630",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011D888",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011D718",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011D9F0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011D890",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011DA38",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011D9F8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011DB38",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011DA40",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011DB74",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011DB40",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011DB98",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011DB7C",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011DBB4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011DBA0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011DBE8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011DBBC",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011DBF0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011DBBC",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011DC24",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011DBF8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011DC40",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011DC2C",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011DC84",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011DC48",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011DCE0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011DC8C",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011DD7C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011DCE8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011DFFC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011DD88",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E018",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E008",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E028",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E008",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E05C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E030",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E070",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E030",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E128",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E078",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E168",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E130",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E3A8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E170",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E414",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E3B0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E428",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E3B0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E48C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E430",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E4A0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E430",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E538",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E4A8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E548",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E540",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E608",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E550",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E624",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E610",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011E94C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E630",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011ED48",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011E960",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011EED0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011ED50",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011EF04",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011EED8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011EF54",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011EF10",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011EF84",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011EF60",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F050",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011EF90",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F0D4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F058",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F15C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F0E0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F174",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F168",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F1B0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F180",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F1C4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F180",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F208",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F1D0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F254",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F1D0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F6CC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F268",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F8FC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F6D8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F938",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F910",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F970",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F940",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F988",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F978",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011F994",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F978",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011FAE4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011F9A8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011FB0C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011FAF0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011FC58",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011FB18",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011FC7C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011FC60",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011FE50",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011FC88",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011FE70",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011FE58",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011FEBC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011FE58",
+        "prologue": true
+      },
+      {
+        "addr": "0x0011FFA8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011FEC8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00120104",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x0011FFB8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00120228",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120110",
+        "prologue": true
+      },
+      {
+        "addr": "0x0012034C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120230",
+        "prologue": true
+      },
+      {
+        "addr": "0x00120424",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120358",
+        "prologue": true
+      },
+      {
+        "addr": "0x00120444",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120430",
+        "prologue": true
+      },
+      {
+        "addr": "0x001204EC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120450",
+        "prologue": true
+      },
+      {
+        "addr": "0x001205D0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001204F8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00120710",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001205D8",
+        "prologue": true
+      },
+      {
+        "addr": "0x0012090C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120720",
+        "prologue": true
+      },
+      {
+        "addr": "0x00120AC8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120918",
+        "prologue": true
+      },
+      {
+        "addr": "0x00120BF8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120AD0",
+        "prologue": true
+      },
+      {
+        "addr": "0x00120E58",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120C00",
+        "prologue": true
+      },
+      {
+        "addr": "0x00120F38",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120E60",
+        "prologue": true
+      },
+      {
+        "addr": "0x00120F8C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120F40",
+        "prologue": true
+      },
+      {
+        "addr": "0x00120FA0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120F40",
+        "prologue": true
+      },
+      {
+        "addr": "0x00120FE8",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120FA8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00120FFC",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00120FA8",
+        "prologue": true
+      },
+      {
+        "addr": "0x00121048",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00121008",
+        "prologue": true
+      },
+      {
+        "addr": "0x0012105C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00121008",
+        "prologue": true
+      },
+      {
+        "addr": "0x001210C0",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00121068",
+        "prologue": true
+      },
+      {
+        "addr": "0x001210D4",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x00121068",
+        "prologue": true
+      },
+      {
+        "addr": "0x00121138",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001210E0",
+        "prologue": true
+      },
+      {
+        "addr": "0x0012114C",
+        "in_body_code": true,
+        "is_function_start": false,
+        "covered_by": "0x001210E0",
+        "prologue": true
+      }
+    ]
+  },
+  "closure": {
+    "branch_targets_promoted": 134,
+    "unresolved_targets": []
+  },
+  "runtime_seeding": {
+    "fault_addresses_promoted": 7,
+    "still_unwalkable": []
+  },
+  "end_extension": {
+    "ends_extended": 130,
+    "false_entries_demoted": 26
+  }
+}

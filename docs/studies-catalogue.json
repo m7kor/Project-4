@@ -1,0 +1,734 @@
+{
+  "date": "2026-10-10",
+  "scope": "All Markdown studies and documents under docs plus root entry documents and archive Markdown. External resource files and source repositories are not individually certified by this catalogue.",
+  "files": [
+    {
+      "path": "docs/00-ARCHITECTURE.md",
+      "sha256": "86ec7b4fe21144abf41e0c5088602fa4ae2cfed8065d1cbe468aa000aa77bc08",
+      "bytes": 3647,
+      "status": "current-entry",
+      "scope": "Current description or goals; goals are not completed features",
+      "title": "معمارية المشروع الفعلية"
+    },
+    {
+      "path": "docs/01-BUILD.md",
+      "sha256": "b02a6bbddbd4d6f35ae409e64217419d2deb281d96ac10292ca829da0cfc48d9",
+      "bytes": 13612,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Building the core — verified settings"
+    },
+    {
+      "path": "docs/CALL_TRACE.md",
+      "sha256": "9754597a8c3b94720e3ced3a38933c0a0238fd3e2d2c94068de08e6fb83603e7",
+      "bytes": 5619,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Selected guest calls"
+    },
+    {
+      "path": "docs/CARD_FORMAT_EXECUTION.md",
+      "sha256": "62d261d27b6d4c3ade9279f4ba0b4a241cdde0f6930eea62feda9bcced4860a3",
+      "bytes": 4236,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "RE4 original card-format execution"
+    },
+    {
+      "path": "docs/CURRENT.md",
+      "sha256": "a888d8915b76c1af02c28c10bb2d55235041406718f9c8716ccab304e2332df4",
+      "bytes": 212387,
+      "status": "evidence-and-history",
+      "scope": "Latest corrected evidence plus historical states; not all sections are current",
+      "title": "الحالة الحالية — 2026-10-10"
+    },
+    {
+      "path": "docs/DVD_READ_CONTRACT.md",
+      "sha256": "0d2f3d496e2b64a1405697fc27cbae1d4301a24cf10bde309225d4b47038f5a4",
+      "bytes": 7436,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "عقد قراءة DVD المدعوم حاليًا — 2026-10-06"
+    },
+    {
+      "path": "docs/EE_BRANCH_WIDTH.md",
+      "sha256": "6de94a53a182df6e052062d8aef7465a252f6917e2966770ebb0bc1741bb4638",
+      "bytes": 4715,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "عرض مقارنات فروع EE — 2026-10-06"
+    },
+    {
+      "path": "docs/EE_COMPARE_WIDTH.md",
+      "sha256": "e860cff2a8eab0fd5c356de14a6235c3121e5d0f726f3abdd506a1ab7afccef0",
+      "bytes": 2888,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "EE set-less-than comparison width"
+    },
+    {
+      "path": "docs/EE_MEMORY_LAYOUT.md",
+      "sha256": "0aa1ed29660b3477def347e55ed938559c359365187e808013f84452d44b159e",
+      "bytes": 1856,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "EE memory layout in the current HLE runtime"
+    },
+    {
+      "path": "docs/EE_MOVE_WIDTH.md",
+      "sha256": "7484f5d6d6c7e418587eef96d90c67c7b74f73f429129c68dc97b68d5653e10d",
+      "bytes": 2453,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "EE conditional moves preserve the upper half"
+    },
+    {
+      "path": "docs/EE_QUAD_ALIGNMENT.md",
+      "sha256": "a6ac860a0beaba2bc29c7b47ba8e7b7a73c7f14a7f6ac84a9662e19402210a3f",
+      "bytes": 3149,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "R5900 LQ/SQ address alignment"
+    },
+    {
+      "path": "docs/GAME_SAVE_FOLDER.md",
+      "sha256": "3d567e63cec5bd178a53ff20b85b2870384844795e4efd066233849361cac7cf",
+      "bytes": 3389,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Local RE4 native folder and per-game saves"
+    },
+    {
+      "path": "docs/GIF_DMA_SOURCE_TRACE.md",
+      "sha256": "0518a4701557c9338a7edf0483883a1a4ea10b98e2792f643498bf9274386ff1",
+      "bytes": 1487,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Bounded GIF DMA source evidence"
+    },
+    {
+      "path": "docs/GIF_TRACE.md",
+      "sha256": "e3630b217a626a070b01d9c47a08641af41fe31490624d99077ef796ed242e00",
+      "bytes": 2631,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Raw GIF evidence"
+    },
+    {
+      "path": "docs/GOD_OF_WAR_HOTPATHS_20261009.md",
+      "sha256": "0a4ba87feaa0720822a714a20d344d94f356800ff65e34af0a725e7285401def",
+      "bytes": 6295,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "تطبيق تحسينات الرن تايم وقياسها — 2026-10-09"
+    },
+    {
+      "path": "docs/GOD_OF_WAR_UPDATE_20261008.md",
+      "sha256": "bfbadcffccb89f930676a46c14089a4adb730621a158955e701719fe856da650",
+      "bytes": 5111,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "God of War update audit — 2026-10-08"
+    },
+    {
+      "path": "docs/GOD_OF_WAR_UPDATE_20261009.md",
+      "sha256": "bc029b8430d1561740fcfdad7e54045b40803d0615898b87dd463c57d0c3422b",
+      "bytes": 9088,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "مراجعة تحديث God of War — 2026-10-09"
+    },
+    {
+      "path": "docs/GOD_OF_WAR_UPDATE_20261010.md",
+      "sha256": "03c33dae7ddc92040ed0e53cdef4c57a3c92b75b043f11b0645e5a9d77745ede",
+      "bytes": 8942,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "مراجعة تحديث God of War — 2026-10-10"
+    },
+    {
+      "path": "docs/GS_TEXTURE_CAPTURE.md",
+      "sha256": "59fd2200fb6fb5f7979e4a84b04801221aa090d100cb14ff72bd0ad5c2139e8d",
+      "bytes": 8167,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Bounded texture and CLUT capture — 2026-10-07"
+    },
+    {
+      "path": "docs/INCREMENTAL_BUILD.md",
+      "sha256": "f667c168b983ab993be2f58f4beef8811bfd276bd3a11182d743009a97fb0f08",
+      "bytes": 2175,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Local declarations for generated game bodies"
+    },
+    {
+      "path": "docs/INTERLACED_TEXT_STABILITY.md",
+      "sha256": "f886f09ba9fd671fd6df91a9bbc8530e25051d796d853d4b2591ed2586ee9522",
+      "bytes": 2369,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Vertical text flicker: evidence and host presentation change"
+    },
+    {
+      "path": "docs/IOP_CARD_CLOCK.md",
+      "sha256": "764f04c748fc47846ef6ed84dbc03e9301e9a3a2e12f06e08f0f9b2a662e7d84",
+      "bytes": 4440,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "IOP card clock and extended service-thread observation"
+    },
+    {
+      "path": "docs/IOP_CPU_INTERRUPT_ERRORS.md",
+      "sha256": "9874044693a1d1f946fc27dbf5eb3f24b10af1b2c93ed802ec204ce0e13533fc",
+      "bytes": 3957,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "IOP CPU interrupt return values — 2026-10-07"
+    },
+    {
+      "path": "docs/IOP_DMA_INTERRUPT_MASK.md",
+      "sha256": "f89e163e6f0508e98738bf0fa15f2abf92f3e774d1bdb394b758d406bc771da5",
+      "bytes": 8144,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "IOP DMA interrupts must respect CPU masking"
+    },
+    {
+      "path": "docs/IOP_HOST_COST_AND_VF0.md",
+      "sha256": "db564a2cba35bc9a218b73c6d6587b54fa4ea44f99550963a3faf444f7a7867d",
+      "bytes": 7748,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "تكلفة IOP وتهيئة VF0 — 2026-10-08"
+    },
+    {
+      "path": "docs/IOP_IDLE_SCHEDULING.md",
+      "sha256": "01e61d2923c9ec3779d7e4f198098a21c2b7bbeae3eccaae768212ed853d7b9d",
+      "bytes": 5648,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "تكلفة جدولة IOP أثناء الخمول — 2026-10-08"
+    },
+    {
+      "path": "docs/IOP_INTERRUPT_CONTEXT.md",
+      "sha256": "0073b30601e4db5a5bb1405950c8aba3abf7a666255a169366e875e864f29d77",
+      "bytes": 2615,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "IOP interrupt context — 2026-10-07"
+    },
+    {
+      "path": "docs/IOP_MODULE_ARGUMENTS_AND_CTYPE.md",
+      "sha256": "3166502e1d964647ea06781b9874be5a177114945ce49f3bb769a8b51121ffc7",
+      "bytes": 5973,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "IOP module arguments and numeric option parsing — 2026-10-07"
+    },
+    {
+      "path": "docs/IOP_RESUMABLE_CALLS.md",
+      "sha256": "a224149bfcee6f8227a298bf7a57b3e0abedfb5f4568eb2d8417ff6edeed29c8",
+      "bytes": 3062,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Resumable original IOP calls"
+    },
+    {
+      "path": "docs/IOP_RPC_SNAPSHOTS.md",
+      "sha256": "6b8d1327a454db45a6d81c6b635a501d2298c97c1dd2f14e0fa808fb8d07f2b0",
+      "bytes": 5839,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Original IOP RPC state capture"
+    },
+    {
+      "path": "docs/IOP_SOUND_IMPORT_TRACE.md",
+      "sha256": "1e3417fbb66c547dae1cadaa58acff46e85917e32bd25982d46f56a04c68b287",
+      "bytes": 8860,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Original sound transfer and handler registrations"
+    },
+    {
+      "path": "docs/IOP_STAGE_PROFILE.md",
+      "sha256": "fa458fc886a1c998fb5f5cac9e72a938c43cb1f1e08e1e70c1bec514ac13ce18",
+      "bytes": 8257,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "قياس أجزاء تحديث IOP — 2026-10-08"
+    },
+    {
+      "path": "docs/IOP_THREAD_INTERRUPT_CONTROL.md",
+      "sha256": "5edddb132b74cf29dd48cc35a213a7630c8676ca6df03835005aa199c6a11a45",
+      "bytes": 5570,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "IOP thread interrupt context — 2026-10-07"
+    },
+    {
+      "path": "docs/IOP_VBLANK_CALLBACKS.md",
+      "sha256": "fb4c77d17b651edd54e86e5fbdb5b5cd796dfbf70848d1a9179e1252eb95d4b4",
+      "bytes": 4281,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "IOP VBlank callback delivery"
+    },
+    {
+      "path": "docs/IPU_MMIO_TRACE.md",
+      "status": "documented-study",
+      "scope": "Evidence limited to stated validation; not blanket certification.",
+      "sha256": "a8d56804cd3dbe0fa3a964edbda583698e6333b71223dceef042c61ae36759f5",
+      "bytes": 2824,
+      "title": "رصد IPU وقنوات DMA"
+    },
+    {
+      "path": "docs/MEMORY_CARD_NATIVE_DETECTION.md",
+      "sha256": "5e8f43e6c5c97231c5f6ba4e615aab1d0b2d153633d361d35ea7c54a784aa5c3",
+      "bytes": 8021,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Memory-card service and native RE4 detection"
+    },
+    {
+      "path": "docs/MODERN_CONTROLLERS.md",
+      "sha256": "6a35f380a39f103f9df2fcc436dfe76c37e020d1858c68deeb6184d1a73b4cb7",
+      "bytes": 5466,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Automatic modern-controller input"
+    },
+    {
+      "path": "docs/NATIVE_PAD_INPUT.md",
+      "sha256": "3d402ed5dfc876d8f99c58388fb118dfd68503f4c5c69a8236766dc035d14957",
+      "bytes": 7993,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Native DualShock 2 input"
+    },
+    {
+      "path": "docs/NATIVE_RPC_THREAD_QUEUE.md",
+      "sha256": "f48e5c9bf154e6bd846066fc11abdcbd817295a075f86670b6753719542ce8f8",
+      "bytes": 7628,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Native RPC on the original IOP service thread"
+    },
+    {
+      "path": "docs/NATIVE_RPC_TIMING.md",
+      "sha256": "e879f40c74f59603252ce1afd3f92197b6067d850af67a3a06420c2f376d3216",
+      "bytes": 5750,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Native RPC timing and receive-buffer progress"
+    },
+    {
+      "path": "docs/NATIVE_SPU2_INTEGRATION.md",
+      "sha256": "c77b3692c2f8fa38b04ada716fb0e12f885d9e2bdbfb28f32af15b0df3b971c7",
+      "bytes": 6516,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Native SPU2 integration — 2026-10-07"
+    },
+    {
+      "path": "docs/OBSERVED_ENTRIES.md",
+      "sha256": "3af4b24ba0429d9bf3c55a2b27a28f37030cb614127cc5c89c0c7c7b875ae0e0",
+      "bytes": 2047,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Observed dispatch entry audit"
+    },
+    {
+      "path": "docs/OPENGOAL_REVIEW.md",
+      "sha256": "b1d6a901ab8953a0c0ecab1abe8516ab33bb43552d8b6e8284353020acb3dba3",
+      "bytes": 4948,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "OpenGOAL: ما يفيد مشروع RE4"
+    },
+    {
+      "path": "docs/PCSX2_MEMORY_SAVE_STUDY.md",
+      "sha256": "25a8f9681d29d82a8c1423c9ce9bf28fd6b9053ee56bb78d408fe8df9de700ef",
+      "bytes": 13491,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "PCSX2 memory-card and save-state study — 2026-10-08"
+    },
+    {
+      "path": "docs/PCSX2_REFERENCE_TOOL.md",
+      "sha256": "32ea25bfa1df836dc4e530abc4c62a08361b2eb3489ebb45232523178594d69d",
+      "bytes": 3184,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "مرجع ذاكرة PCSX2"
+    },
+    {
+      "path": "docs/POST_SYSTEM_LOAD_BLACK_SCREEN.md",
+      "sha256": "5122376625e7d5dd19944b95e25a86e8d8e6afc900cf2f5d04fd54e5264f53ee",
+      "bytes": 4641,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "السواد بعد بيانات النظام — 2026-10-08"
+    },
+    {
+      "path": "docs/PROJECT_AUDIT_20261010.md",
+      "sha256": "ff7f114a812f54eff61d608c79cd75a5c260160286b5457455c426676d9da2f4",
+      "bytes": 13398,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "فحص المشروع وشجرته — 2026-10-10"
+    },
+    {
+      "path": "docs/PROJECT_SURVEY_20261007.md",
+      "sha256": "98b64874dbbb9a46319c2421eecf5eaf2229ab70581dcab379a4868c57e46c65",
+      "bytes": 13060,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Cross-project engineering review — 2026-10-07"
+    },
+    {
+      "path": "docs/PS2_BOOT_INTRO.md",
+      "sha256": "7aa94b08ec5d70c7b46c2c75938023a2f507abd2086592b8b121ec62a149b458",
+      "bytes": 2731,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Original PS2 boot intro: local feasibility audit"
+    },
+    {
+      "path": "docs/PS2RECOMP_WIKI_REVIEW.md",
+      "sha256": "f6bd729c48373ceb6190044254664ccfcc6948473d94cfd1045734e3896d0e3f",
+      "bytes": 8043,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "مراجعة ويكي PS2Recomp — 2026-10-06"
+    },
+    {
+      "path": "docs/RE4_BOOT_FIX_PLAN.md",
+      "sha256": "0719b3ebd29b5a1b5459adf4dc8144dbaaa8c325adb0d6b469838dd5b9aceab7",
+      "bytes": 14504,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "خطة معالجة توقف إقلاع RE4 — 2026-10-06"
+    },
+    {
+      "path": "docs/RE4_EE_REPEAT_SUSPEND.md",
+      "sha256": "d1eb34d3a08a816881fdc1e96518936ca36de77133318da559e6b16a8d167d59",
+      "bytes": 4466,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "EE repeated suspension â€” 2026-10-10"
+    },
+    {
+      "path": "docs/RE4_EE_RPC_THREAD_ENTRY.md",
+      "sha256": "77833e7ddce2dd8b5cd61790293d70818904c3ee96aaf4906bad73ee635e89c0",
+      "bytes": 3914,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "مدخل خيط الاتصال الأصلي — 2026-10-09"
+    },
+    {
+      "path": "docs/RE4_EE_THREAD_ENTRY.md",
+      "sha256": "3ff6cb3f3b5fcbde80ad00778f26407dd95f7ed7d4b0d742342bf5ce395b9cad",
+      "bytes": 4205,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "مدخل خيط EE المفقود منذ الإقلاع — 2026-10-09"
+    },
+    {
+      "path": "docs/RE4_EVENT_READ_TRACE.md",
+      "sha256": "df751d1d9733e32734c1f36a456e7b535e6dc35dcbfbb5131875549c4783b5f7",
+      "bytes": 25014,
+      "status": "evidence-and-history",
+      "scope": "Latest corrected evidence plus historical states; not all sections are current",
+      "title": "RE4 event read and execution investigation — 2026-10-10"
+    },
+    {
+      "path": "docs/RE4_GAME_FILE_AUDIT.md",
+      "sha256": "7b45c76e104c464b0f728cbe7d6185e6a45ae473bbedcc2b85f3880058a020e0",
+      "bytes": 5812,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "مراجعة ملفات RE4 — 2026-10-06"
+    },
+    {
+      "path": "docs/RE4_GRAPHICS_SEQUENCE_REVIEW.md",
+      "sha256": "169b32fa8e0085c82c3b5dcf30eb3c292565f6f86fe6bcc3f4fed0e5d5286823",
+      "bytes": 5940,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "RE4 graphics sequence review — 2026-10-10"
+    },
+    {
+      "path": "docs/RE4_OBJECT_WEAPON_INIT.md",
+      "sha256": "3e59684e8d7d82a6a8796097ae79b206df77495fb2fc415a2233a6254fcd742c",
+      "bytes": 8368,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "تهيئة كائن السلاح وتصحيح الجذر — 2026-10-09"
+    },
+    {
+      "path": "docs/RE4_R120_EVENTS_INTEGRATION.md",
+      "sha256": "8c1765746a7b9f1cfcb54723322748e381f84e952684872ea65d03d18092eb1b",
+      "bytes": 4541,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "أحداث غرفة R120 — اختبار ودمج"
+    },
+    {
+      "path": "docs/RE4_R120_EVENTS_REVIEW.md",
+      "sha256": "0cc9c0dec9cf7ca06392e70b9cfa3f91fb6e1ce50c8036d2e54b371eb11d85ad",
+      "bytes": 4886,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "مراجعة أحداث R120 وأدوات التشخيص — 2026-10-09"
+    },
+    {
+      "path": "docs/RE4_R120_INIT.md",
+      "sha256": "455e9650969d1ab97018d713bf67fb43a10025b64e9acb2eb6d2757b171f4654",
+      "bytes": 3258,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "مدخل غرفة R120 — 2026-10-09"
+    },
+    {
+      "path": "docs/RE4_SNR2_NATIVE_MODULES.md",
+      "sha256": "464f10f609d489474d29084920b5dbdfd2ffd11aed2d277b210d4a2905b2ac50",
+      "bytes": 46389,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "تحديث 2026-10-09 — منشئ المرحلة يعمل والعائق التالي _prolog"
+    },
+    {
+      "path": "docs/RE4_STAGE_REGISTRATION.md",
+      "sha256": "6148d6608302dd7695c8c2de2dc1dd51364715ab3bf82cb7a0dbbc393d8fee95",
+      "bytes": 13307,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "تسجيل غرف المرحلة والوحدة التالية — 2026-10-09"
+    },
+    {
+      "path": "docs/RE4_TASK_DISPATCH.md",
+      "sha256": "0d2317d5f77200821da6174f253e9e5303da371bc6cadfa156a72f5d4bab9e99",
+      "bytes": 6057,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "RE4 task dispatch investigation"
+    },
+    {
+      "path": "docs/RE4_WEAPON_EVENT_METHODS.md",
+      "sha256": "4a9e18542352d896a41bd22cc5861aa1b92676451c377ccd6db5459eadc2d886",
+      "bytes": 3018,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "طريقتا أحداث السلاح الأصليتان — 2026-10-10"
+    },
+    {
+      "path": "docs/RE4_WEAPON_HAND_INIT.md",
+      "sha256": "2b438b19e2f47f7280a10e67da5d02f524985720ee095ffaa951dc3193600221",
+      "bytes": 4178,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "تهيئة يد اللاعب — 2026-10-09"
+    },
+    {
+      "path": "docs/RE4_WEAPON_MODEL_INIT.md",
+      "sha256": "7b83dbf0ba0c7b3c5e92ed89d77b0a947fe58879f894be1d2f2af7709d6a39e6",
+      "bytes": 6458,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "تهيئة نموذج سلاح Ruger — 2026-10-09"
+    },
+    {
+      "path": "docs/RE4_WEAPON_MOTION.md",
+      "sha256": "aea7169512cd1a30398ba91ed0400ae4396e44dd77d44ad53f0271cf35212d9f",
+      "bytes": 3216,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "تهيئة حركة سلاح Ruger — 2026-10-09"
+    },
+    {
+      "path": "docs/RE4_WEAPON_PLAYER_INIT.md",
+      "sha256": "3f272a4800323a74f9b5e4ac2d318d4d105a512fc5b684680b71a512b0a7f314",
+      "bytes": 6379,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "تهيئة سلاح اللاعب — 2026-10-09"
+    },
+    {
+      "path": "docs/RESOURCE_AUDIT.md",
+      "sha256": "73183c683c61fe879ffb45aeb01a94733a0bed461ada18ad5a0c8f95c04af49e",
+      "bytes": 42607,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "تدقيق مكتبة موارد PS2"
+    },
+    {
+      "path": "docs/RESOURCE_REVIEW.md",
+      "sha256": "15c24b6cc650c7e1d3fdff4e16b38fb96e094f29d326bbcdf9222b73ea19a336",
+      "bytes": 3564,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "مراجعة المراجع المحلية"
+    },
+    {
+      "path": "docs/SECRMAN_AUTHENTICATION.md",
+      "sha256": "92dd7faa9c0dd38f1898078dc11511b0ee21259f63e52041db9001fd28b31ebc",
+      "bytes": 4820,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Native card authentication and RE4 detection — 2026-10-08"
+    },
+    {
+      "path": "docs/SIF_TRANSPORT.md",
+      "sha256": "c8bbfba6fcbd38380816953a1455e534962606218e139e38dc7998b7828a90f0",
+      "bytes": 6312,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "SIF startup, RPC transport and IOP reboot"
+    },
+    {
+      "path": "docs/SIO2_ASYMMETRIC_CARD.md",
+      "sha256": "bd20677576edb4185db456d27aaaf69f5d51a3025b87f86c7c17778794a62939",
+      "bytes": 6147,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "SIO2 asymmetric memory-card response clocks"
+    },
+    {
+      "path": "docs/SIO2_NATIVE_CARD.md",
+      "sha256": "d78e27d865e7a7246f5e53ca785de7b628d2c074833a2e9ffd1397bd84be09ec",
+      "bytes": 5303,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "Native SIO2 and raw memory-card backend — 2026-10-08"
+    },
+    {
+      "path": "docs/SPU2_BACKEND_REVIEW.md",
+      "sha256": "479951d9d1293b7464189c71cbee643df82c80eeabafb344be11e7900ea347df",
+      "bytes": 3909,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "SPU2 backend follow-up — 2026-10-07"
+    },
+    {
+      "path": "docs/STATE.md",
+      "sha256": "04e152b39753728607e08bd2ba9be4e82809d899f15e3cc020f9bf3494eacc0e",
+      "bytes": 58255,
+      "status": "evidence-and-history",
+      "scope": "Latest corrected evidence plus historical states; not all sections are current",
+      "title": "Lodestone — project state"
+    },
+    {
+      "path": "docs/STUDIES_INDEX.md",
+      "sha256": "e9c975b037084ddd8ed01f7663f86e4d4f130a1f0087ce23f148a055bd763b22",
+      "bytes": 5124,
+      "status": "current-entry",
+      "scope": "Current description or goals; goals are not completed features",
+      "title": "الدراسات: الاعتماد والتصحيحات والأرشيف"
+    },
+    {
+      "path": "docs/TOOLING_AUDIT.md",
+      "sha256": "a1b462c7b4a88ea5c9f0063f6978d4c008b04c3ed52ce771de2f429ccee967d4",
+      "bytes": 12387,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "تدقيق أدوات المشروع — 2026-10-06"
+    },
+    {
+      "path": "docs/TRACE_CONFIGURATION.md",
+      "sha256": "ea75a8996b0f88877641b4886e812d91c47251b607c8a9a200fa10e745b81ffe",
+      "bytes": 2385,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "إعداد رصد اللعبة والتحقق منه"
+    },
+    {
+      "path": "docs/TRACE_PAYLOAD_IDENTITY.md",
+      "sha256": "1bfe7f1e4e8e2022f4fc46ad9c4db63a400c29aff4d046e38fc9098820b11ff2",
+      "bytes": 2316,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "مقارنة بيانات القراءة بالملف الأصلي"
+    },
+    {
+      "path": "docs/VIF_DIRECT_CONTINUATION_FIX.md",
+      "sha256": "3cb8ba0d973ad5ddbd028a30ec21b1cac981e080a03ca5bb5c7e2d8c514eef84",
+      "bytes": 3656,
+      "status": "documented-study",
+      "scope": "Specialized documentation; evidence applies only to its stated experiment. Not blanket certification.",
+      "title": "VIF DIRECT payloads and GS IMAGE continuation"
+    },
+    {
+      "path": "IDEA.md",
+      "sha256": "476fcd6c01a738acfa03765fd8a00bd6f36399ec1d6c9291e79d689c13ec07d6",
+      "bytes": 1023,
+      "status": "current-entry",
+      "scope": "Current description or goals; goals are not completed features",
+      "title": "رؤية المشروع"
+    },
+    {
+      "path": "RE4-FLAGSHIP.md",
+      "sha256": "596383c0cb38b434cb2bc85afc45d05f90778326a7493797e9796f2afcac97a5",
+      "bytes": 3077,
+      "status": "current-entry",
+      "scope": "Current description or goals; goals are not completed features",
+      "title": "خطة Resident Evil 4 ومعايير الإكمال"
+    },
+    {
+      "path": "README.md",
+      "sha256": "be7a150c96fc7543f9b050e5cdbc21f73a8c792503a65c06e82d28e7f020c20f",
+      "bytes": 17532,
+      "status": "current-entry",
+      "scope": "Current description or goals; goals are not completed features",
+      "title": "Lodestone — PS2 Native Recompilation"
+    },
+    {
+      "path": "ارشيف/2026-10-10/documentation/README-before-organization.md",
+      "sha256": "f2b1ecb18d5bbf54aa4189a1bc7155388422ec9f9dfd084afa8250b8e5b70a8a",
+      "bytes": 6170,
+      "status": "archived-original",
+      "scope": "Historical document; use corrected replacement or evidence index",
+      "title": "Lodestone — PS2 native recompilation"
+    },
+    {
+      "path": "ارشيف/2026-10-10/studies/00-ARCHITECTURE-before-evidence-review.md",
+      "sha256": "4eca8c52006ea218cc1f52f5440a8a04340cb93c8143dfbbed4475db42961142",
+      "bytes": 12470,
+      "status": "archived-original",
+      "scope": "Historical document; use corrected replacement or evidence index",
+      "title": "Lodestone — The Unification"
+    },
+    {
+      "path": "ارشيف/2026-10-10/studies/IDEA-original.md",
+      "sha256": "a6e4fd016aa2f37f7770c4d4c4a5f670a75167bad716df716ada420826420430",
+      "bytes": 21852,
+      "status": "archived-original",
+      "scope": "Historical document; use corrected replacement or evidence index",
+      "title": "The Masterpiece: مُحرّك إعادة الهندسة — PS2 Recompiler Studio"
+    },
+    {
+      "path": "ارشيف/2026-10-10/studies/RE4-FLAGSHIP-original.md",
+      "sha256": "90d0c82687aa5c7fae7b7988a363f13b1003f13b757e9caaee389f55dd5f5800",
+      "bytes": 12775,
+      "status": "archived-original",
+      "scope": "Historical document; use corrected replacement or evidence index",
+      "title": "RE:ENGINE —Stage 1: Resident Evil 4 (USA) كهدف رئيسي"
+    },
+    {
+      "path": "ارشيف/2026-10-10/studies/README-before-2026-10-05-audit.md",
+      "sha256": "4f69fb5c16fce6391cb392bee33592626d53a7b75d62f5d7cfd777ef7edf5445",
+      "bytes": 19271,
+      "status": "archived-original",
+      "scope": "Historical document; use corrected replacement or evidence index",
+      "title": "Lodestone"
+    },
+    {
+      "path": "ارشيف/README.md",
+      "sha256": "edf160fcb8949b97cae313752d5ed4e4997de9db4ddbf2144bc2f27529d29656",
+      "bytes": 2218,
+      "status": "archived-original",
+      "scope": "Historical document; use corrected replacement or evidence index",
+      "title": "ارشيف المشروع"
+    }
+  ]
+}

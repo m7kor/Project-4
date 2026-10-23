@@ -1,0 +1,7 @@
+{
+  "repository": "PCSX2/pcsx2",
+  "revision": "646df006a4688063e56c0826e7ea4b8bb0c112c4",
+  "adapter_repository": "drakolordx7/KillzoneRecomp",
+  "adapter_revision": "5f0700079f9ac4e14799d66d01747dbcdcec55f6",
+  "archive_sha256": "9cafebd6e706d53402cd5405300f93dfc42f9d00921ca7cc89f3e3113276f366"
+}

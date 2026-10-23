@@ -1,0 +1,236 @@
+# Lodestone profile — Resident Evil 4 (USA)
+# serial SLUS-211.34 · PS2 · ET_EXEC/EM_MIPS · entry 0x00100008
+#
+# This file is DATA. No C++ lives in a profile. That rule is what makes
+# game knowledge composable instead of forked.
+#
+# Regenerate the fingerprint-derived fields with:
+#   lodestone fingerprint "game/Resident Evil 4 (USA)" --emit-profile
+
+[identity]
+serial    = "SLUS-211.34"
+product   = "SLUS-211.34"
+region    = "NTSC-U"
+version   = "1.01"
+sha256    = "465d144f526603d0dcc35ad1fdb4e82cc3a1481c22289f321482cc910fb9f1ad"
+entry     = "0x00100008"
+crc32     = ""            # TODO: fill after first successful boot (see below)
+text_base = "0x00100000"
+text_size = "0x002C9F28"
+mem_size  = "0x003A0A58"
+bss_size  = 858.8          # KiB
+
+[build]
+# Provenance of every number above. Never record an unproven figure.
+entry_source        = "ELF header, verified"
+text_range_source   = "PT_LOAD[0], verified"
+function_count      = "8446"         # our own analyzer; no external oracle
+function_count_src  = "analysis/analysis.json stats.functions, re-checked by `lodestone profile`"
+bss_size_source     = "memsz - filesz, verified"
+crc32_source        = "pending first clean boot"
+
+[toolchain]
+recorder   = "PS2Recomp"
+generator  = "lodestone analyze (local heuristic map; not Ghidra-verified)"
+analyzer   = "ps2l/analyze.py"
+cmake      = "Ninja"
+compiler   = "clang-cl"
+# Three of these were verified in upstream source; keep them on.
+patch_syscalls = false      # upstream default
+patch_cop0     = true       # upstream default
+patch_cache    = true       # upstream default
+unity_build    = false      # OFF: counterproductive with Ninja over ~10k TUs
+pch            = true
+sccache        = false
+never_clean    = true       # 20-30h MSVC rebuild otherwise
+
+[disc]
+# The runner needs the WHOLE disc at runtime, not just the ELF.
+# dead_end 0029: models/textures/sound/movies all stream from disc during play.
+system_cnf   = "SYSTEM.CNF"
+boot2        = "cdrom0:\\SLUS_211.34;1"
+ioprp        = "ioprp.img"          # ROMDIR image; parse with the OPL ioprp.c approach
+modules_dat  = "modules.dat"        # UNDOCUMENTED format — do not assume a spec
+index_file   = "data/0flist.dir"    # 43 bytes; not an archive
+stream_threshold = 16777216          # >16MB must stream, not load
+
+[[archive]]
+path  = "data/bio4dat.afs"
+size  = 1537845248
+kind  = "CRI AFS"
+inner = "GCA (.dat) — rename .dat to .gca for generic tools"
+tools = ["interface (Shin-ichi Tsuruta)", "Universal Quick DAT (Un)Packer (zatarita)", "GCA Extractor"]
+
+[[archive]]
+path  = "data/bio4mov.afs"
+size  = 1963034624
+kind  = "CRI AFS"
+note  = "movie data; decodes to STR/ATR per community consensus — UNVERIFIED"
+
+[[archive]]
+path  = "data/bio4mov2.afs"
+size  = 909705216
+kind  = "CRI AFS"
+
+[formats]
+# Facts verified Oct 2026 from RE4 modding communities. Confidence is explicit.
+texture   = { format = "TPL", note = "NOT TIM2 — do not conflate", confidence = "stated_verified" }
+model     = { format = "BIN", note = "AMO is Outbreak, not RE4", confidence = "stated_verified" }
+audio     = { format = "OGG Vorbis", container = "ogg.dat", note = "bgmtbl.dat = cue table", confidence = "stated_verified" }
+cue       = { files = ["plXX_prog.out.lst"], confidence = "stated_verified" }
+cutscene  = { format = "STR/ATR + IMA ADPCM", confidence = "catalogued" }
+
+# ---------------------------------------------------------------------------
+# [boundary] — THE single authoritative guest/host split.
+#
+# Learned from DC2: put it in one file so no other subtree can silently move
+# a function between "stubbed" and "recompiled".
+# Every entry MUST carry an evidence tier. See knowledge/PS2_REFERENCE.md §R2.
+#   on_screen | snapshot_diff | stated_verified | catalogued | static_vtable_walk | shared_sdk
+# ---------------------------------------------------------------------------
+[boundary]
+# Syntax: "addr" = "handler"            (handler from PS2_SYSCALL_LIST / PS2_STUB_LIST)
+#         "addr" = "@module:symbol"     (C++ in core/ or plugins/, addressed by CRC32)
+# triage handlers: ret0 / ret1 / reta0 — use them to CLASSIFY importance only,
+# then promote to a real handler. A triage handler left in place is a bug.
+#
+# EMPTY IS CORRECT RIGHT NOW. A stub that is not justified by a trace is a
+# guess, and a wrong guess is worse than a missing stub: the missing one throws
+# TODO_NAMED and names itself at the call site, while the wrong one silently
+# returns a plausible value and corrupts the guest. Entries are added when a
+# trace says which call actually faults — not before.
+
+[evidence]
+# addr -> tier. lodestone refuses to promote an entry past its tier.
+# Mirrors [boundary]; both are empty until the first traced fault.
+
+[analysis]
+# Everything below was MEASURED by `lodestone analyze` on 2026-10-03, not
+# estimated. Method and caveats: knowledge/PS2_REFERENCE.md + dead_ends.jsonl
+# #0031-#0038 (eight bugs found and fixed in our own analyzer by this route).
+
+# --- ELF layout, measured ---------------------------------------------------
+[analysis.layout]
+text_addr          = "0x00100000"
+text_size          = 2029852        # .text only, NOT PT_LOAD filesz
+data_addr          = "0x002EF980"
+data_size          = 454416
+data_flags         = 7              # R|W|X — the EE jumps through pointers here
+sndata_addr        = "0x0035E900"   # SN streaming data, 300000 B
+rodata_addr        = "0x003A7D00"
+bss_size           = 879192
+sections           = 107
+program_headers    = 1
+
+# --- overlays: RE4 HAS THEM. "1 program header" did not mean "none". ------
+[analysis.overlays]
+count              = 93
+total_bytes        = 155808
+tables             = [".DVP.ovlytab", ".DVP.ovlystrtab"]
+ovlytab_size       = 1116            # 93 x 12-byte records
+ovlystrtab_size    = 3465
+all_sh_addr_zero   = true            # so they shadow addr 0 in header-order scans
+load_region        = "inside .data"
+consequence        = "overlays overwrite .data at runtime; recompiling .text alone is not a complete port"
+evidence           = "static_vtable_walk"
+
+# --- function census, measured --------------------------------------------
+# MEASURED, and re-checked by `lodestone profile` against analysis/analysis.json.
+# The session-2 figures (5,904 / 39.75% / median 44) were still carried here
+# after session 4 re-measured them; they were wrong, and are now a hard error.
+[analysis.functions]
+found              = 8446
+median_bytes       = 96
+max_bytes          = 11616
+byte_coverage_pct  = 98.51
+discovery_mix      = { entry = 1, jal = 4792, materialised = 262, jalr = 2, jump = 214, orphan_ref = 443, callback = 2401, multi_target = 50, hole_prologue = 32, branch_target = 127, runtime_fault = 6, fallthrough = 116 }
+uncovered_verdict  = "1.50% is outside the heuristic map; its contents and runtime relevance remain unverified"
+orphan_ref         = "Discovery category for referenced entries without a recognized prologue; a heuristic label, not a verified function classification."
+caveat             = "98.51% is byte coverage of a heuristic code map including continuation blocks. It is not verified function-boundary accuracy or game compatibility."
+
+# --- syscall census, measured ---------------------------------------------
+# IMPORTANT: these are the 20-bit CODE FIELDS of `syscall` instructions, not
+# syscall numbers. The runtime dispatches on $v1; the analyzer census reads
+# (word >> 6) & 0xFFFFF. The two namespaces are NOT the same and must never be
+# compared directly. See knowledge/PS2_REFERENCE.md and dead_ends.jsonl#0059.
+[analysis.syscalls]
+sites              = 155
+distinct_20bit_ids = 1
+note               = "Re-measured 2026-10-05: SPECIAL function 0x0C is SYSCALL; primary opcode 0x0C is ANDI. All 155 sites have code field zero; runtime syscall IDs require register-state evidence. Previous 5702-site census was invalid."
+unknown_field      = "what syscall number $v1 holds at each site is NOT yet censused"
+
+ghidra_csv  = "pending"      # generated from YOUR ELF, never committed
+stubs       = []             # filled by ExportPS2Functions.java
+untracked   = []
+patches     = []
+jump_tables = []
+# CRITICAL: ExportPS2Functions.java ALWAYS writes skip = [] and skip_count = 0.
+# `skip` is effectively a legacy field. Do not plan around it.
+
+# ---------------------------------------------------------------------------
+# [environment] — every switch that changes observable behaviour.
+# Keep this exhaustive. A knob nobody wrote down is a bug that survives a year.
+# ---------------------------------------------------------------------------
+[environment]
+# Set ON first: it turns silent JR $ra into a diagnostic.
+"PS2X_STRICT_RETURN_DIAGNOSTICS" = "ON"
+# Triage order from upstream README, quoted:
+#   1. run with minimal config, no aggressive skipping
+#   2. fix hard blockers (function not found, syscall TODO, critical IO)
+#   3. use temporary return stubs ONLY to classify call importance
+#   4. promote temporary fixes to real implementations
+#   5. move per-game hacks into game overrides keyed by ELF metadata
+#   6. re-test from cold boot after each batch
+
+[verification]
+# The gate. Nothing merges without it.
+oracle          = "pcsx2"
+method          = "process-isolated"   # GPL: diff against, never link (psprecomp ORACLE.md)
+anchors         = ["syscall", "dma_tag", "gs_register", "iop_rpc", "mem_write"]
+snapshot_diff   = true
+required_tiers  = ["on_screen", "snapshot_diff"]
+incremental_gate = true                  # a changed byte set must regenerate identically
+
+[stages]
+# Ordered with zero-ambiguity exit criteria. A stage that overruns its budget by
+# a week means the CORE is wrong, not the game. Stop and fix the core.
+R0_pipeline = { status = "done", exit = "fingerprint -> analyze -> recompile -> build -> run executes end to end on ONE ELF", evidence = "run on SLUS_211.34: 8,297 functions, 0 decode failures, 8,337 TUs generated, full link 541 s on 12 cores, ps2EntryRunner.exe 96,863,232 B; regenerated 2026-10-04 with GPR_U32 BEQ fix (dead_ends#0081)" }
+R0b_canary  = { status = "pending", exit = "the SAME runtime, SAME CLI and SAME profile on a small ELF whose correct result is known, so a fault can be attributed to core / toolchain / game instead of guessed at", why = "Without this, every RE4 fault is ambiguous. Currently RE4 is both the subject and the test." }
+R1_boot    = { status = "done", exit = "entry 0x00100008 executes; first fault fully traced", evidence = "entry runs; fault 0x0029CC28 -> 0x002A1C24 root-caused to 5 analyzer defects and fixed (dead_ends #0053-#0057); rebuilt and re-run, that fault no longer occurs" }
+R1b_sema    = { status = "done", exit = "the guest passes the last resolved syscall with defined semantics instead of spinning in a retry loop", evidence = "DONE 2026-10-05. Root cause was NOT a semantic disagreement, it was a DROPPED INSTRUCTION: the delay slot of FUN_002A1C88's final `jr $ra` at 0x2A1CC0 is `daddu $v0, $a0, $zero` at 0x2A1CC4 — the instruction that returns the FOUND ADDRESS in $v0 — and a function body decoded as [start,end) does not contain it, so the emitter substituted a NOP (dead_ends#0085). The word was read out of the ELF at vaddr 0x2A1CC4 (0x0080102d), not inferred from the generated C++. After the fix the runtime MEASURES completed.v0 = 0x8001218C for key 0x2A1C88 and 0x800120E8 for key 0x2A1C50; s3 - s2 = 0xA4, which is exactly the exit condition of FUN_002A1CE0 and exactly the distance between the two syscall-table slots the runtime mirrored at physical 0x1218C and 0x120E8. The convergence loop ran once and left. Blast radius of the same bug: 7,580 of 8,298 generated functions had a dropped final delay slot. This also RESOLVES dead_ends#0077 and #0079, whose conclusion ('the function returns a predicate') was an artefact of the missing instruction" }
+R1c_patch = { status = "active", exit = "the runtime-installed kernel patches execute correctly", evidence_now = "2026-10-05: wired existing sparse lookup into hasFunction and lookupFunction. Both missing-handler diagnostics (0x80075000 and 0x80076000) disappeared in artifacts/runs/20261005T090146Z-1ecb8530. Synthetic sparse-dispatch regression passed. Full patch semantics remain unverified." }
+R1d_hole    = { status = "done", exit = "every PC-relative branch target is a registered entry", evidence = "DONE 2026-10-05. The first fault after the delay-slot fix was `[guest-branch:missing-target] kind=DirectJump op=J source=0x2a21e8 target=0x2a2170` — a 112-byte hole between the function ending at 0x2A2168 and FUN_002A21E0, referenced by nothing but a jump, which is why every evidence-keyed analyzer pass missed it. Analyzer now asserts the DQ8 closure invariant: functions 8,297 -> 8,536 (+237 branch_target), coverage 95.72% -> 96.61%. FUN_002A2170/0x2A2188/0x2A21AC now exist" }
+R1e_sif = { status = "active", exit = "the guest passes the SIF/EIO layer and starts real file I/O", evidence_now = "2026-10-05: native SIF receiver, BIND/CALL/END, CD init and IOP reset tested. FILEIO, CDVDFSV and LOADFILE started from IOPRP.IMG. RE4 sends a FILEIO open for MODULES.DAT, then waits on EE semaphore 29; successful file completion is not yet observed. See docs/SIF_TRANSPORT.md and artifacts/runs/20261005T155051Z-a9c5c704." }
+R1f_resume = { status = "done", exit = "the recorded return fault at 0x29ED74 is resolved", evidence = "Function-map end extension resolved the recorded fault (dead_ends 0087). The subsequent 0x2A3E2C continuation and 0x2A3BD0 native SIF callback are now included by analyzer passes. No claim that every possible runtime target is covered." }
+R2_afs     = { status = "pending", exit = "one file extracted from bio4dat.afs" }
+R3_init    = { status = "pending", exit = "module load + IRX + video init, no fault" }
+R4_frame   = { status = "pending", exit = "FIRST FRAME RENDERED FROM RE4  <- masterpiece criterion" }
+R5_title   = { status = "pending", exit = "title screen + menus + audio" }
+R6_play    = { status = "pending", exit = "village 1-1: aim, camera, collision" }
+R7_polish  = { status = "pending", exit = "perf >= PCSX2, colour correct, upscale" }
+
+[legal]
+# Hard rule for this repo and every profile in it.
+ship_game_content = false
+allow             = ["tooling", "runtime code", "addresses", "profile data", "analysis notes"]
+forbid            = ["ELF", "ISO", "A/DAT/TPL/OGG payloads", "generated game code", "disc images"]
+crc32_note        = "hashes identify a build the USER already owns; they are not a way to obtain one"
+
+[bios]
+# BIOS IMAGES ARE NOT SHIPPED. Same rule as game content, and it is a separate
+# copyright owner: Sony, not Capcom.
+#
+# The user supplied real dumps in bios/ (SCPH-70004 v12 PAL, SCPH-10000,
+# SCPH-39001). They are read locally and only FACTS derived from them may enter
+# the repo — addresses, offsets, hashes, decoded semantics. No BIOS bytes, no
+# BIOS strings, no BIOS tables. Findings go to knowledge/ref/ps2-bios-mined.md.
+present   = true
+shipped   = false
+use       = "local analysis only"
+authority = "knowledge/ref/ps2-bios-mined.md"
+reason    = "settles what syscall 0x83 is, whether the kernel's table really is where our runtime puts it, and what lives in physical [0, 0x80000) — all three were guesses (dead_ends#0060 #0065)"
+
+[provenance]
+derived_from = ["research/ECOSYSTEM-REPORT.md", "knowledge/PS2_REFERENCE.md"]
+verified_on  = "2026-10-05"
+license      = "GPL-3.0"

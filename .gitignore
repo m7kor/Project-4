@@ -1,0 +1,35 @@
+# Local game and BIOS inputs, saves, and generated copyrighted code.
+/game/
+/bios/
+/mc0/
+/mc1/
+/recomp/generated/
+/recomp/native/
+/ارشيف/
+/artifacts/
+__pycache__/
+*.py[cod]
+*.log
+/run_stdout.txt
+/run_stderr.txt
+/core/out/
+/core/deps/
+/dependencies/pcsx2/
+/dependencies/ghidra-emotionengine-reloaded/
+/dependencies/tools/
+
+# Machine-local inputs and outputs
+/Resident Evil 4/
+/saves/
+/tmp/*
+!/tmp/.gitkeep
+/.mcp.json
+*.exe
+*.dll
+*.obj
+*.pdb
+*.lib
+*.iso
+*.ps2
+/core/ps2xRuntime/src/lib/vu/generated/*.inc
+!/core/ps2xRuntime/src/lib/vu/generated/vu1_compiled_programs.inc

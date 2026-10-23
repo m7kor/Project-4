@@ -1,0 +1,13 @@
+{
+  "port": "SELFTEST-noise",
+  "created": "x",
+  "iterations": [
+    {
+      "step": 1,
+      "exit": 0,
+      "signatures": [],
+      "outcome": "no signature"
+    }
+  ],
+  "hypotheses": {}
+}
