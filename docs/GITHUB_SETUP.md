@@ -27,6 +27,7 @@ SDK, LLVM/clang-cl, CMake and Ninja. Python 3.10 additionally needs `tomli`.
 ```powershell
 git -c core.longpaths=true clone https://github.com/m7kor/Project-4.git
 cd Project-4
+python -m pip install -r requirements-dev.txt
 python -m unittest discover -s tests
 python -m ps2l status
 ```

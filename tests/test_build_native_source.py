@@ -35,6 +35,6 @@ class NativeSourceSelectionTests(unittest.TestCase):
 
     def test_explicit_installer_requires_real_source(self):
         self.assertEqual(build._native_module_flags(self.root / "other-game", self.source),
-                         [f"PS2_NATIVE_MODULE_SOURCE={self.source.as_posix()}"])
+                         [f"PS2_NATIVE_MODULE_SOURCE={self.source.resolve().as_posix()}"])
         with self.assertRaises(ValueError):
             build._native_module_flags(self.generated, self.root / "missing.cpp")

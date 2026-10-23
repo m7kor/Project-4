@@ -34,8 +34,8 @@
     },
     {
       "path": ".github/workflows/python-tests.yml",
-      "bytes": 411,
-      "sha256": "a3c560070c7100a93e939c1ef85437725dcb4e65affe58be95a0274e12ac5ea4"
+      "bytes": 499,
+      "sha256": "35aa3582435eb65f06237715c230addd0d8210f3e9e4e485afb8836e7c73ccf5"
     },
     {
       "path": ".gitignore",
@@ -107459,8 +107459,8 @@
     },
     {
       "path": "docs/GITHUB_SETUP.md",
-      "bytes": 2833,
-      "sha256": "e6816a3536c6de5a1a0834a1ba25c0c1bc90ada5af25c64c909deaa79e9a9de4"
+      "bytes": 2879,
+      "sha256": "0a3b4ea62e67c080d93d880d03782f19802efe75e0ab15611264759794335261"
     },
     {
       "path": "docs/GOD_OF_WAR_HOTPATHS_20261009.md",
@@ -108453,6 +108453,11 @@
       "sha256": "b473ccb739d7553c5860728e404bb8de3ff998c7880e7227857775658983fbc1"
     },
     {
+      "path": "requirements-dev.txt",
+      "bytes": 64,
+      "sha256": "14f8dc4fa011569f0a87943b86709961b929efc1c29e826fb5d145db8620e455"
+    },
+    {
       "path": "tests/test_adma_read_report.py",
       "bytes": 2189,
       "sha256": "0e93e1ec3773d40b88c85ee8f0eb7627f04ed8d7c3ecd28d4d7f14b9a32563e6"
@@ -108484,8 +108489,8 @@
     },
     {
       "path": "tests/test_build_native_source.py",
-      "bytes": 1951,
-      "sha256": "ded7568402a50d0ee5bee29d0f389e6bab5d54fba293e052eed985ffb045161b"
+      "bytes": 1961,
+      "sha256": "483b0d89563f6d9ac4dca85af5c106127a4ea73cebf377b3cc0b8e135d163e52"
     },
     {
       "path": "tests/test_capture_speakers_cli.py",
@@ -109678,8 +109683,8 @@
       "sha256": "a64b29697944f9986235899b8457d5bcbddfbfa6c1a91e0a8ad3e17b299cc132"
     }
   ],
-  "file_count": 21930,
-  "total_bytes": 369517325,
+  "file_count": 21931,
+  "total_bytes": 369517533,
   "validation": {
     "python_tests_run": 403,
     "passed": 396,
