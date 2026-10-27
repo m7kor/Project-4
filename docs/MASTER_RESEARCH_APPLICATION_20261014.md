@@ -1,6 +1,6 @@
 # تطبيق المرجع الأساسي على PS2Redemption
 
-اعتمد المستخدم `PS2_Static_Recompilation_Master_Research.md` مرجعًا أساسيًا للمشروع. قُرئت فصوله العشرة كاملة وحُفظت نسخة دون تعديل في [المراجع](references/PS2_Static_Recompilation_Master_Research.md). الأصل `C:/Users/KH/Desktop/PS2_Static_Recompilation_Master_Research.md`، حجمه 58,099 بايت، SHA256 `fd913a1f5ab62ec1cbc742fc5edfe5bf23527c9e42505a3a4fbadb09e447d974`. بيانات الهوية في `review-20261014-master-research-identity.json`.
+اعتمد المستخدم `PS2_Static_Recompilation_Master_Research.md` مرجعًا أساسيًا للمشروع. قُرئت فصوله العشرة كاملة وحُفظت نسخة دون تعديل في [المراجع](references/PS2_Static_Recompilation_Master_Research.md). الأصل `C:/Users/LOCAL_USER/Desktop/PS2_Static_Recompilation_Master_Research.md`، حجمه 58,099 بايت، SHA256 `fd913a1f5ab62ec1cbc742fc5edfe5bf23527c9e42505a3a4fbadb09e447d974`. بيانات الهوية في `review-20261014-master-research-identity.json`.
 
 المرجع يوجه التحقيق؛ تفاصيله وأمثلته تُطابق بالمصدر والملف الفعلي قبل تعديل سلوك اللعبة. دليل الهندسة السابق يبقى سجل الأدلة والتجارب، وهذا المرجع يجمع أولويات العمل المقبلة.
 

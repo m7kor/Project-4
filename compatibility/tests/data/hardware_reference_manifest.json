@@ -1,0 +1,500 @@
+{
+  "scope": "Rerun of existing pre-integration ae1c119 Zmbor hardware binaries; NOT Project4 candidate hardware coverage",
+  "tests": {
+    "ps2x_hw_cpu_ee_alu": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_alu.exe": "c159c1d734d325bf5ccd66a75f321dbc1df7c2c040fe4f9e75677194885a49a0",
+        "alu.elf": "b4e9bc2478a10b74d984b748cf4ae183798af1222c8ac5cfa61d2a76aff04dd6",
+        "alu.expected": "304e5c0b5a794deae3b4f7453f70ef2a65cff44e2e62228fc3f7c77a6986e3b7",
+        "run.tty.txt": "ca8e2f3e76df48f98b2ebc89b4d1181dd5b407e76e6bae642cfec5a933223c76"
+      }
+    },
+    "ps2x_hw_cpu_ee_branch": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_branch.exe": "acb65a6a3bb5ee3b5d8f0a0879107ca9fea91e512ba10642d09963bec6fbd051",
+        "branch.elf": "fbc57e977c550563c1566be4adaf1edd7cbf264f943b7324292be337b98d7144",
+        "branch.expected": "bb1b825a73994cb4d2365a42a1d5ac169a2aa7b96bad504500dc5d0b691790d0",
+        "run.tty.txt": "7f4bb21fc5d7f9b1770c27bda44433d1f489c0bb8f01745ed7ea1cc6346770bc"
+      }
+    },
+    "ps2x_hw_cpu_ee_branchdelay": {
+      "status": "MISMATCH",
+      "hashes": {
+        "ps2x_hw_cpu_ee_branchdelay.exe": "b4b719e3d19e99c6f83ce9eed0ae679bfe0c15068f3e4a01cd852e3db90a993b",
+        "branchdelay.elf": "1c99fe9222f074f9c446703a2c7fe9e38e29acefb32028929cf09eae2005ce3b",
+        "branchdelay.expected": "9dbaf83da6e2a8c9dc9b1eccf863ff321c5717a1c2e299b9d6f9f4522da49cd0",
+        "run.tty.txt": "5fc73098d31cd54d898a1f349d6a41646167dcdb8811f2deadf4c8fb6f499f3a"
+      }
+    },
+    "ps2x_hw_cpu_ee_cop0_performance": {
+      "status": "MISMATCH",
+      "hashes": {
+        "ps2x_hw_cpu_ee_cop0_performance.exe": "f5126c024b483a8235844a9b4c72bba4fab8e69f8c4c21799ba465a3c52e8970",
+        "performance.elf": "5fb330e238dd071c1e60e5d925c9dbfa8f35dde8a1c20cfc7aa9093019648130",
+        "performance.expected": "0c1c34c0fb1dd003c057fad7b0b9c226301d38e5f01f24378293f4f69bd29f13",
+        "run.tty.txt": "b097c33bf132b565c7e0b5173daf664b78760c166886efe9e2e8e37d65310c25"
+      }
+    },
+    "ps2x_hw_cpu_ee_fpu_arithmetic": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_fpu_arithmetic.exe": "01e4feaf265c29ac1d78e7256ddebd9e0c0ee4f678b5c018f2fff1f3197ac8ec",
+        "arithmetic.elf": "8c39cf4b37b3728a7f8502a53cb19cf7c3f850c712a7a8c3c9b5a35fbf712c4b",
+        "arithmetic.expected": "3ca2ebc6727a536a789fe49ebf93d7f5ae26632e5f4b513819c89e61b9ae84b9",
+        "run.tty.txt": "7838819381f0339d0edbf5a8796ae893ff657514c8e3a145da85c58b5ced0753"
+      }
+    },
+    "ps2x_hw_cpu_ee_fpu_branch": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_fpu_branch.exe": "8e879ced6aea5075ea27bbadf18eb56140ff86d9ae6893e4cfbb2f2d4ab35a39",
+        "branch.elf": "d7ef8c0a44ec405b1ff49730b8d6db5354663d002bec54ec8114a5f168b68836",
+        "branch.expected": "000a91096574cbde4ff48beebb63d0094f13a0b13660a07d11e6c8d47cfceb83",
+        "run.tty.txt": "6a9b03322c1239cc0c47f9faf5b76c98946b99d875db88993cfbdfd66f22c2e8"
+      }
+    },
+    "ps2x_hw_cpu_ee_fpu_branchdelay": {
+      "status": "MISMATCH",
+      "hashes": {
+        "ps2x_hw_cpu_ee_fpu_branchdelay.exe": "76d3d25a5b41a2821556f9ebbcbe990d431f52a4b2ad201579ce46da645d3c4a",
+        "branchdelay.elf": "e6c55037f92ad02ebecec9c544999b65e8a28b11f8f54be4c67f853b6b33ae87",
+        "branchdelay.expected": "43d3da6088e38963a807d6365448dc08260e81276bde9c6f0ece470c5d2a4763",
+        "run.tty.txt": "13ae35fc248d1247e1e4476235fc6a91338491dda46231d03de828cd0f57a113"
+      }
+    },
+    "ps2x_hw_cpu_ee_fpu_compare": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_fpu_compare.exe": "7213d5e09d804aaa5241c6f85f7142cd6a60a8b3bc5058e98deca9e4fcd3267d",
+        "compare.elf": "283ae30e60936a23481a22c2f6b8145d852345ae034219a314c4d08d8a23f0b0",
+        "compare.expected": "06a77afecd8095cc8281816acef6ad46af174313c7a05f16e5f670afcdbfe93c",
+        "run.tty.txt": "1e11690f9dcd5f5063df6ea8db7ad2f8252408adae428766192f0ef326489ce4"
+      }
+    },
+    "ps2x_hw_cpu_ee_fpu_convert": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_fpu_convert.exe": "644eedc43ae72aada7ae0e90f00201a6a803123839a15e4bf2e8b274ccde52db",
+        "convert.elf": "2fa53b3d665726df1ed1651607d0fba4cd8723abefe25fae4f67f5d72f92536c",
+        "convert.expected": "73c02d4e20a0f5a53a5923d7f814ed3ace4b19842d958d82a485ad84b3a1e157",
+        "run.tty.txt": "360e1959ad3d0fb447348cd90795232f5ef9e845154a4e77ca7cd83642205743"
+      }
+    },
+    "ps2x_hw_cpu_ee_fpu_fcr": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_fpu_fcr.exe": "44a7ffb8d218a3fe6655e37bdb03a186e8e41c1b06850e23131c832e9845ef71",
+        "fcr.elf": "04e08a3e0ba73ef893f9bb94579b2d8ab2cd53ff2c95eedb699f631af5fd302e",
+        "fcr.expected": "82d1a0738feda876e9279155afb22bc7c28d57f912265b92cc6e5d52ae5251cf",
+        "run.tty.txt": "78e83ef58a2ddbfd107f38b54d1620a3c6e81d0a1c36d5f94815533f810db546"
+      }
+    },
+    "ps2x_hw_cpu_ee_fpu_muldiv": {
+      "status": "MISMATCH",
+      "hashes": {
+        "ps2x_hw_cpu_ee_fpu_muldiv.exe": "aa245ccef122c153433402e14607ee91f3d89822e738e67bede869c88d4a34e0",
+        "muldiv.elf": "a3dff0fd53c1e7fa9683ceece3cebb8bfabae5707b8447b3a96d4090e3bae5be",
+        "muldiv.expected": "2ae7fc981552e236a0d25450c190ae1d93e866fca57ea1724f32b534aec5fb55",
+        "run.tty.txt": "6aaac2c931ece3145098b2d4e8d09f5ce5f6243c2af40527104f7d3aaf3c3fe0"
+      }
+    },
+    "ps2x_hw_cpu_ee_fpu_sqrt": {
+      "status": "MISMATCH",
+      "hashes": {
+        "ps2x_hw_cpu_ee_fpu_sqrt.exe": "6950282d028ca26f6d04ebeb95b555791faee29f45559e77abd9b340b5de4e26",
+        "sqrt.elf": "ec9760b491a1a46d80949f941b3cedd79d533e28512fabec5ff7799163797c85",
+        "sqrt.expected": "80a45b27e377eb3bcc58cb96afba9fbed24f5cce9712e1c1ad35c887bf3050bf",
+        "run.tty.txt": "0aab3a8ed022e6f587c67742cbf968811d0c2633978417056797e130fd444df8"
+      }
+    },
+    "ps2x_hw_cpu_ee_fpu_transfer": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_fpu_transfer.exe": "7d70d6f203b7cfd10b29d8f4cb28e142e3717e52f068ddec50e1c884821c952a",
+        "transfer.elf": "9e6afa6b863e02548c3d99b615f86523b9ea46fd84091dc3251fa6c2cf64a9a7",
+        "transfer.expected": "7a9993061b042b8098ebaaa56b76de18154afc167c3352b84f2c518ddcf955b2",
+        "run.tty.txt": "1d9761fa98b45d322c3ddbc1e97c5d173cc29aaaaef7e365181c292d7185149a"
+      }
+    },
+    "ps2x_hw_cpu_ee_lsu": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_lsu.exe": "2a757b4723b7ee882d65bf4f0bb3534eafb118d33ba0afede62c23c82db4d723",
+        "lsu.elf": "445125524fb50a27608048fc7ed7c3a6635b951fbc343b351bf7ff1cd2e0b90f",
+        "lsu.expected": "17bf9cf63c878d0f86f34135f4d66710907c09a44694b69144a7b0e34a04a920",
+        "run.tty.txt": "d93c552adf6d8ce54da9e1525eccbb80e72c83721677742769a20dcf9e0e4175"
+      }
+    },
+    "ps2x_hw_cpu_ee_lsudelay": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_lsudelay.exe": "1e2dc7865a411f8d3ac7cb4e9b577bd397abfae9839c937284594aadde988aa1",
+        "lsudelay.elf": "105c198bfc5c11ecf00a8407b7c3a2439415265da6af64bac500c4691cafd1b6",
+        "lsudelay.expected": "bf7150aa953c4d92ed7c7bad75f8511e6a52d31b097f36fe957ca424725ba849",
+        "run.tty.txt": "7677f172943a7848aa13a093650fc44bcf5b6686e5fc58efd85cb034b172e5e5"
+      }
+    },
+    "ps2x_hw_cpu_ee_muldiv": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_muldiv.exe": "80798694dd17e2adffec1fb8be23286ca4d471b8b2f9bc1087d61f5f9be8802c",
+        "muldiv.elf": "648091382a4ee43d8fe38852a4ff75b04979bb21ca018729e57515da5a835f9c",
+        "muldiv.expected": "19568339413486021a78f5f801ddc89bab567f6abb90081a3a886264b77d01aa",
+        "run.tty.txt": "6774818b963c6e65abf9ec287d56eb2c79d90127c97d3c60c3023cad8ddbb38e"
+      }
+    },
+    "ps2x_hw_cpu_ee_simd_arithmetic": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_simd_arithmetic.exe": "c0065bdc9cf6f6a3138634504a01def035a9ad9cc9ec33b19d1fb074b73c1227",
+        "arithmetic.elf": "72003e6d86ed964eaa3cb5771413ab0eb2697b7fe27b45a1006ddab41a0385a4",
+        "arithmetic.expected": "71413f3594bb507c73c21d1ed5b341ae4fb8e3b1cfa6e75d04047fb2bec107db",
+        "run.tty.txt": "11a9df624b90ec45aaf97d9b44e0075d0026c836cb671e490ab527da8f3eac93"
+      }
+    },
+    "ps2x_hw_cpu_ee_simd_compare": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_simd_compare.exe": "b6e9a239088a7e26e2a1a3eb24f0152482d5b3a892466e9eb0cad8638a029c42",
+        "compare.elf": "b38d244036dcd69e620614b745c3c45a5c39e5ce5bf10646aaed14bc94fee174",
+        "compare.expected": "eeeca50894aef73b0dc33af6b22bf56850b8a36d947da29b7a8b0657686acdb5",
+        "run.tty.txt": "ae13752a728844e492028f8b82adab6dc9f090e32db9a54959b173c291e7bb44"
+      }
+    },
+    "ps2x_hw_cpu_ee_simd_funnel": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_simd_funnel.exe": "0653594ac4a61afb4f1db1fa7c5db292b1135af3750c27697ff1265a21a55bb0",
+        "funnel.elf": "4f06ab69df1300c7b04d17bb02decfeccbe9d8d35ad85a1eff353cc51b2a52d3",
+        "funnel.expected": "31cc2bf7ea8aad4cfd800ba820dada3462fc85a038ef90e435f59baeaefab148",
+        "run.tty.txt": "ab2ff94c10c98dc908debbf440598d66cca9a349b118aad537410cbcee412c7e"
+      }
+    },
+    "ps2x_hw_cpu_ee_simd_logic": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_simd_logic.exe": "b2992c481516ad54ae06b19a1fb150e9e426326100abab8f4c15686d4d229e9d",
+        "logic.elf": "d05d3e371b7e0197a016334fae438cd0cc70d53759f74e43108c217e5447ac14",
+        "logic.expected": "8b9889824c6b62adf6dda2b90d9da128b7a360def2d8f93b8951d0aef1842002",
+        "run.tty.txt": "44801de7dc55a471af06dee1dd9de1fe76104335f0beaa54913dc681cdb758e3"
+      }
+    },
+    "ps2x_hw_cpu_ee_simd_muldiv": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_simd_muldiv.exe": "39ba1a679db3b1815a55da3676fb98aedae3cbdb9f357343842135d617914b40",
+        "muldiv.elf": "3c66f11c16db278b493831797cae173b8779da65c9493040cdf28fbfdc27c408",
+        "muldiv.expected": "1ea50051122a910ededea9cf35dd736c957a247f43e30724d7ffdc9d71abfe1d",
+        "run.tty.txt": "792ef5803f44cac71c8ef68f7b472ba45040b3b108a68b19569d4d18fbd3e019"
+      }
+    },
+    "ps2x_hw_cpu_ee_simd_shuffle": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_ee_simd_shuffle.exe": "a9c11bdbadeb17ff156020c76a5b1fc81a630ca16ec8a541435e06d132faafca",
+        "shuffle.elf": "aff1140dc6311e0e713c69de1877c283a1627d92bbf9442a848a35145a70ec76",
+        "shuffle.expected": "8584763e31b267b6ccc8bf579cc0b01faf0532c49bd7709d7b8f79c475e22831",
+        "run.tty.txt": "4408ce8d149ae052c9ae7890687a891dadbdec4ce9bc86c9c496ce563e5612f9"
+      }
+    },
+    "ps2x_hw_cpu_vu0_macro_integer": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_cpu_vu0_macro_integer.exe": "18dfc84e75a102cbf1dbc81c66aea7159a45437f11e861c5d16336c1c27543c0",
+        "integer.elf": "7ed73fae39e58cb0e7a3f774dacc9eec4f038a3a6d9a23ae810d2f61f0d81fca",
+        "integer.expected": "0b241e0ed7fcd1041579bb95346e92f2d0291787cb229430bce5016c51b47ea3",
+        "run.tty.txt": "171ab834e528c4b622ad215328431d1356171e7114a2877ec27ee82bb56706d8"
+      }
+    },
+    "ps2x_hw_cpu_vu0_macro_transfer": {
+      "status": "MISMATCH",
+      "hashes": {
+        "ps2x_hw_cpu_vu0_macro_transfer.exe": "6710731af2c9eccd2e552482de0bc65229dbffd8b802302d64cbcd58812d2cff",
+        "transfer.elf": "3e1267857b88b61f176b9f6a7ae2adf8226953bcc6e1847e97ecb93b928a5b16",
+        "transfer.expected": "9a2235d3deed550bef521c18a26c0653e341edce71891d06ee728c58f7ad6577",
+        "run.tty.txt": "876b8c3e1469b3b1ecd8fbb721ed8c681099ba272076aeb46b30ebbbfb775cfd"
+      }
+    },
+    "ps2x_hw_dma_dmac_cpcond": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_dma_dmac_cpcond.exe": "b9964787c20233f4642899a7736d1e91bc1d7101b606b4749811c590308616e0",
+        "cpcond.elf": "100a269c40c68897bbcd3f1f72f390902adb6623fa88b952694e4dfe6f3aac18",
+        "cpcond.expected": "400baffe9c6d019a8b398d22117d115054d537cc5ec123b5f8c0fe770d6e8a72",
+        "run.tty.txt": "799e048790eb14bd9a36df40542bed92756d58e210785d77cddefa4d0850ab78"
+      }
+    },
+    "ps2x_hw_dma_dmac_tagintr": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_dma_dmac_tagintr.exe": "22940e9557baa38c1f34ce3f5a3426fe3f3afdd4abe6f8811944e557b3adb879",
+        "tagintr.elf": "35be0091184c7829a2ec1a9bd949209f6451e27fae50348a5040967fa983ff65",
+        "tagintr.expected": "81951b699faecf99ae4e48c0684bd58c2d59a2e6dedabbd5aa95d78403b5381b",
+        "run.tty.txt": "7ed0396d924e6cbb99212c74e37bda26247c2cb317b6ccddcd10ec0b6cbe9567"
+      }
+    },
+    "ps2x_hw_dma_spr_chain": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_dma_spr_chain.exe": "ad504fd2a308ef46c76ed40b15cda9689c3045742bc675a6886ca2ae3f029b9a",
+        "chain.elf": "9d4b21212a586d7f9080ec5b395529504ce24c78ac7a2bbd0378e06f06cd6d49",
+        "chain.expected": "1a205f9634a0ec692b2a415c4c3a050cf9ed20eb915b38ebcc0be678e9384691",
+        "run.tty.txt": "5a1783f5bbbbb22b6894f676c805fab67d8c4a0366d207cc207e6e284ef45174"
+      }
+    },
+    "ps2x_hw_dma_spr_interleave": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_dma_spr_interleave.exe": "78c512417f177b278540a6a779f5d84d2a727791ce373f5ce5a6835e318bb818",
+        "interleave.elf": "b4855252e532526ae6f36ada0f910117dd3ee9f8b1e0841b89eb41487779765c",
+        "interleave.expected": "65916e72003a7c27c1f745ed45541083eaf61e205232218b6063e85df4954070",
+        "run.tty.txt": "f20c8f3301d3382b90cfe53cc637774b249a564a0c72ce02bf45b9e594b32e6b"
+      }
+    },
+    "ps2x_hw_dma_spr_normal": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_dma_spr_normal.exe": "47f3c572748a24595e3abe1698db1c23b781bbae29e6deec3b61443696d97c4e",
+        "normal.elf": "f4282be877706266fe80380febab90eccb637a8b4792df5e2aba2ce6b983244f",
+        "normal.expected": "b50d1a83e820469781d87153417865a3f89902777337b20c7ddb7a3ffce8321e",
+        "run.tty.txt": "c13b6f6aa8e74510d1b0aff029a4b3d8baf364e1aa3240765a61531e6ef5ca5c"
+      }
+    },
+    "ps2x_hw_dma_vif_basic": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_dma_vif_basic.exe": "0b57f66e0055413c751fd45b02958678fb3093c2bce78e55f49fca8e79e966eb",
+        "basic.elf": "4ed6207e33998bd8d642cd2f830bff36aa1b1489fd00d03600d1cdfae6a04d46",
+        "basic.expected": "39a7d9aa70eedd4fe79fba2c050a60b1762cd65f281c583b1bce09636b356059",
+        "run.tty.txt": "83b3d27b3c8b71076d289db501abff0f1377cb12e2a16a4c629da9221e8a2566"
+      }
+    },
+    "ps2x_hw_dma_vif_intstall": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_dma_vif_intstall.exe": "b9873fcc08c8a118aa149e25773261ef2762c0df21ac9050eca1abf39506a7fd",
+        "intstall.elf": "daadbbd7017667273b4fce5c26cb373c54bb05502c94198e5877dc4b51f160eb",
+        "intstall.expected": "a62114735bc0adf45f8236066f55aa5c22424880b77e4840ce6abae33e34eb8e",
+        "run.tty.txt": "c616d60e4af6a0e5c453c2b7b624f4ac528299f4e8109175af425ac06a78d617"
+      }
+    },
+    "ps2x_hw_dma_vif_mskpath3": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_dma_vif_mskpath3.exe": "931ae796808db56e75d143ef910ff5846c745c43beb2db1b301b63a5c8eb3a3f",
+        "mskpath3.elf": "0de2c61ba359a76a05da9b71add41cc5962121e7683339df50debcb607ad36a9",
+        "mskpath3.expected": "bdfcb786179ede71df224d637d868155693127ca6c245548c716656833c2045d",
+        "run.tty.txt": "e5aea0f31bc593dcd51b8301b2784ac994ef68c6c2b3f3377c4cc403a7caea93"
+      }
+    },
+    "ps2x_hw_dma_vif_stcycl": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_dma_vif_stcycl.exe": "5d7e63f305f59c9d1452d6fab7bc270c374219290bb4bbc8aa15ed783481bd33",
+        "stcycl.elf": "ec0ce6c070c8d3319d7d9ec7fe96930ac5260ba6120995959104fbf87de1a8ad",
+        "stcycl.expected": "8b3785c2b9f199033a53265050130f3d6c165712dafd0894a639454f9ca89a97",
+        "run.tty.txt": "a64571eb808c43a4e064ffb1206b20fcf97fa77abd5df39d257aa7904fcc5815"
+      }
+    },
+    "ps2x_hw_dma_vif_stmod": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_dma_vif_stmod.exe": "87b5218029cc76931708bc8afa8847a61f4946e6cc5c29095dfb95ddd67274d1",
+        "stmod.elf": "d4fcd6cebe3302606a34b1a15ba20455531e3a25a480968b9f9a153288c911aa",
+        "stmod.expected": "e25da4eeb53753887edbe3493bfb16c8a002f0871f9e5b35a04564bf505e0726",
+        "run.tty.txt": "94c03c3f6feb128ece73f1937e2f9fdaed24357ace8ca1a414656fa235a49a33"
+      }
+    },
+    "ps2x_hw_dma_vif_unpack": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_dma_vif_unpack.exe": "db63543f3c7cf5b55b59e7e9763e854af3f85ceb1ca5f1c0e0c8bf0ab3b7b4d6",
+        "unpack.elf": "290b0f2ece52142b9c47be72d547381a4c0f2432c7173de2742725a748152296",
+        "unpack.expected": "4ccb99c601f226920c76e725e53266c1c3aacb4c2986d58484f39f9cb06d4910",
+        "run.tty.txt": "eea5875b1863adece5ce006a616b297d19470d3816de08ed19fbfdaebed2a163"
+      }
+    },
+    "ps2x_hw_gs_label": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_gs_label.exe": "dc4173ca1c456287b7508b5c8270ec89edb2db29d9ce8888768fa1c3c4de4341",
+        "label.elf": "ddd6a57ca8e2567cf4177dc59d784a31848c6f63c56536cb48d1ccca827e73e8",
+        "label.expected": "6b56294058c2912c749a8da5b14a0c34ad9a6ba770e15ca24e42e3569c8110dd",
+        "run.tty.txt": "0c3d584b600c532fda5fd349a136cae42ca343516d61cf0be4d0318bbb7dddfb"
+      }
+    },
+    "ps2x_hw_gs_signal": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_gs_signal.exe": "d51ef647213336250923e7d0ddcba6f3da10d799d4ec70b6f50b375d8ed43096",
+        "signal.elf": "e9bd3fd7e9bb1b6c38f7cf5d9040134d850e90c3a51df29fd0df7c113941ebd7",
+        "signal.expected": "373533fe33ca1ccf448002a88f82c1918cd69bc6c60c6cc569611bd022e4d34a",
+        "run.tty.txt": "b83a92b757ae3b0fe7f8d04d03a22ffdf6dc3612dcc02c79066149793ed41650"
+      }
+    },
+    "ps2x_hw_kernel_ee_interrupt_dmac_order": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_kernel_ee_interrupt_dmac_order.exe": "5e6b0472553ab02273a49be0e8f9d670bfdc2d74959438944a992b7a8f500aff",
+        "dmac_order.elf": "cc7d713a279600266cd9f2321b67fb8fccfc4e9ff41568ced7744f9c9722c0b6",
+        "dmac_order.expected": "0255e43797a9117640910e7ce352035332f50fb1a80b207c892beb4c0eb20b37",
+        "run.tty.txt": "2fbbd69dad705eedd40e164388569f2e423c0403bfc2bfe7f327dee61e9ff397"
+      }
+    },
+    "ps2x_hw_kernel_ee_interrupt_intc_order": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_kernel_ee_interrupt_intc_order.exe": "6073699cd2dcee983300a07dec7560036db461287d3a0bf81cb05285d37a4fdc",
+        "intc_order.elf": "a22a9c5444149fb6e38c8156c96e6db26cf496749987ad7a1e0bc3f880e13795",
+        "intc_order.expected": "c4d81479ab2762cf60942b62e09d5d8c6106d7e387a8c851901356604c0ddb38",
+        "run.tty.txt": "b460b6da2473cf7598b07a56a56c600fab03023435b22dbe8ca2a34cea33f548"
+      }
+    },
+    "ps2x_hw_kernel_ee_thread_delete": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_kernel_ee_thread_delete.exe": "07fc8d90fb18cfbe14c53a89b714e6f1f20eac67e9faf4493d53dd33646b046d",
+        "delete.elf": "4be4d4a5e239353ba59fb1ebbb3e77c5b99f9df5d789c7e6a78fcff48854455b",
+        "delete.expected": "462a4be371db9d599939452d20c0f1bd5775d85b65f8deed9505b3d3a7fa1c7b",
+        "run.tty.txt": "095086dbde04f4516cca92710bcb29d46090720e95ac5c4436bc9662aed60486"
+      }
+    },
+    "ps2x_hw_kernel_ee_thread_exit": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_kernel_ee_thread_exit.exe": "239267b72a226f5b1598ad9d9636db226a4e6b9ae3393bd6edbccb6737cafb75",
+        "exit.elf": "40707fa439ebfd2f24ef45da696992102d5574068d6c4c30724d914e7bea455e",
+        "exit.expected": "de08773451b6fca9e23163c7fccefda579e335822c3b8dcf8f7838e0684421a0",
+        "run.tty.txt": "da2a9be993e58b677993fe31eb3644c5720ad06f34d1fbc3e3876278bd7e93a7"
+      }
+    },
+    "ps2x_hw_kernel_ee_thread_resume": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_kernel_ee_thread_resume.exe": "cf89f30196c9e542733cd0df599a761a3add03bdfd4d34bcaa42839d6a231fd3",
+        "resume.elf": "4da010cf08ff9dcf2ea048f92099c5e1da644f5b5d2fa3b103261b232fb444ab",
+        "resume.expected": "83df6e95d6788707102185d5521e69e14f9e6c8259f0e403d11b469cb950a7b0",
+        "run.tty.txt": "73029a456e44f8638d80001c76318b94cda9414272de204ed4bb058848570985"
+      }
+    },
+    "ps2x_hw_kernel_ee_thread_sleep": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_kernel_ee_thread_sleep.exe": "3b36f6f847361762a2b6ae1fed826d50f9d2f03cbd06547d68afc43f2d48724b",
+        "sleep.elf": "2db45c8a16fc6fbbd3f2a722dfd3d38781a353a0b263a65741de45178058ae9a",
+        "sleep.expected": "4d4c58abe05bcb764acf51cf7ca507970efb999accf3b0f0835b251d0171af3b",
+        "run.tty.txt": "62193cb3ee363e2cfc8b5c42d2234327270598743fd2f122377b35dc7b71dbd3"
+      }
+    },
+    "ps2x_hw_kernel_ee_thread_stat": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_kernel_ee_thread_stat.exe": "a80aa6d0a6cb9f137c16bc5bd49080b6b2456f53184dd5139e277d7e885b54a2",
+        "stat.elf": "c3ec41ffdeeb321d8727217f967ef3d313be6d56a74ed58319a2c6cffc402733",
+        "stat.expected": "4d111de8ae8d88779f7155572b4a611ec031abee6c06c801a7dcdcaf1cd8d510",
+        "run.tty.txt": "60a173131c62f3b75f6c5e423882027c7fc181e63ddadbd80c708201bf296413"
+      }
+    },
+    "ps2x_hw_kernel_ee_thread_suspend": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_kernel_ee_thread_suspend.exe": "3290bd3c50132272c169572f936d428bc631c362204d48021d3c7ec3cfcd1bb6",
+        "suspend.elf": "d42e47554b004e7faca328d8dc083a2239d4af652dedac226b1817e60d2f3a20",
+        "suspend.expected": "7ad07db9cb38e6b491f3b58c65c3636fe32fc12d1484f4e2bff621f142d056a4",
+        "run.tty.txt": "22d77a23d10abae933d2fe25c18e317cadfdaf28b8ccff3708063addec08de49"
+      }
+    },
+    "ps2x_hw_kernel_ee_thread_terminate": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_kernel_ee_thread_terminate.exe": "a4b6110818aa59578533fbc5f62c2b61aff79de93314870361cbd82ece168c48",
+        "terminate.elf": "39983900c6d48b5464ba74c0d66a412eed15b4b5d53ce015baea947d91d804ed",
+        "terminate.expected": "243e1ef427008f296661a0abec7ac920e6ceec9ff5e25a4312c78b2069459018",
+        "run.tty.txt": "72ad4aa654181fec0988419e7d8ed208e36262e5f4f3971f781cc2d41a49282a"
+      }
+    },
+    "ps2x_hw_kernel_ee_thread_wakeup": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_kernel_ee_thread_wakeup.exe": "a247fcebdbb530bac52575220ea1c382303454a9cffbc9bd485269868df45350",
+        "wakeup.elf": "9ba57bb662c5b813117a09697d7ef2379338a17f37da0c2485b9c227f01047f2",
+        "wakeup.expected": "bfcd389f9b0a6380f95b55c0f6eaa7a2d7a10b21188cd427d955808d7ee37b9a",
+        "run.tty.txt": "f969e5be1ed9c1d58af461f6b62ec4b1ccd8ed8e9c2e605eddb7114f07d370a4"
+      }
+    },
+    "ps2x_hw_memory_ee_default": {
+      "status": "MISMATCH",
+      "hashes": {
+        "ps2x_hw_memory_ee_default.exe": "fce7dde6a14f00e34738679abbb57aa82a3c7fcb5dd75ea05fec2965ce1e5f18",
+        "default.elf": "6d470d1fc21a1d882513fa9e4d4bd296ea43bcc46bc58072b61ad48163f0611a",
+        "default.expected": "ba68495549bbe6cf18261ac6861c8ebafd5bd40763ddad37392173b0c451cfb4",
+        "run.tty.txt": "76f46f18ec2172e6797e816d4f9084a2559b31c088ff552c5bdaef042e5a9465"
+      }
+    },
+    "ps2x_hw_vu_games_triace": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_vu_games_triace.exe": "0397a7cad00b4060b974be5f96b8c32ded2136bff06c3fe06c224c024632349f",
+        "triace.elf": "4f2ed3e358bf6d3aca11afc7bf5b5ef9dbdc73627cc965f1cfa40daffeb35f49",
+        "triace.expected": "af269aefa7b4517e86582f4a7936417e9add73ecea2c4d7b048cb28c0f0a2478",
+        "run.tty.txt": "8d8e7cae71c076a735c79906d3c7d16155e4a4dcc674616a9d780bbc3acf5970"
+      }
+    },
+    "ps2x_hw_vu_lower_branch": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_vu_lower_branch.exe": "5e2454cbe00ddf4f2656bb395993535e916d61358e66ff29479d35e3abb45454",
+        "branch.elf": "7c6f20e53d49047f5afc3b7aec3b43e219a32a9ad8b11eb4ee25f920265a7eb7",
+        "branch.expected": "32a14068ceb7bd71d04267dc936b925ac21564e6f0473e696bd1cd536968b9d2",
+        "run.tty.txt": "e66b32544c757026d670c8f66cb98181d3611bb72271d96f8e08913fc5035564"
+      }
+    },
+    "ps2x_hw_vu_lower_efu": {
+      "status": "MISMATCH",
+      "hashes": {
+        "ps2x_hw_vu_lower_efu.exe": "8faac0ff1cf92e6c5a4dab12102354793a75ff0efaa5920c740b84aa4a414ab0",
+        "efu.elf": "f110f3a94d191de75e12814d1128431ee79c107b61559240651ea2bb0332199e",
+        "efu.expected": "8d417ee65d542e0b2bb41674155d3c60b318a65d88c4f2de72f26e8f56b0e5e8",
+        "run.tty.txt": "31692ed0f0b7a847a2df385337efb71b29f5e79d85c9ac1cb7cecba4a3b83c0a"
+      }
+    },
+    "ps2x_hw_vu_lower_fdivdelay": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_vu_lower_fdivdelay.exe": "7bfa2b0c844e241851ac56d54f068b22e664978205ff23283805ed276267857b",
+        "fdivdelay.elf": "97f25a391f2bdea83e1983cb8bdfdb600a071f7b9bf3ab146e2f7a551f4dbb53",
+        "fdivdelay.expected": "805ddebdcb6b07836f4c33f6759deee972d76f89eaff814063f5b677499feae2",
+        "run.tty.txt": "02997f2947cfbcfc6837b629b2b545568d04a3c31c8d10501717b98913b91974"
+      }
+    },
+    "ps2x_hw_vu_lower_integer": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_vu_lower_integer.exe": "6e05951880a1a777c5cf6578a81c2c63993772617757d571b30c30fcdc79b422",
+        "integer.elf": "bba916f8a37eb91f9be080c4fb68c4ccf93e49d6790d5a47d104be415097eb84",
+        "integer.expected": "0fc303b02b86fe429b8ad5ff19fe296b9b221bc4bbd3c1da2a7c054b7c59fe6e",
+        "run.tty.txt": "d39800381482e16bddb2a12312ce81c251a577201a030996a00d25331b80938d"
+      }
+    },
+    "ps2x_hw_vu_lower_random": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_vu_lower_random.exe": "734c56d3ea18cb7b3b6fa1109bf36164de4c953ba0c249b14d187dde5f915918",
+        "random.elf": "7db7ff16a3d2399a2c8747add4151071de63e31c3bb28a87b629931a0aaa3715",
+        "random.expected": "b0169f7e644b187cfda441b324629aaf5db4565823e93b69cb657c4e4af1cbfc",
+        "run.tty.txt": "68c51a6698cd4677c1768464c84401efa0e593c9b3e173215c0ecf0d30fc2a93"
+      }
+    },
+    "ps2x_hw_vu_upper_clip": {
+      "status": "PASS",
+      "hashes": {
+        "ps2x_hw_vu_upper_clip.exe": "a44a80fb1ff20f8dc088b9df7d17a352c8e5a85e370dfbe567791be9ced2fb75",
+        "clip.elf": "07157032ed26697c0c871498b2d30eff157c6dcd5af85ccb9f5a7514c083987b",
+        "clip.expected": "707a2f83a099ff9340c56ec8747d2239c43fefea3a4cf8789582c3612ef540a7",
+        "run.tty.txt": "1384c76051ee8b107574eba0e2f6006c9b2d878d166117824972e1695d3d1d6e"
+      }
+    }
+  }
+}

@@ -1,0 +1,349 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="510" viewBox="0 0 1000 510" role="img" aria-labelledby="title desc">
+<title id="title">RE4 status: scoped library services and PS2 hardware</title>
+<desc id="desc">GitHub dark treemap. Green means working in verified scope, yellow hatched means partial, gray means pending. SDK function percentages have not been measured. Independent hardware reference47 of55 is separate from candidate validation.</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif}.bg{fill:#0d1117}.line{stroke:#30363d}.t1{fill:#e6edf3}.t2{fill:#8b949e}.ok{fill:#0ca30c}.partial{fill:#fab219}.pending{fill:#484f58}.gap{stroke:#0d1117;stroke-width:1}.chip{fill:#1f2328;fill-opacity:.83}</style>
+<defs><pattern id="hatch" patternUnits="userSpaceOnUse" width="8" height="8"><path d="M-2 2L2 -2M0 8L8 0M6 10L10 6" stroke="#8a5a00" stroke-width=".7"/></pattern></defs>
+<rect class="bg" width="1000" height="510"/>
+<text class="t1" x="44" y="33" font-size="24">Status</text>
+<path class="line" d="M44 44H980"/>
+<rect x="44" y="57" width="93" height="23" rx="3" fill="#30363d"/>
+<rect x="136" y="57" width="100" height="23" rx="3" fill="#fab219"/>
+<text class="t1" x="90" y="73" font-size="11" text-anchor="middle">libraries*</text>
+<text x="186" y="73" font-size="11" text-anchor="middle" fill="#1f2328">not measured</text>
+<rect x="244" y="57" width="93" height="23" rx="3" fill="#30363d"/>
+<rect x="336" y="57" width="100" height="23" rx="3" fill="#fab219"/>
+<text class="t1" x="290" y="73" font-size="11" text-anchor="middle">hardware</text>
+<text x="386" y="73" font-size="11" text-anchor="middle" fill="#1f2328">partial</text>
+<text class="t1" x="44" y="105" font-size="13" text-anchor="start">RE4 SDK / runtime services*: scoped evidence</text>
+<text class="t1" x="530" y="105" font-size="13" text-anchor="start">PS2 hardware: implemented, partly validated</text>
+<g id="component-libc"><title>libc: Runtime services exist; full SDK function audit pending</title>
+<rect class="partial gap" x="44" y="118" width="170" height="156"/>
+<rect x="44" y="118" width="170" height="156" fill="url(#hatch)"/>
+<path d="M57 118V274" stroke="#0d1117" stroke-width=".8"/>
+<path d="M70 118V274" stroke="#0d1117" stroke-width=".8"/>
+<path d="M83 118V274" stroke="#0d1117" stroke-width=".8"/>
+<path d="M96 118V274" stroke="#0d1117" stroke-width=".8"/>
+<path d="M109 118V274" stroke="#0d1117" stroke-width=".8"/>
+<path d="M122 118V274" stroke="#0d1117" stroke-width=".8"/>
+<path d="M135 118V274" stroke="#0d1117" stroke-width=".8"/>
+<path d="M148 118V274" stroke="#0d1117" stroke-width=".8"/>
+<path d="M161 118V274" stroke="#0d1117" stroke-width=".8"/>
+<path d="M174 118V274" stroke="#0d1117" stroke-width=".8"/>
+<path d="M187 118V274" stroke="#0d1117" stroke-width=".8"/>
+<path d="M200 118V274" stroke="#0d1117" stroke-width=".8"/>
+<path d="M213 118V274" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 131H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 144H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 157H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 170H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 183H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 196H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 209H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 222H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 235H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 248H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 261H214" stroke="#0d1117" stroke-width=".8"/>
+<rect class="chip" x="46" y="120" width="32" height="16"/>
+<text class="t1" x="50" y="132" font-size="10" text-anchor="start">libc</text>
+</g>
+<g id="component-libkernel"><title>libkernel: EE kernel and thread services exercised in scoped tests</title>
+<rect class="ok gap" x="214" y="118" width="145" height="130"/>
+<path d="M227 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M240 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M253 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M266 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M279 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M292 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M305 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M318 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M331 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M344 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M357 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 131H359" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 144H359" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 157H359" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 170H359" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 183H359" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 196H359" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 209H359" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 222H359" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 235H359" stroke="#0d1117" stroke-width=".8"/>
+<rect class="chip" x="216" y="120" width="62" height="16"/>
+<text class="t1" x="220" y="132" font-size="10" text-anchor="start">libkernel</text>
+</g>
+<g id="component-libmc"><title>libmc: Earlier isolated campaign save/reload; new candidate save gate pending</title>
+<rect class="partial gap" x="359" y="118" width="145" height="130"/>
+<rect x="359" y="118" width="145" height="130" fill="url(#hatch)"/>
+<path d="M372 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M385 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M398 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M411 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M424 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M437 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M450 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M463 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M476 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M489 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M502 118V248" stroke="#0d1117" stroke-width=".8"/>
+<path d="M359 131H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M359 144H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M359 157H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M359 170H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M359 183H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M359 196H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M359 209H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M359 222H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M359 235H504" stroke="#0d1117" stroke-width=".8"/>
+<rect class="chip" x="361" y="120" width="38" height="16"/>
+<text class="t1" x="365" y="132" font-size="10" text-anchor="start">libmc</text>
+</g>
+<g id="component-libmpeg-ipu"><title>libmpeg / IPU: Intro played; longer video and AV synchronization unverified</title>
+<rect class="partial gap" x="44" y="274" width="170" height="130"/>
+<rect x="44" y="274" width="170" height="130" fill="url(#hatch)"/>
+<path d="M57 274V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M70 274V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M83 274V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M96 274V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M109 274V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M122 274V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M135 274V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M148 274V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M161 274V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M174 274V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M187 274V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M200 274V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M213 274V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 287H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 300H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 313H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 326H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 339H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 352H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 365H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 378H214" stroke="#0d1117" stroke-width=".8"/>
+<path d="M44 391H214" stroke="#0d1117" stroke-width=".8"/>
+<rect class="chip" x="46" y="276" width="86" height="16"/>
+<text class="t1" x="50" y="288" font-size="10" text-anchor="start">libmpeg / IPU</text>
+</g>
+<g id="component-c-ee"><title>C++ / EE: Recompiler integer-semantics and runtime unit gates</title>
+<rect class="ok gap" x="214" y="248" width="86" height="78"/>
+<path d="M227 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M240 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M253 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M266 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M279 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M292 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 261H300" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 274H300" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 287H300" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 300H300" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 313H300" stroke="#0d1117" stroke-width=".8"/>
+<rect class="chip" x="216" y="250" width="56" height="16"/>
+<text class="t1" x="220" y="262" font-size="10" text-anchor="start">C++ / EE</text>
+</g>
+<g id="component-libsif"><title>libsif: Selected SIF protocol and replay tests</title>
+<rect class="ok gap" x="300" y="248" width="91" height="78"/>
+<path d="M313 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M326 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M339 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M352 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M365 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M378 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M300 261H391" stroke="#0d1117" stroke-width=".8"/>
+<path d="M300 274H391" stroke="#0d1117" stroke-width=".8"/>
+<path d="M300 287H391" stroke="#0d1117" stroke-width=".8"/>
+<path d="M300 300H391" stroke="#0d1117" stroke-width=".8"/>
+<path d="M300 313H391" stroke="#0d1117" stroke-width=".8"/>
+<rect class="chip" x="302" y="250" width="44" height="16"/>
+<text class="t1" x="306" y="262" font-size="10" text-anchor="start">libsif</text>
+</g>
+<g id="component-libm-fpu"><title>libm / FPU: Arithmetic tests exist; broader independent edge-case coverage pending</title>
+<rect class="partial gap" x="391" y="248" width="113" height="78"/>
+<rect x="391" y="248" width="113" height="78" fill="url(#hatch)"/>
+<path d="M404 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M417 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M430 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M443 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M456 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M469 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M482 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M495 248V326" stroke="#0d1117" stroke-width=".8"/>
+<path d="M391 261H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M391 274H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M391 287H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M391 300H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M391 313H504" stroke="#0d1117" stroke-width=".8"/>
+<rect class="chip" x="393" y="250" width="68" height="16"/>
+<text class="t1" x="397" y="262" font-size="10" text-anchor="start">libm / FPU</text>
+</g>
+<g id="component-libgcc"><title>libgcc: Runtime helpers; exhaustive SDK audit pending</title>
+<rect class="partial gap" x="214" y="326" width="86" height="78"/>
+<rect x="214" y="326" width="86" height="78" fill="url(#hatch)"/>
+<path d="M227 326V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M240 326V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M253 326V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M266 326V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M279 326V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M292 326V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 339H300" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 352H300" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 365H300" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 378H300" stroke="#0d1117" stroke-width=".8"/>
+<path d="M214 391H300" stroke="#0d1117" stroke-width=".8"/>
+<rect class="chip" x="216" y="328" width="44" height="16"/>
+<text class="t1" x="220" y="340" font-size="10" text-anchor="start">libgcc</text>
+</g>
+<g id="component-fileio"><title>fileio: Selected read and completion paths exercised</title>
+<rect class="ok gap" x="300" y="326" width="91" height="78"/>
+<path d="M313 326V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M326 326V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M339 326V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M352 326V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M365 326V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M378 326V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M300 339H391" stroke="#0d1117" stroke-width=".8"/>
+<path d="M300 352H391" stroke="#0d1117" stroke-width=".8"/>
+<path d="M300 365H391" stroke="#0d1117" stroke-width=".8"/>
+<path d="M300 378H391" stroke="#0d1117" stroke-width=".8"/>
+<path d="M300 391H391" stroke="#0d1117" stroke-width=".8"/>
+<rect class="chip" x="302" y="328" width="44" height="16"/>
+<text class="t1" x="306" y="340" font-size="10" text-anchor="start">fileio</text>
+</g>
+<g id="component-libsd"><title>libsd: PCM tested; host playback and sync incomplete</title>
+<rect class="partial gap" x="391" y="326" width="57" height="52"/>
+<rect x="391" y="326" width="57" height="52" fill="url(#hatch)"/>
+<path d="M404 326V378" stroke="#0d1117" stroke-width=".8"/>
+<path d="M417 326V378" stroke="#0d1117" stroke-width=".8"/>
+<path d="M430 326V378" stroke="#0d1117" stroke-width=".8"/>
+<path d="M443 326V378" stroke="#0d1117" stroke-width=".8"/>
+<path d="M391 339H448" stroke="#0d1117" stroke-width=".8"/>
+<path d="M391 352H448" stroke="#0d1117" stroke-width=".8"/>
+<path d="M391 365H448" stroke="#0d1117" stroke-width=".8"/>
+<rect class="chip" x="393" y="328" width="38" height="16"/>
+<text class="t1" x="397" y="340" font-size="10" text-anchor="start">libsd</text>
+</g>
+<g id="component-libpad"><title>libpad: Movement, aiming and shooting observed</title>
+<rect class="ok gap" x="448" y="326" width="56" height="52"/>
+<path d="M461 326V378" stroke="#0d1117" stroke-width=".8"/>
+<path d="M474 326V378" stroke="#0d1117" stroke-width=".8"/>
+<path d="M487 326V378" stroke="#0d1117" stroke-width=".8"/>
+<path d="M500 326V378" stroke="#0d1117" stroke-width=".8"/>
+<path d="M448 339H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M448 352H504" stroke="#0d1117" stroke-width=".8"/>
+<path d="M448 365H504" stroke="#0d1117" stroke-width=".8"/>
+<rect class="chip" x="450" y="328" width="44" height="16"/>
+<text class="t1" x="454" y="340" font-size="10" text-anchor="start">libpad</text>
+</g>
+<g id="component-sdk-audit"><title>SDK audit: No trustworthy SDK-function completion percentage</title>
+<rect class="pending gap" x="391" y="378" width="113" height="26"/>
+<path d="M404 378V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M417 378V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M430 378V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M443 378V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M456 378V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M469 378V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M482 378V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M495 378V404" stroke="#0d1117" stroke-width=".8"/>
+<path d="M391 391H504" stroke="#0d1117" stroke-width=".8"/>
+<rect class="chip" x="393" y="380" width="62" height="16"/>
+<text class="t1" x="397" y="392" font-size="10" text-anchor="start">SDK audit</text>
+</g>
+<g id="component-r3000a"><title>R3000A: IOP runtime exercised; scoped coverage</title>
+<rect class="ok gap" x="530" y="118" width="100" height="88"/>
+<text x="580.0" y="162.0" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#fff">R3000A</text>
+</g>
+<g id="component-irx"><title>IRX: Module loading exists; not every module independently validated</title>
+<rect class="partial gap" x="630" y="118" width="65" height="88"/>
+<rect x="630" y="118" width="65" height="88" fill="url(#hatch)"/>
+<text x="662.5" y="162.0" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#1f2328">IRX</text>
+</g>
+<g id="component-sif"><title>SIF: Selected ordered protocol tests</title>
+<rect class="ok gap" x="530" y="206" width="83" height="70"/>
+<text x="571.5" y="241.0" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#fff">SIF</text>
+</g>
+<g id="component-cdvd"><title>CDVD: Read-only data and streaming paths exercised</title>
+<rect class="ok gap" x="613" y="206" width="82" height="70"/>
+<text x="654.0" y="241.0" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#fff">CDVD</text>
+</g>
+<g id="component-spu2"><title>SPU2: Raw PCM agrees; underruns and AV sync remain</title>
+<rect class="partial gap" x="530" y="276" width="72" height="128"/>
+<rect x="530" y="276" width="72" height="128" fill="url(#hatch)"/>
+<text x="566.0" y="340.0" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#1f2328">SPU2</text>
+</g>
+<g id="component-pad"><title>Pad: Real controller gameplay observations</title>
+<rect class="ok gap" x="602" y="276" width="93" height="61"/>
+<text x="648.5" y="306.5" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#fff">Pad</text>
+</g>
+<g id="component-mc"><title>MC: Historical isolated save/reload; current candidate acceptance open</title>
+<rect class="partial gap" x="602" y="337" width="93" height="67"/>
+<rect x="602" y="337" width="93" height="67" fill="url(#hatch)"/>
+<text x="648.5" y="370.5" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#1f2328">MC</text>
+</g>
+<g id="component-r5900"><title>R5900: Static EE recompilation and regression tests</title>
+<rect class="ok gap" x="695" y="118" width="158" height="93"/>
+<text x="774.0" y="164.5" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#fff">R5900</text>
+</g>
+<g id="component-kernel"><title>Kernel: Kernel and scheduling services in scoped tests</title>
+<rect class="ok gap" x="695" y="211" width="95" height="93"/>
+<text x="742.5" y="257.5" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#fff">Kernel</text>
+</g>
+<g id="component-fpu-mmi"><title>FPU/MMI: Arithmetic translation tests; not exhaustive hardware equivalence</title>
+<rect class="ok gap" x="790" y="211" width="63" height="93"/>
+<text x="821.5" y="257.5" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#fff">FPU/MMI</text>
+</g>
+<g id="component-intc"><title>INTC: Interrupt paths in tests and runtime</title>
+<rect class="ok gap" x="695" y="304" width="63" height="100"/>
+<text x="726.5" y="354.0" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#fff">INTC</text>
+</g>
+<g id="component-dmac"><title>DMAC: Narrow deterministic replay; full timing unproven</title>
+<rect class="partial gap" x="758" y="304" width="63" height="100"/>
+<rect x="758" y="304" width="63" height="100" fill="url(#hatch)"/>
+<text x="789.5" y="354.0" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#1f2328">DMAC</text>
+</g>
+<g id="component-timer"><title>Timer: Scheduler implementation; broader timing work remains</title>
+<rect class="partial gap" x="821" y="304" width="32" height="100"/>
+<rect x="821" y="304" width="32" height="100" fill="url(#hatch)"/>
+<text x="837.0" y="354.0" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#1f2328" transform="rotate(-90 837.0 354.0)">Timer</text>
+</g>
+<g id="component-gif"><title>GIF: Ordered GIF replay comparisons</title>
+<rect class="ok gap" x="853" y="118" width="50" height="117"/>
+<text x="878.0" y="176.5" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#fff">GIF</text>
+</g>
+<g id="component-gs"><title>GS: paraLLEl-GS;37 matching tagged frames, wider coverage open</title>
+<rect class="partial gap" x="903" y="118" width="77" height="117"/>
+<rect x="903" y="118" width="77" height="117" fill="url(#hatch)"/>
+<text x="941.5" y="176.5" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#1f2328">GS</text>
+</g>
+<g id="component-vif1-vu1"><title>VIF1/VU1: 3200 snapshots; primary performance bottleneck</title>
+<rect class="partial gap" x="853" y="235" width="127" height="76"/>
+<rect x="853" y="235" width="127" height="76" fill="url(#hatch)"/>
+<text x="916.5" y="273.0" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#1f2328">VIF1/VU1</text>
+</g>
+<g id="component-tex-clut"><title>Tex/CLUT: Existing GS texture paths; broader scene checks pending</title>
+<rect class="partial gap" x="853" y="311" width="63" height="93"/>
+<rect x="853" y="311" width="63" height="93" fill="url(#hatch)"/>
+<text x="884.5" y="357.5" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#1f2328">Tex/CLUT</text>
+</g>
+<g id="component-ipu"><title>IPU: Intro demonstrated; longer video and audio timing incomplete</title>
+<rect class="partial gap" x="916" y="311" width="64" height="93"/>
+<rect x="916" y="311" width="64" height="93" fill="url(#hatch)"/>
+<text x="948.0" y="357.5" font-size="11" text-anchor="middle" dominant-baseline="central" fill="#1f2328">IPU</text>
+</g>
+<rect class="chip" x="532" y="120" width="28" height="16"/>
+<text class="t1" x="536" y="132" font-size="10" text-anchor="start">IOP</text>
+<rect class="chip" x="697" y="120" width="28" height="16"/>
+<text class="t1" x="701" y="132" font-size="10" text-anchor="start">EE</text>
+<rect class="chip" x="855" y="120" width="55" height="16"/>
+<text class="t1" x="859" y="132" font-size="10" text-anchor="start">GS / VU</text>
+<rect class="ok" x="44" y="421" width="13" height="13" rx="2"/>
+<text class="t2" x="64" y="432" font-size="12" text-anchor="start">Working (verified scope)</text>
+<rect class="partial" x="245" y="421" width="13" height="13" rx="2"/>
+<rect x="245" y="421" width="13" height="13" fill="url(#hatch)"/>
+<text class="t2" x="265" y="432" font-size="12" text-anchor="start">Partial</text>
+<rect class="pending" x="355" y="421" width="13" height="13" rx="2"/>
+<text class="t2" x="375" y="432" font-size="12" text-anchor="start">Pending</text>
+<text class="t2" x="530" y="432" font-size="11" text-anchor="start">Gameplay: room100 →101 | scene0.2155x | paired gain+4.94%</text>
+<text class="t2" x="44" y="457" font-size="11" text-anchor="start">* Library cells are decorative service groups, not counted SDK functions. Areas do not measure overall completion.</text>
+<text class="t2" x="44" y="477" font-size="11" text-anchor="start">Separate hardware reference:47/55 exact on Zmbor00173a2; not candidate hardware acceptance. Full campaign and quicksave pending.</text>
+<text class="t2" x="44" y="497" font-size="11" text-anchor="start">RE4 USA SLUS-211.34 | 27 Oct2026 | Evidence and limits: docs/status/README.md</text>
+</svg>

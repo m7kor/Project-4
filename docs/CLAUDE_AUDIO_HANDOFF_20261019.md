@@ -12,7 +12,7 @@ Claude: تحليل وإصلاح الصوت وتزامنه، مع قياس مسا
 
 أنت مسؤول عن الصوت والتزامن في مشروع PS2Redemption، هدفه تشغيل RE4 SLUS-211.34 كاملة بسرعة طبيعية وصورة وصوت وحفظ صحيحين. Codex يعمل بالتوازي على أداء الرسوم والحسابات والدمج.
 
-المجلد المشترك: `C:\Project\PS2redmption`. ابدأ بقراءة `PS2_PROJECT_STATE.md` و`docs/MASTERPIECE_EXECUTION_PLAN.md`، وتعليمات AGENTS.md إن وجدت، ومهارة `C:\Users\KH\.codex\skills\ps2-recomp-agent-skill\SKILL.md`. الحالة الفعلية تتقدم؛ تحقق من الملفات والبصمات ولا تعتمد على الفقرات التاريخية وحدها.
+المجلد المشترك: `C:\Project\PS2redmption`. ابدأ بقراءة `PS2_PROJECT_STATE.md` و`docs/MASTERPIECE_EXECUTION_PLAN.md`، وتعليمات AGENTS.md إن وجدت، ومهارة `C:/Users/LOCAL_USER\.codex\skills\ps2-recomp-agent-skill\SKILL.md`. الحالة الفعلية تتقدم؛ تحقق من الملفات والبصمات ولا تعتمد على الفقرات التاريخية وحدها.
 
 المطلوب:
 

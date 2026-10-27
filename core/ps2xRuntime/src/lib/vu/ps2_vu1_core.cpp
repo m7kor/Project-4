@@ -26,6 +26,48 @@ uint64_t g_vu1CompiledDeadFmac = 0;
 #include <limits>
 #include <ps2_log.h>
 
+#if defined(_M_X64) || defined(__x86_64__) || defined(__SSE2__)
+#include <emmintrin.h>
+#define PS2X_FMAC_CLASSIFY_SSE2 1
+#endif
+
+// Batch ONLY the existing exponent2..253 shortcut. No arithmetic or rounding.
+// Boundary exponents and any exceptional selected lane use the original path.
+bool ps2Vu1ClassifyNormalFmac(const float *value, uint8_t dest, uint8_t laneFlags[4])
+{
+    dest &= 15u;
+    if (!dest) { std::memset(laneFlags, 0, 4); return true; }
+#if defined(PS2X_FMAC_CLASSIFY_SSE2)
+    static constexpr uint8_t reversed[16] = {0,8,4,12,2,10,6,14,1,9,5,13,3,11,7,15};
+    static constexpr uint32_t signFlags[16] = {0x00000000u, 0x00000002u, 0x00000200u, 0x00000202u, 0x00020000u, 0x00020002u, 0x00020200u, 0x00020202u, 0x02000000u, 0x02000002u, 0x02000200u, 0x02000202u, 0x02020000u, 0x02020002u, 0x02020200u, 0x02020202u};
+    const uint32_t selected = reversed[dest];
+    const __m128 bits = _mm_loadu_ps(value);
+    const __m128i magnitude = _mm_and_si128(_mm_castps_si128(bits), _mm_set1_epi32(0x7fffffff));
+    const __m128i lower = _mm_cmpgt_epi32(magnitude, _mm_set1_epi32(0x00ffffff));
+    const __m128i upper = _mm_cmpgt_epi32(_mm_set1_epi32(0x7f000000), magnitude);
+    const uint32_t normal = static_cast<uint32_t>(_mm_movemask_ps(_mm_castsi128_ps(_mm_and_si128(lower, upper))));
+    if ((normal & selected) != selected) return false;
+    const uint32_t packed = signFlags[static_cast<uint32_t>(_mm_movemask_ps(bits)) & selected];
+    std::memcpy(laneFlags, &packed, 4);
+    return true;
+#else
+    uint8_t flags[4]{};
+    for (uint32_t component = 0; component < 4; ++component)
+    {
+        if (!(dest & (8u >> component))) continue;
+        uint32_t bits;std::memcpy(&bits, value + component, sizeof(bits));
+        const uint32_t exponent=(bits >> 23)&255u;
+        if (exponent < 2u || exponent > 253u) return false;
+        flags[component]=static_cast<uint8_t>((bits >> 30)&2u);
+    }
+    std::memcpy(laneFlags,flags,4);return true;
+#endif
+}
+static const bool fmacClassifyEnabled = [] {
+    const char *value = std::getenv("PS2X_VU1_FMAC_CLASSIFY");
+    return value && *value == '1';
+}();
+
 // Internal algebra shared with an exhaustive unit witness; no public header.
 // Read only selected lanes and preserve all status bits from the old path.
 uint64_t ps2Vu1PackFmacFlags(const uint8_t laneFlags[4], uint8_t dest)
@@ -247,6 +289,8 @@ void VU1Interpreter::applyDestAcc(const float *result, uint8_t dest)
 void VU1Interpreter::normalizeFmacResult(float *result, uint8_t dest,
                                          uint8_t laneFlags[4])
 {
+    if (fmacClassifyEnabled && ps2Vu1ClassifyNormalFmac(result, dest, laneFlags))
+        return;
     for (uint32_t component = 0; component < 4u; ++component)
     {
         laneFlags[component] = 0u;

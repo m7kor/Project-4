@@ -1,0 +1,1138 @@
+[
+  {
+    "path": "tests/test_adma_read_report.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_analysis.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_audio_check.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_audio_process_timeline.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_audio_quality_report.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_bootcheck.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_build_native_source.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_capture_speakers_cli.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_controller_trace_report.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_decompref.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_ee_trace_reports.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_elf_pointer_scan.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_entrycheck.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_frame_tools.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_game_speed_compare.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_game_speed_report.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_gameplay_input_report.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_gif_boundary_inspect.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_gif_dma_source_audit.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_gif_trace.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_gs_texture_inspect.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_gs_transfer_audit.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_inspect_ps2_card.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_iop_snapshot_inspect.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_iop_sound_audit.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_isolated_guest_reuse.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_live_pad_command.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_mapcheck.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_mipsdec.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_mmi_refresh.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_package_re4.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_patch_ee_float_semantics.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_pcm_write_compare.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_pcsx2_probe_schema.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_pcsx2_reference.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_pipeline.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_re4_area_witness.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_re4_encounter_witness.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_re4_feedback_route.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_re4_live_memory.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_re4_name_table.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_re4_player_motion_report.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_reemit_ee_fpu_roots.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_replay_ee_adx.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_replay_progress.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_replay_transport_report.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_research_snapshot.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_rpc_wait_audit.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_run_fault_stop.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_run_process_timing.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_run_trace_configuration.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_sif_pcm_extract.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_sj_stereo_watch.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_snr2_body_cfg.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_snr2_imports.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_snr2_inventory.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_snr2_loader_profile.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_snr2_native_plan.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_snr2_observed_identity.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_snr2_relocations.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_snr2_sdk_lifecycle.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_spu2_sources.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_toolchain_check.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_trace_payload_identity.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_tracy_roundtrip.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_vif_direct_inspect.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_vu1_call_profile.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_vu1_clean_blocks_codegen.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_vu1_mode_compare.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_vu1_tool_cli.py",
+    "group": "tests"
+  },
+  {
+    "path": "tests/test_vu1_verify.py",
+    "group": "tests"
+  },
+  {
+    "path": "core/ps2xTest/CMakeLists.txt",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/gs_cache/CMakeLists.txt",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/gs_cache/gs_clut_cache_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/gs_cache/gs_memory_cache_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/gs_cache/gs_parallel_bridge_stub.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/gs_cache/gs_test_support.h",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/gs_cache/gs_texture_cache_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/include/MiniTest.h",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/integer_emitted_regression.py",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/PHASE4_VALIDATION.md",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/PHASE5_VALIDATION.md",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/code_generator_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/dma_chain_bench.inl",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/dma_chain_limits.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/elf_analyzer_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/fmac_classify_witness.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/gif_fence_replay.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/gif_path_replay.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/gs_readback_probe.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/integer_emit_probe.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ipu_csc_bench.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ipu_sfd_probe.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/main.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/mmi_codegen_probe.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/mmi_permutation_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/native_module_codegen_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/native_relocation_runtime_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/pad_input_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_gs_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_iop_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_ipu_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_memory_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_recompiler_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_runtime_expansion_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_runtime_interrupt_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_runtime_io_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_runtime_kernel_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_sif_dma_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_sif_rpc_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_vif_work_queue_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_vu1_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/ps2_vu_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/r5900_decoder_tests.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/relocation_codegen_probe.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/runtime_hotpath_bench.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/test_function_table.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/vif1_unpack_bench.inl",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/vif1_unpack_fast_tests.inl",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/vu1_bench.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/vu1_codegen.cpp",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xTest/src/vu1_command_replay.inl",
+    "group": "core/ps2xTest"
+  },
+  {
+    "path": "core/ps2xIOP/tests/iop_compat_test_support.h",
+    "group": "core/ps2xIOP/tests"
+  },
+  {
+    "path": "core/ps2xIOP/tests/iop_compatibility_tests.cpp",
+    "group": "core/ps2xIOP/tests"
+  },
+  {
+    "path": "core/ps2xIOP/tests/iop_emulator_tests.cpp",
+    "group": "core/ps2xIOP/tests"
+  },
+  {
+    "path": "core/ps2xIOP/tests/iop_import_tests.cpp",
+    "group": "core/ps2xIOP/tests"
+  },
+  {
+    "path": "core/ps2xIOP/tests/iop_import_version_tests.cpp",
+    "group": "core/ps2xIOP/tests"
+  },
+  {
+    "path": "core/ps2xIOP/tests/iop_spu2_bridge_tests.cpp",
+    "group": "core/ps2xIOP/tests"
+  },
+  {
+    "path": "compatibility/tests/architecture_detail_state.inl",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/architecture_vu_cost.inl",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/data/hardware_reference_manifest.json",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/dma_iop_replay.cpp",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/gif_image2_test.cpp",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/host_boundary_probe.inl",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/image2_frontend_test.cpp",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/phase4_codegen_probe.cpp",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/phase4_dma_limits.cpp",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/phase5_fmac_classify_witness.cpp",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/phase5_pipeline_random.inl",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/phase5_pipeline_state.inl",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/phase5_pipeline_state_v2.inl",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/phase5_vector_retire_witness.cpp",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/specs/typewriter-smoke.example.json",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_architecture_ammo.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_architecture_lab.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_architecture_timeline.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_host_boundary_observer.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_host_boundary_regression.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_lab_layout.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_lab_regression.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_phase2_contracts.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_phase5_gates.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_phase5_pipeline.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_replay_input_quality.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_replay_observer.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_transport_replay.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/test_vu_shared_regions.py",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/tests/vif_direct_replay.cpp",
+    "group": "compatibility/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_adma_read_report.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_analysis.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_audio_check.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_audio_process_timeline.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_audio_quality_report.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_bootcheck.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_build_native_source.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_capture_speakers_cli.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_controller_trace_report.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_decompref.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_ee_trace_reports.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_elf_pointer_scan.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_entrycheck.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_frame_tools.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_game_speed_compare.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_game_speed_report.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_gameplay_input_report.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_gif_boundary_inspect.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_gif_dma_source_audit.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_gif_trace.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_gs_texture_inspect.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_gs_transfer_audit.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_inspect_ps2_card.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_iop_snapshot_inspect.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_iop_sound_audit.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_isolated_guest_reuse.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_live_pad_command.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_mapcheck.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_mipsdec.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_mmi_refresh.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_package_re4.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_patch_ee_float_semantics.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_pcm_write_compare.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_pcsx2_probe_schema.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_pcsx2_reference.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_pipeline.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_re4_area_witness.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_re4_encounter_witness.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_re4_feedback_route.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_re4_live_memory.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_re4_name_table.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_re4_player_motion_report.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_reemit_ee_fpu_roots.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_replay_ee_adx.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_replay_progress.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_replay_transport_report.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_research_snapshot.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_rpc_wait_audit.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_run_fault_stop.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_run_process_timing.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_run_trace_configuration.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_sif_pcm_extract.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_sj_stereo_watch.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_snr2_body_cfg.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_snr2_imports.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_snr2_inventory.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_snr2_loader_profile.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_snr2_native_plan.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_snr2_observed_identity.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_snr2_relocations.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_snr2_sdk_lifecycle.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_spu2_sources.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_toolchain_check.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_trace_payload_identity.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_tracy_roundtrip.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_vif_direct_inspect.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_vu1_call_profile.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_vu1_clean_blocks_codegen.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_vu1_mode_compare.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_vu1_tool_cli.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/reference-tools/tests/test_vu1_verify.py",
+    "group": "compatibility/reference-tools/tests"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_alu.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_branch.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_branchdelay.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_cop0_performance.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_fpu_arithmetic.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_fpu_branch.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_fpu_branchdelay.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_fpu_compare.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_fpu_convert.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_fpu_fcr.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_fpu_muldiv.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_fpu_sqrt.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_fpu_transfer.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_lsu.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_lsudelay.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_muldiv.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_simd_arithmetic.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_simd_compare.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_simd_funnel.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_simd_logic.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_simd_muldiv.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_ee_simd_shuffle.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_vu0_macro_integer.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/cpu_vu0_macro_transfer.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/dma_dmac_cpcond.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/dma_dmac_tagintr.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/dma_spr_chain.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/dma_spr_interleave.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/dma_spr_normal.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/dma_vif_basic.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/dma_vif_intstall.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/dma_vif_mskpath3.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/dma_vif_stcycl.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/dma_vif_stmod.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/dma_vif_unpack.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/gs_label.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/gs_signal.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/kernel_ee_interrupt_dmac_order.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/kernel_ee_interrupt_intc_order.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/kernel_ee_thread_delete.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/kernel_ee_thread_exit.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/kernel_ee_thread_resume.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/kernel_ee_thread_sleep.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/kernel_ee_thread_stat.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/kernel_ee_thread_suspend.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/kernel_ee_thread_terminate.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/kernel_ee_thread_wakeup.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/memory_ee_default.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/vu_games_triace.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/vu_lower_branch.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/vu_lower_efu.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/vu_lower_fdivdelay.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/vu_lower_integer.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/vu_lower_random.expected",
+    "group": "compatibility/hardware-reference/expected"
+  },
+  {
+    "path": "compatibility/hardware-reference/expected/vu_upper_clip.expected",
+    "group": "compatibility/hardware-reference/expected"
+  }
+]

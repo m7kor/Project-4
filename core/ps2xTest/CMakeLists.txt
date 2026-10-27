@@ -195,3 +195,40 @@ if(CMAKE_BUILD_TYPE STREQUAL "Release" OR CMAKE_BUILD_TYPE STREQUAL "RelWithDebI
     EnableFastReleaseMode(ps2_test_lib)
     EnableFastReleaseMode(ps2x_tests)
 endif()
+
+# Procedural source-chain resource regressions; no game data or GPU required.
+if(BUILD_TESTING)
+    add_executable(ps2x_dma_chain_limits src/dma_chain_limits.cpp
+        $<TARGET_OBJECTS:ps2_test_function_table>)
+    target_include_directories(ps2x_dma_chain_limits PRIVATE ${CMAKE_SOURCE_DIR}/ps2xRuntime/include)
+    target_link_libraries(ps2x_dma_chain_limits PRIVATE ps2_runtime)
+    add_test(NAME dma_chain_resource_limits COMMAND ps2x_dma_chain_limits)
+    set_tests_properties(dma_chain_resource_limits PROPERTIES TIMEOUT 60)
+endif()
+
+# Compile actual integer emitter output under UBSan, independently of the host runtime.
+# clang-cl/MSVC CTest environments may not carry the developer-shell LIB/INCLUDE;
+# Windows uses the same script manually with clang++ after vcvars64.
+if(BUILD_TESTING AND NOT MSVC AND CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
+    find_package(Python3 COMPONENTS Interpreter QUIET)
+    if(Python3_Interpreter_FOUND)
+        add_executable(ps2x_integer_emit_probe src/integer_emit_probe.cpp)
+        target_link_libraries(ps2x_integer_emit_probe PRIVATE ps2_recomp_lib)
+        add_test(NAME emitted_integer_ubsan
+            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/integer_emitted_regression.py"
+                --probe "$<TARGET_FILE:ps2x_integer_emit_probe>"
+                --runtime-header "${CMAKE_SOURCE_DIR}/ps2xRuntime/include/ps2_runtime_macros.h"
+                --cxx "${CMAKE_CXX_COMPILER}"
+                --output "${CMAKE_CURRENT_BINARY_DIR}/integer-regressions")
+        set_tests_properties(emitted_integer_ubsan PROPERTIES TIMEOUT 120)
+    endif()
+endif()
+
+# Independent bitwise oracle against the actual runtime helper; no game fixture.
+if(BUILD_TESTING)
+    add_executable(ps2x_fmac_classify_witness src/fmac_classify_witness.cpp
+        $<TARGET_OBJECTS:ps2_test_function_table>)
+    target_link_libraries(ps2x_fmac_classify_witness PRIVATE ps2_runtime)
+    add_test(NAME vu_fmac_normal_classification COMMAND ps2x_fmac_classify_witness)
+    set_tests_properties(vu_fmac_normal_classification PROPERTIES TIMEOUT 30)
+endif()

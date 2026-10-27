@@ -1,4 +1,6 @@
 #include "MiniTest.h"
+#include "ps2recomp/code_generator.h"
+#include "ps2recomp/r5900_decoder.h"
 #include "ps2recomp/ps2_recompiler.h"
 #include "ps2recomp/config_manager.h"
 #include "ps2recomp/elf_parser.h"
@@ -748,6 +750,52 @@ void register_ps2_recompiler_tests()
 {
     MiniTest::Case("PS2Recompiler", [](TestCase &tc)
                    {
+        tc.Run("overflow-trapping ADDI to zero is still emitted", [](TestCase &t) {
+            std::vector<Symbol> symbols; std::vector<Section> sections;
+            CodeGenerator generator(symbols, sections); R5900Decoder decoder;
+            const auto op = decoder.decodeInstruction(0x00100000u, (8u << 26) | (1u << 21) | 1u, false);
+            const auto function = makeFunction("phase7_addi_zero", 0x00100000u, 0x0010000Cu);
+            const auto code = generator.generateFunction(function,
+                {op, makeJrRa(0x00100004u), makeNopLike(0x00100008u)}, false);
+            t.IsTrue(code.find("EXCEPTION_INTEGER_OVERFLOW") != std::string::npos,
+                     "discarding an ADDI result must not discard its overflow exception");
+        });
+        tc.Run("unloadable ELF relocation data is skipped without losing valid symbols", [](TestCase &t) {
+            const auto suffix = std::to_string(std::chrono::steady_clock::now().time_since_epoch().count());
+            const auto dir = std::filesystem::temp_directory_path() / ("phase7-elf-" + suffix);
+            std::filesystem::create_directories(dir); const auto good = dir / "good.elf";
+            // Explicit minimal ELF32, so only the relocation-data offset is corrupt.
+            // Re-saving an already loaded multi-segment ELF can change other layout.
+            std::array<unsigned char, 456> bytes{};
+            const auto put = [&](size_t p, uint32_t v, unsigned n=4) {
+                for (unsigned i=0;i<n;++i) bytes[p+i] = static_cast<unsigned char>(v>>(i*8));
+            };
+            bytes[0]=0x7f; bytes[1]='E'; bytes[2]='L'; bytes[3]='F';
+            bytes[4]=1; bytes[5]=1; bytes[6]=1;
+            put(16,2,2); put(18,8,2); put(20,1); put(24,0x100000);
+            put(32,256); put(40,52,2); put(42,32,2); put(46,40,2); put(48,5,2);
+            put(64,0x03e00008); const char names[8] = {'\0','t','a','r','g','e','t','\0'};
+            for(unsigned i=0;i<8;++i) bytes[80+i]=names[i];
+            put(112,1); put(116,0x100000); put(120,8); bytes[124]=0x12; put(126,1,2);
+            put(144,0x100000); put(148,0x104);
+            const uint32_t sections[5][10]={{0},{0,1,6,0x100000,64,8,0,0,4,0},
+                {0,3,0,0,80,8,0,0,1,0},{0,2,0,0,96,32,2,1,4,16},
+                {0,9,0,0,144,8,3,1,4,8}};
+            for(unsigned i=0;i<5;++i) for(unsigned j=0;j<10;++j) put(256+i*40+j*4,sections[i][j]);
+            const auto save = [&](const std::filesystem::path &path) {
+                std::ofstream file(path,std::ios::binary);
+                file.write(reinterpret_cast<const char *>(bytes.data()),bytes.size());
+                return static_cast<bool>(file);
+            };
+            t.IsTrue(save(good), "valid ELF fixture must save");
+            ElfParser valid(good.string()); t.IsTrue(valid.parse(), "valid ELF must parse");
+            t.IsTrue(!valid.extractSymbols().empty(), "valid symbols must remain available");
+            const auto bad = dir / "bad.elf"; put(256+4*40+16,0x7fff0000u);
+            t.IsTrue(save(bad), "corrupt-offset fixture must save");
+            ElfParser malformed(bad.string()); t.IsTrue(malformed.parse(), "bad table must not crash ELF parse");
+            t.IsTrue(!malformed.extractSymbols().empty(), "bad relocation must not erase valid symbols");
+            std::error_code error; std::filesystem::remove_all(dir, error);
+        });
         tc.Run("game helpers are not classified as runtime stubs", [](TestCase &t) {
             t.IsFalse(ps2_runtime_calls::isStubName("Pad_init"),
                       "Pad_init should be recompiled as game code");

@@ -1,0 +1,127 @@
+{
+  "as_of": "2026-10-27",
+  "scope": "Evidence, not an overall completion percentage",
+  "performance": {
+    "reference_median_speed": 0.2058477945,
+    "candidate_median_speed": 0.2154855482,
+    "paired_median_gain_percent": 4.9357072,
+    "pairs": 7
+  },
+  "cpp_tests_per_implementation": 635,
+  "snapshot_count": 3200,
+  "separate_zmbor_hardware": {
+    "exact": 47,
+    "total": 55,
+    "revision": "00173a2d4a9d740adac2d5a1df5f1cf1ecb9abcb"
+  },
+  "components": [
+    {
+      "component": "EE / R5900",
+      "status": "Static recompilation",
+      "evidence": "Integer semantics / malformed ELF tests",
+      "gap": "Broader campaign instruction coverage"
+    },
+    {
+      "component": "MMI + FPU",
+      "status": "Implemented, scoped tests",
+      "evidence": "Translation and arithmetic regressions",
+      "gap": "Independent hardware edge-case evidence"
+    },
+    {
+      "component": "VU0",
+      "status": "Runtime implementation",
+      "evidence": "Shared helpers and unit-test coverage",
+      "gap": "More captured real-workload equivalence"
+    },
+    {
+      "component": "VU1",
+      "status": "Primary performance bottleneck",
+      "evidence": "3,200 snapshots; 964 + 1,024 commands",
+      "gap": "Sustained real-time performance"
+    },
+    {
+      "component": "VU pipeline",
+      "status": "Reference semantics retained",
+      "evidence": "Budgets, flags, queues and continuation",
+      "gap": "Low-overhead candidate attribution"
+    },
+    {
+      "component": "VIF0 / VIF1",
+      "status": "Fast paths retained",
+      "evidence": "VIF replay and payload-bound tests",
+      "gap": "Wider interleaved workload coverage"
+    },
+    {
+      "component": "GIF + XGKICK",
+      "status": "Packet paths exercised",
+      "evidence": "Ordered GIF / full-state comparisons",
+      "gap": "Independent timing edge cases"
+    },
+    {
+      "component": "GS / paraLLEl-GS",
+      "status": "Existing renderer retained",
+      "evidence": "37 matched guest-tagged RGBA frames",
+      "gap": "Wider scenes and frame-pacing proof"
+    },
+    {
+      "component": "DMAC + SPR",
+      "status": "Narrow replay coverage",
+      "evidence": "Chains, payload bounds and DMA tests",
+      "gap": "More channels / independent timing"
+    },
+    {
+      "component": "IOP + SIF",
+      "status": "Services and replay",
+      "evidence": "Protocol / ordering regression gates",
+      "gap": "Broader RPC and scheduler workloads"
+    },
+    {
+      "component": "IPU / movies",
+      "status": "Intro path demonstrated",
+      "evidence": "Historical real-game intro observations",
+      "gap": "Longer video and AV-sync validation"
+    },
+    {
+      "component": "SPU2 / audio",
+      "status": "PCM agrees; underruns remain",
+      "evidence": "5,570,686 common stereo frames equal",
+      "gap": "Speaker output and AV synchronization"
+    },
+    {
+      "component": "Disc / streaming",
+      "status": "Read-only original assets",
+      "evidence": "Resource requests and room loading",
+      "gap": "More rooms and completion behavior"
+    },
+    {
+      "component": "Controllers",
+      "status": "Movement / aiming / shooting",
+      "evidence": "Verified input and real observations",
+      "gap": "Lossless same-tick event replay"
+    },
+    {
+      "component": "Memory cards",
+      "status": "Earlier save / restart / reload",
+      "evidence": "Isolated campaign card validation",
+      "gap": "New candidate progress-save acceptance"
+    },
+    {
+      "component": "Timing / scheduler",
+      "status": "Measured below real time",
+      "evidence": "Seven alternating scene A/B pairs",
+      "gap": "CPU / GPU wait attribution and pacing"
+    },
+    {
+      "component": "Dynamic modules",
+      "status": "Existing loader reused",
+      "evidence": "Gameplay and IOP diagnostics",
+      "gap": "More events and module lifecycles"
+    },
+    {
+      "component": "External quicksave",
+      "status": "Not implemented",
+      "evidence": "Card backup is not a savestate",
+      "gap": "Restorable complete-state contract"
+    }
+  ]
+}

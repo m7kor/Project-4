@@ -1,0 +1,284 @@
+{
+  "schema": 1,
+  "note": "Edit labels, scoped status (ok/partial/pending), evidence text and coordinates, then regenerate SVG. Tiles are not SDK function counts.",
+  "palette": {
+    "background": "#0d1117",
+    "working": "#0ca30c",
+    "partial": "#fab219",
+    "pending": "#484f58"
+  },
+  "libraries": [
+    [
+      44,
+      118,
+      170,
+      156,
+      "libc",
+      "partial",
+      "Runtime services exist; full SDK function audit pending"
+    ],
+    [
+      214,
+      118,
+      145,
+      130,
+      "libkernel",
+      "ok",
+      "EE kernel and thread services exercised in scoped tests"
+    ],
+    [
+      359,
+      118,
+      145,
+      130,
+      "libmc",
+      "partial",
+      "Earlier isolated campaign save/reload; new candidate save gate pending"
+    ],
+    [
+      44,
+      274,
+      170,
+      130,
+      "libmpeg / IPU",
+      "partial",
+      "Intro played; longer video and AV synchronization unverified"
+    ],
+    [
+      214,
+      248,
+      86,
+      78,
+      "C++ / EE",
+      "ok",
+      "Recompiler integer-semantics and runtime unit gates"
+    ],
+    [
+      300,
+      248,
+      91,
+      78,
+      "libsif",
+      "ok",
+      "Selected SIF protocol and replay tests"
+    ],
+    [
+      391,
+      248,
+      113,
+      78,
+      "libm / FPU",
+      "partial",
+      "Arithmetic tests exist; broader independent edge-case coverage pending"
+    ],
+    [
+      214,
+      326,
+      86,
+      78,
+      "libgcc",
+      "partial",
+      "Runtime helpers; exhaustive SDK audit pending"
+    ],
+    [
+      300,
+      326,
+      91,
+      78,
+      "fileio",
+      "ok",
+      "Selected read and completion paths exercised"
+    ],
+    [
+      391,
+      326,
+      57,
+      52,
+      "libsd",
+      "partial",
+      "PCM tested; host playback and sync incomplete"
+    ],
+    [
+      448,
+      326,
+      56,
+      52,
+      "libpad",
+      "ok",
+      "Movement, aiming and shooting observed"
+    ],
+    [
+      391,
+      378,
+      113,
+      26,
+      "SDK audit",
+      "pending",
+      "No trustworthy SDK-function completion percentage"
+    ]
+  ],
+  "hardware": [
+    [
+      530,
+      118,
+      100,
+      88,
+      "R3000A",
+      "ok",
+      "IOP runtime exercised; scoped coverage"
+    ],
+    [
+      630,
+      118,
+      65,
+      88,
+      "IRX",
+      "partial",
+      "Module loading exists; not every module independently validated"
+    ],
+    [
+      530,
+      206,
+      83,
+      70,
+      "SIF",
+      "ok",
+      "Selected ordered protocol tests"
+    ],
+    [
+      613,
+      206,
+      82,
+      70,
+      "CDVD",
+      "ok",
+      "Read-only data and streaming paths exercised"
+    ],
+    [
+      530,
+      276,
+      72,
+      128,
+      "SPU2",
+      "partial",
+      "Raw PCM agrees; underruns and AV sync remain"
+    ],
+    [
+      602,
+      276,
+      93,
+      61,
+      "Pad",
+      "ok",
+      "Real controller gameplay observations"
+    ],
+    [
+      602,
+      337,
+      93,
+      67,
+      "MC",
+      "partial",
+      "Historical isolated save/reload; current candidate acceptance open"
+    ],
+    [
+      695,
+      118,
+      158,
+      93,
+      "R5900",
+      "ok",
+      "Static EE recompilation and regression tests"
+    ],
+    [
+      695,
+      211,
+      95,
+      93,
+      "Kernel",
+      "ok",
+      "Kernel and scheduling services in scoped tests"
+    ],
+    [
+      790,
+      211,
+      63,
+      93,
+      "FPU/MMI",
+      "ok",
+      "Arithmetic translation tests; not exhaustive hardware equivalence"
+    ],
+    [
+      695,
+      304,
+      63,
+      100,
+      "INTC",
+      "ok",
+      "Interrupt paths in tests and runtime"
+    ],
+    [
+      758,
+      304,
+      63,
+      100,
+      "DMAC",
+      "partial",
+      "Narrow deterministic replay; full timing unproven"
+    ],
+    [
+      821,
+      304,
+      32,
+      100,
+      "Timer",
+      "partial",
+      "Scheduler implementation; broader timing work remains"
+    ],
+    [
+      853,
+      118,
+      50,
+      117,
+      "GIF",
+      "ok",
+      "Ordered GIF replay comparisons"
+    ],
+    [
+      903,
+      118,
+      77,
+      117,
+      "GS",
+      "partial",
+      "paraLLEl-GS;37 matching tagged frames, wider coverage open"
+    ],
+    [
+      853,
+      235,
+      127,
+      76,
+      "VIF1/VU1",
+      "partial",
+      "3200 snapshots; primary performance bottleneck"
+    ],
+    [
+      853,
+      311,
+      63,
+      93,
+      "Tex/CLUT",
+      "partial",
+      "Existing GS texture paths; broader scene checks pending"
+    ],
+    [
+      916,
+      311,
+      64,
+      93,
+      "IPU",
+      "partial",
+      "Intro demonstrated; longer video and audio timing incomplete"
+    ]
+  ]
+}

@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1500" viewBox="0 0 1440 1500" role="img" aria-labelledby="title desc">
+<title id="title">حالة RE4 × Zmbor — الأدلة والنواقص</title>
+<desc id="desc">خريطة مكونات ومراحل لعبة Resident Evil 4 SLUS-211.34. الألوان تمثل نطاق الدليل، لا نسبة اكتمال. تحسن مشهد الحفظ 48.8 بالمئة، وسرعة الضيف نحو0.215 من الزمن الحقيقي. انتقال غرفة مستقلة وقبول الصوت والحملة كاملة غير مثبتة.</desc>
+<style>text{font-family:'Segoe UI',Tahoma,Arial,sans-serif} .rtl{direction:rtl;unicode-bidi:plaintext} .ltr{direction:ltr;unicode-bidi:embed} </style>
+<rect width="1440" height="1500" fill="#f5f7fb"/>
+
+<text x="1400" y="66" class="rtl" text-anchor="start" font-size="42" font-weight="700" fill="#182536">RE4 × Zmbor — خريطة الحالة والنواقص</text>
+<rect x="40" y="32" width="390" height="42" rx="6" fill="#e9edf4"/>
+<text x="58" y="60" class="ltr" text-anchor="start" font-size="22" font-weight="600" fill="#182536">SLUS-211.34  |  24 OCT 2026</text>
+<text x="1400" y="110" class="rtl" text-anchor="start" font-size="25" font-weight="400" fill="#425269">نسخة تعمل داخل اللعب، لكنها لم تحقق بعد قبول الحملة والسرعة الطبيعية والصوت كاملًا</text>
+<text x="1400" y="149" class="rtl" text-anchor="start" font-size="23" font-weight="600" fill="#8b5c00">الألوان تصف ما اختُبر فعلًا — لا توجد نسبة اكتمال عامة موثوقة</text>
+<line x1="40" y1="171" x2="1400" y2="171" stroke="#d9e0e8"/>
+<rect x="960" y="192" width="440" height="136" rx="10" fill="#ffffff" stroke="#d9e0e8"/>
+<text x="1380" y="224" class="rtl" text-anchor="start" font-size="24" font-weight="600" fill="#182536">تحسن مشهد الحفظ</text>
+<text x="982" y="277" class="ltr" text-anchor="start" font-size="47" font-weight="700" fill="#0b7c48">+48.8%</text>
+<text x="1380" y="309" class="rtl" text-anchor="start" font-size="20" font-weight="400" fill="#526176">زوجان متناوبان • لا يعمم على الحملة</text>
+<rect x="500" y="192" width="440" height="136" rx="10" fill="#ffffff" stroke="#d9e0e8"/>
+<text x="920" y="224" class="rtl" text-anchor="start" font-size="24" font-weight="600" fill="#182536">سرعة الضيف في المشهد</text>
+<text x="522" y="277" class="ltr" text-anchor="start" font-size="47" font-weight="700" fill="#bb3634">0.215×</text>
+<text x="920" y="309" class="rtl" text-anchor="start" font-size="20" font-weight="400" fill="#526176">السرعة الطبيعية: 1.0× • الفجوة باقية</text>
+<rect x="40" y="192" width="440" height="136" rx="10" fill="#ffffff" stroke="#d9e0e8"/>
+<text x="460" y="224" class="rtl" text-anchor="start" font-size="24" font-weight="600" fill="#182536">اختبارات C++ المكتملة</text>
+<text x="62" y="277" class="ltr" text-anchor="start" font-size="47" font-weight="700" fill="#2451a3">633 / 633</text>
+<text x="460" y="309" class="rtl" text-anchor="start" font-size="20" font-weight="400" fill="#526176">403 حالة Python؛ منها 7 متخطاة</text>
+<circle cx="1391" cy="363" r="8" fill="#0ca30c"/>
+<text x="1371" y="370" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">مثبت بنطاق محدد</text>
+<circle cx="1071" cy="363" r="8" fill="#e9a913"/>
+<text x="1051" y="370" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">قبول جزئي</text>
+<circle cx="801" cy="363" r="8" fill="#d94b48"/>
+<text x="781" y="370" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">فجوة مثبتة</text>
+<circle cx="541" cy="363" r="8" fill="#8b97a7"/>
+<text x="521" y="370" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">غير مثبت</text>
+<circle cx="281" cy="363" r="8" fill="#3974d8"/>
+<text x="261" y="370" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">تجربة غير مقبولة</text>
+<text x="935" y="420" class="rtl" text-anchor="start" font-size="30" font-weight="700" fill="#182536">مكونات المحرك</text>
+<text x="935" y="451" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#526176">كل مكوّن يحتاج قبولًا أوسع من نجاح مسار واحد</text>
+<text x="1400" y="420" class="rtl" text-anchor="start" font-size="30" font-weight="700" fill="#182536">تقدم اللعبة</text>
+<text x="1400" y="451" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#526176">الدليل مرتبط بالمشهد والنسخة المختبرة</text>
+<g><title>EE / R5900 — جزئي: إقلاع ولعب فعليان. قبول الحملة أوسع من الإقلاع</title>
+<rect x="647.33" y="470" width="287.67" height="116" rx="8" fill="#fffaf0" stroke="#d9e0e8"/>
+<rect x="929.0" y="478" width="6" height="100" rx="2" fill="#e9a913"/>
+<text x="663.3333333333334" y="504" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">EE / R5900</text>
+<text x="918.0" y="502" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#e9a913">جزئي</text>
+<text x="918.0" y="540" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">إقلاع ولعب فعليان</text>
+<text x="918.0" y="569" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">قبول الحملة أوسع من الإقلاع</text>
+</g>
+<g><title>MMI / FPU — جزئي: تنفيذ واختبارات قائمة. تغطية عتاد أوسع مطلوبة</title>
+<rect x="343.67" y="470" width="287.67" height="116" rx="8" fill="#fffaf0" stroke="#d9e0e8"/>
+<rect x="625.33" y="478" width="6" height="100" rx="2" fill="#e9a913"/>
+<text x="359.6666666666667" y="504" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">MMI / FPU</text>
+<text x="614.3333333333334" y="502" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#e9a913">جزئي</text>
+<text x="614.3333333333334" y="540" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">تنفيذ واختبارات قائمة</text>
+<text x="614.3333333333334" y="569" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">تغطية عتاد أوسع مطلوبة</text>
+</g>
+<g><title>VU0 — جزئي: مسارات واختبارات وحدة. حدود النقل والحواف تحتاج قبولًا</title>
+<rect x="40.0" y="470" width="287.67" height="116" rx="8" fill="#fffaf0" stroke="#d9e0e8"/>
+<rect x="321.67" y="478" width="6" height="100" rx="2" fill="#e9a913"/>
+<text x="56.0" y="504" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">VU0</text>
+<text x="310.6666666666667" y="502" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#e9a913">جزئي</text>
+<text x="310.6666666666667" y="540" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">مسارات واختبارات وحدة</text>
+<text x="310.6666666666667" y="569" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">حدود النقل والحواف تحتاج قبولًا</text>
+</g>
+<g><title>VU1 — فجوة: أكبر اختناق في العينة. نحو 74% شاملًا من خيط اللعبة</title>
+<rect x="647.33" y="602" width="287.67" height="116" rx="8" fill="#fff3f2" stroke="#d9e0e8"/>
+<rect x="929.0" y="610" width="6" height="100" rx="2" fill="#d94b48"/>
+<text x="663.3333333333334" y="636" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">VU1</text>
+<text x="918.0" y="634" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#d94b48">فجوة</text>
+<text x="918.0" y="672" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">أكبر اختناق في العينة</text>
+<text x="918.0" y="701" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">نحو 74% شاملًا من خيط اللعبة</text>
+</g>
+<g><title>VIF — جزئي: UNPACK وتكامل مع VU. حدود التجزئة والتوقيت مفتوحة</title>
+<rect x="343.67" y="602" width="287.67" height="116" rx="8" fill="#fffaf0" stroke="#d9e0e8"/>
+<rect x="625.33" y="610" width="6" height="100" rx="2" fill="#e9a913"/>
+<text x="359.6666666666667" y="636" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">VIF</text>
+<text x="614.3333333333334" y="634" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#e9a913">جزئي</text>
+<text x="614.3333333333334" y="672" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">UNPACK وتكامل مع VU</text>
+<text x="614.3333333333334" y="701" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">حدود التجزئة والتوقيت مفتوحة</text>
+</g>
+<g><title>GIF / IMAGE2 — مثبت بنطاق: تصحيح مثبت في خمسة مسارات. هذا ليس قبول GIF كله</title>
+<rect x="40.0" y="602" width="287.67" height="116" rx="8" fill="#f1fbf3" stroke="#d9e0e8"/>
+<rect x="321.67" y="610" width="6" height="100" rx="2" fill="#0ca30c"/>
+<text x="56.0" y="636" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">GIF / IMAGE2</text>
+<text x="310.6666666666667" y="634" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#0ca30c">مثبت بنطاق</text>
+<text x="310.6666666666667" y="672" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">تصحيح مثبت في خمسة مسارات</text>
+<text x="310.6666666666667" y="701" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">هذا ليس قبول GIF كله</text>
+</g>
+<g><title>GS / Textures — جزئي: عالم وشخصية وواجهة ظاهرة. مزامنة GPU ومشاهد أوسع</title>
+<rect x="647.33" y="734" width="287.67" height="116" rx="8" fill="#fffaf0" stroke="#d9e0e8"/>
+<rect x="929.0" y="742" width="6" height="100" rx="2" fill="#e9a913"/>
+<text x="663.3333333333334" y="768" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">GS / Textures</text>
+<text x="918.0" y="766" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#e9a913">جزئي</text>
+<text x="918.0" y="804" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">عالم وشخصية وواجهة ظاهرة</text>
+<text x="918.0" y="833" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">مزامنة GPU ومشاهد أوسع</text>
+</g>
+<g><title>DMAC / SPR — جزئي: نقل وسلاسل DMA عاملة. اختبارات الحواف والتداخل</title>
+<rect x="343.67" y="734" width="287.67" height="116" rx="8" fill="#fffaf0" stroke="#d9e0e8"/>
+<rect x="625.33" y="742" width="6" height="100" rx="2" fill="#e9a913"/>
+<text x="359.6666666666667" y="768" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">DMAC / SPR</text>
+<text x="614.3333333333334" y="766" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#e9a913">جزئي</text>
+<text x="614.3333333333334" y="804" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">نقل وسلاسل DMA عاملة</text>
+<text x="614.3333333333334" y="833" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">اختبارات الحواف والتداخل</text>
+</g>
+<g><title>IOP / SIF — جزئي: وحدات وتحكم وصوت فعلي. قبول أوسع عبر الانتقالات</title>
+<rect x="40.0" y="734" width="287.67" height="116" rx="8" fill="#fffaf0" stroke="#d9e0e8"/>
+<rect x="321.67" y="742" width="6" height="100" rx="2" fill="#e9a913"/>
+<text x="56.0" y="768" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">IOP / SIF</text>
+<text x="310.6666666666667" y="766" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#e9a913">جزئي</text>
+<text x="310.6666666666667" y="804" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">وحدات وتحكم وصوت فعلي</text>
+<text x="310.6666666666667" y="833" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">قبول أوسع عبر الانتقالات</text>
+</g>
+<g><title>IPU / Video — جزئي: مقاطع ومسار فك قائم. تخطي وتزامن عبر مشاهد أكثر</title>
+<rect x="647.33" y="866" width="287.67" height="116" rx="8" fill="#fffaf0" stroke="#d9e0e8"/>
+<rect x="929.0" y="874" width="6" height="100" rx="2" fill="#e9a913"/>
+<text x="663.3333333333334" y="900" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">IPU / Video</text>
+<text x="918.0" y="898" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#e9a913">جزئي</text>
+<text x="918.0" y="936" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">مقاطع ومسار فك قائم</text>
+<text x="918.0" y="965" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">تخطي وتزامن عبر مشاهد أكثر</text>
+</g>
+<g><title>SPU2 / Audio — فجوة: مسار الصوت موجود ويعمل. نقص عينات؛ القبول السمعي ناقص</title>
+<rect x="343.67" y="866" width="287.67" height="116" rx="8" fill="#fff3f2" stroke="#d9e0e8"/>
+<rect x="625.33" y="874" width="6" height="100" rx="2" fill="#d94b48"/>
+<text x="359.6666666666667" y="900" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">SPU2 / Audio</text>
+<text x="614.3333333333334" y="898" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#d94b48">فجوة</text>
+<text x="614.3333333333334" y="936" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">مسار الصوت موجود ويعمل</text>
+<text x="614.3333333333334" y="965" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">نقص عينات؛ القبول السمعي ناقص</text>
+</g>
+<g><title>Streaming — جزئي: أصول أصلية للقراءة فقط. عبور الغرف وتحميل الاعتماديات</title>
+<rect x="40.0" y="866" width="287.67" height="116" rx="8" fill="#fffaf0" stroke="#d9e0e8"/>
+<rect x="321.67" y="874" width="6" height="100" rx="2" fill="#e9a913"/>
+<text x="56.0" y="900" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">Streaming</text>
+<text x="310.6666666666667" y="898" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#e9a913">جزئي</text>
+<text x="310.6666666666667" y="936" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">أصول أصلية للقراءة فقط</text>
+<text x="310.6666666666667" y="965" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">عبور الغرف وتحميل الاعتماديات</text>
+</g>
+<g><title>Controllers — جزئي: يد فعلية وإدخال مرصود. تأخر الشاشة وأجهزة أوسع</title>
+<rect x="647.33" y="998" width="287.67" height="116" rx="8" fill="#fffaf0" stroke="#d9e0e8"/>
+<rect x="929.0" y="1006" width="6" height="100" rx="2" fill="#e9a913"/>
+<text x="663.3333333333334" y="1032" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">Controllers</text>
+<text x="918.0" y="1030" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#e9a913">جزئي</text>
+<text x="918.0" y="1068" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">يد فعلية وإدخال مرصود</text>
+<text x="918.0" y="1097" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">تأخر الشاشة وأجهزة أوسع</text>
+</g>
+<g><title>Memory Cards — مثبت بنطاق: حفظ ثم تحميل فعليان. الخانة 01 ضمن الفصل 1-1</title>
+<rect x="343.67" y="998" width="287.67" height="116" rx="8" fill="#f1fbf3" stroke="#d9e0e8"/>
+<rect x="625.33" y="1006" width="6" height="100" rx="2" fill="#0ca30c"/>
+<text x="359.6666666666667" y="1032" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">Memory Cards</text>
+<text x="614.3333333333334" y="1030" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#0ca30c">مثبت بنطاق</text>
+<text x="614.3333333333334" y="1068" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">حفظ ثم تحميل فعليان</text>
+<text x="614.3333333333334" y="1097" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">الخانة 01 ضمن الفصل 1-1</text>
+</g>
+<g><title>Timing — جزئي: عداد ضيف وتوقيت مقترن. pacing وتزامن أشمل مطلوبان</title>
+<rect x="40.0" y="998" width="287.67" height="116" rx="8" fill="#fffaf0" stroke="#d9e0e8"/>
+<rect x="321.67" y="1006" width="6" height="100" rx="2" fill="#e9a913"/>
+<text x="56.0" y="1032" class="ltr" text-anchor="start" font-size="25" font-weight="650" fill="#182536">Timing</text>
+<text x="310.6666666666667" y="1030" class="rtl" text-anchor="start" font-size="17" font-weight="600" fill="#e9a913">جزئي</text>
+<text x="310.6666666666667" y="1068" class="rtl" text-anchor="start" font-size="20.5" font-weight="500" fill="#182536">عداد ضيف وتوقيت مقترن</text>
+<text x="310.6666666666667" y="1097" class="rtl" text-anchor="start" font-size="19.5" font-weight="400" fill="#526176">pacing وتزامن أشمل مطلوبان</text>
+</g>
+<rect x="970" y="470" width="430" height="644" rx="8" fill="#ffffff" stroke="#d9e0e8"/>
+<g><title>1: الإقلاع — مثبت: الملف التنفيذي الصحيح</title><circle cx="1373" cy="499" r="16" fill="#0ca30c"/></g>
+<text x="1373" y="505" class="ltr" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">1</text>
+<text x="1343" y="497" class="rtl" text-anchor="start" font-size="23" font-weight="600" fill="#182536">الإقلاع</text>
+<text x="1343" y="520" class="rtl" text-anchor="start" font-size="17.5" font-weight="400" fill="#526176">مثبت: الملف التنفيذي الصحيح</text>
+<line x1="988" y1="528" x2="1382" y2="528" stroke="#e8edf3"/>
+<g><title>2: القائمة الرئيسية — مثبت: صور ومدخلات فعلية</title><circle cx="1373" cy="553" r="16" fill="#0ca30c"/></g>
+<text x="1373" y="559" class="ltr" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">2</text>
+<text x="1343" y="551" class="rtl" text-anchor="start" font-size="23" font-weight="600" fill="#182536">القائمة الرئيسية</text>
+<text x="1343" y="574" class="rtl" text-anchor="start" font-size="17.5" font-weight="400" fill="#526176">مثبت: صور ومدخلات فعلية</text>
+<line x1="988" y1="582" x2="1382" y2="582" stroke="#e8edf3"/>
+<g><title>3: بدء اللعبة — جزئي: مسار البداية غير موثق كاملًا</title><circle cx="1373" cy="607" r="16" fill="#e9a913"/></g>
+<text x="1373" y="613" class="ltr" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">3</text>
+<text x="1343" y="605" class="rtl" text-anchor="start" font-size="23" font-weight="600" fill="#182536">بدء اللعبة</text>
+<text x="1343" y="628" class="rtl" text-anchor="start" font-size="17.5" font-weight="400" fill="#526176">جزئي: مسار البداية غير موثق كاملًا</text>
+<line x1="988" y1="636" x2="1382" y2="636" stroke="#e8edf3"/>
+<g><title>4: المقدمة السينمائية — جزئي: ظهرت مقاطع وتُخطي بعضها</title><circle cx="1373" cy="661" r="16" fill="#e9a913"/></g>
+<text x="1373" y="667" class="ltr" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">4</text>
+<text x="1343" y="659" class="rtl" text-anchor="start" font-size="23" font-weight="600" fill="#182536">المقدمة السينمائية</text>
+<text x="1343" y="682" class="rtl" text-anchor="start" font-size="17.5" font-weight="400" fill="#526176">جزئي: ظهرت مقاطع وتُخطي بعضها</text>
+<line x1="988" y1="690" x2="1382" y2="690" stroke="#e8edf3"/>
+<g><title>5: اتصال Hunnigan — مثبت: اتصال ما بعد المنزل</title><circle cx="1373" cy="715" r="16" fill="#0ca30c"/></g>
+<text x="1373" y="721" class="ltr" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">5</text>
+<text x="1343" y="713" class="rtl" text-anchor="start" font-size="23" font-weight="600" fill="#182536">اتصال Hunnigan</text>
+<text x="1343" y="736" class="rtl" text-anchor="start" font-size="17.5" font-weight="400" fill="#526176">مثبت: اتصال ما بعد المنزل</text>
+<line x1="988" y1="744" x2="1382" y2="744" stroke="#e8edf3"/>
+<g><title>6: الغابة — مثبت: عالم وشخصية وواجهة</title><circle cx="1373" cy="769" r="16" fill="#0ca30c"/></g>
+<text x="1373" y="775" class="ltr" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">6</text>
+<text x="1343" y="767" class="rtl" text-anchor="start" font-size="23" font-weight="600" fill="#182536">الغابة</text>
+<text x="1343" y="790" class="rtl" text-anchor="start" font-size="17.5" font-weight="400" fill="#526176">مثبت: عالم وشخصية وواجهة</text>
+<line x1="988" y1="798" x2="1382" y2="798" stroke="#e8edf3"/>
+<g><title>7: حركة الشخصية — مثبت: يد فعلية وقراءات موضع</title><circle cx="1373" cy="823" r="16" fill="#0ca30c"/></g>
+<text x="1373" y="829" class="ltr" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">7</text>
+<text x="1343" y="821" class="rtl" text-anchor="start" font-size="23" font-weight="600" fill="#182536">حركة الشخصية</text>
+<text x="1343" y="844" class="rtl" text-anchor="start" font-size="17.5" font-weight="400" fill="#526176">مثبت: يد فعلية وقراءات موضع</text>
+<line x1="988" y1="852" x2="1382" y2="852" stroke="#e8edf3"/>
+<g><title>8: التصويب وإطلاق النار — مثبت: ذخيرة وإصابة وظرف طلقة</title><circle cx="1373" cy="877" r="16" fill="#0ca30c"/></g>
+<text x="1373" y="883" class="ltr" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">8</text>
+<text x="1343" y="875" class="rtl" text-anchor="start" font-size="23" font-weight="600" fill="#182536">التصويب وإطلاق النار</text>
+<text x="1343" y="898" class="rtl" text-anchor="start" font-size="17.5" font-weight="400" fill="#526176">مثبت: ذخيرة وإصابة وظرف طلقة</text>
+<line x1="988" y1="906" x2="1382" y2="906" stroke="#e8edf3"/>
+<g><title>9: انتقال غرفة مستقلة — مثبت: 0x100 → 0x101 بيد المستخدم</title><circle cx="1373" cy="931" r="16" fill="#0ca30c"/></g>
+<text x="1373" y="937" class="ltr" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">9</text>
+<text x="1343" y="929" class="rtl" text-anchor="start" font-size="23" font-weight="600" fill="#182536">انتقال غرفة مستقلة</text>
+<text x="1343" y="952" class="rtl" text-anchor="start" font-size="17.5" font-weight="400" fill="#526176">مثبت: 0x100 → 0x101 بيد المستخدم</text>
+<line x1="988" y1="960" x2="1382" y2="960" stroke="#e8edf3"/>
+<g><title>10: تفاعل الأعداء — مثبت ضمن المواجهات المرصودة</title><circle cx="1373" cy="985" r="16" fill="#0ca30c"/></g>
+<text x="1373" y="991" class="ltr" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">10</text>
+<text x="1343" y="983" class="rtl" text-anchor="start" font-size="23" font-weight="600" fill="#182536">تفاعل الأعداء</text>
+<text x="1343" y="1006" class="rtl" text-anchor="start" font-size="17.5" font-weight="400" fill="#526176">مثبت ضمن المواجهات المرصودة</text>
+<line x1="988" y1="1014" x2="1382" y2="1014" stroke="#e8edf3"/>
+<g><title>11: الحفظ ثم التحميل — مثبت: نجاح ثم استعادة في تشغيل آخر</title><circle cx="1373" cy="1039" r="16" fill="#0ca30c"/></g>
+<text x="1373" y="1045" class="ltr" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">11</text>
+<text x="1343" y="1037" class="rtl" text-anchor="start" font-size="23" font-weight="600" fill="#182536">الحفظ ثم التحميل</text>
+<text x="1343" y="1060" class="rtl" text-anchor="start" font-size="17.5" font-weight="400" fill="#526176">مثبت: نجاح ثم استعادة في تشغيل آخر</text>
+<text x="1384" y="1095" class="rtl" text-anchor="start" font-size="19" font-weight="600" fill="#8b5c00">المرحلة 11 لا تغلق فجوة المرحلة 9</text>
+<line x1="40" y1="1143" x2="1400" y2="1143" stroke="#d9e0e8"/>
+<text x="1400" y="1181" class="rtl" text-anchor="start" font-size="30" font-weight="700" fill="#182536">ما الذي يحتاجه المشروع أولًا؟</text>
+<rect x="960" y="1203" width="440" height="151" rx="8" fill="#ffffff" stroke="#d9e0e8"/>
+<text x="1380" y="1239" class="rtl" text-anchor="start" font-size="25" font-weight="650" fill="#182536">P0 — تقدم اللعب</text>
+<text x="1380" y="1274" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">عبور غرفة مستقلة ومتابعة اللعب</text>
+<text x="1380" y="1303" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">إعادة القتال على النسخة الأحدث</text>
+<text x="1380" y="1332" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">تتبع البث والوحدات والحفظ</text>
+<rect x="500" y="1203" width="440" height="151" rx="8" fill="#ffffff" stroke="#d9e0e8"/>
+<text x="920" y="1239" class="rtl" text-anchor="start" font-size="25" font-weight="650" fill="#182536">P0 — السرعة الطبيعية</text>
+<text x="920" y="1274" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">VU هو أكبر اختناق مقاس</text>
+<text x="920" y="1303" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">التقاعد والأعلام والحساب الدقيق</text>
+<text x="920" y="1332" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">قياس متكرر قبل قبول أي تحسين</text>
+<rect x="40" y="1203" width="440" height="151" rx="8" fill="#ffffff" stroke="#d9e0e8"/>
+<text x="460" y="1239" class="rtl" text-anchor="start" font-size="25" font-weight="650" fill="#182536">P1 — الصوت والقبول</text>
+<text x="460" y="1274" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">نقص العينات والتزامن السمعي</text>
+<text x="460" y="1303" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">توقيت الإطارات وتغطية العتاد</text>
+<text x="460" y="1332" class="rtl" text-anchor="start" font-size="21" font-weight="400" fill="#425269">الحملة الكاملة ما زالت غير مثبتة</text>
+<rect x="40" y="1372" width="1360" height="70" rx="8" fill="#edf4ff" stroke="#c5d8f8"/>
+<text x="1380" y="1400" class="rtl" text-anchor="start" font-size="23" font-weight="600" fill="#2451a3">تجربة جمع الأعلام رُفضت: اجتازت الصحة، لكنها أبطأ في الأزواج السبعة (وسيط 0.73%)</text>
+<text x="1380" y="1427" class="rtl" text-anchor="start" font-size="20" font-weight="400" fill="#425269">مرشح تخصيص الخانات رُفض: أبطأ 0.93% رغم اجتياز الصحة. النسخة المقبولة بقيت محفوظة.</text>
+<text x="1400" y="1479" class="rtl" text-anchor="start" font-size="20" font-weight="400" fill="#526176">الخريطة تخص RE4؛ المرجع المرفق يخص SCUS_973.99. الأخضر ليس شهادة باكتمال المكوّن.</text>
+<text x="40" y="1479" class="ltr" text-anchor="start" font-size="17" font-weight="400" fill="#526176">Accepted build: e17998c7</text>
+</svg>
