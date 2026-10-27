@@ -1574,11 +1574,22 @@ bool PS2Memory::writeIORegister(uint32_t address, uint32_t value)
                     const bool tieEnabled = (chcr & (1u << 7)) != 0u;
                     ps2x::DmaChainCycleGuard chainGuard;
                     std::vector<uint8_t> chainBuf = ps2x::dma_buffers::take();
+                    // Host resource guard, not a PS2 transfer-size limit. A finite
+                    // REF chain can otherwise request far more than guest RAM.
+                    // Fail before publishing any truncated packet; exact-limit
+                    // transfers remain valid. Keep the existing cycle detector.
+                    constexpr size_t kMaxGatheredChainBytes = size_t{1} << 28;
+                    const auto checkGatheredSize = [&](size_t bytes) {
+                        if (bytes > kMaxGatheredChainBytes ||
+                            chainBuf.size() > kMaxGatheredChainBytes - bytes)
+                            throw std::runtime_error("[dma:payload-limit] gathered source chain exceeds 256 MiB host guard; transfer not completed");
+                    };
 
                     auto appendData = [&](uint32_t srcAddr, uint32_t qwCount, uint32_t dmaTagAddr, uint32_t tagId)
                     {
                         const uint64_t bytes64 = static_cast<uint64_t>(qwCount) * 16ull;
                         uint32_t bytes = (bytes64 > 0xFFFFFFFFull) ? 0xFFFFFFFFu : static_cast<uint32_t>(bytes64);
+                        checkGatheredSize(bytes);
                         const bool scratch = isScratchpad(srcAddr);
                         uint32_t src = 0;
                         src = translateAddress(srcAddr);
@@ -1625,6 +1636,7 @@ bool PS2Memory::writeIORegister(uint32_t address, uint32_t value)
 
                         // CHCR.TTE sends the DMAtag's upper 64 bits to the channel before
                         // the tag payload. VIF chains use those bytes for two VIFcodes.
+                        checkGatheredSize(8u);
                         chainBuf.insert(chainBuf.end(), localBase + tagPhys + 8u, localBase + tagPhys + 16u);
                     };
 

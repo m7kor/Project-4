@@ -193,11 +193,9 @@ namespace ps2recomp
         case OPCODE_COP2:
             return m_codeGenerator.translateVUInstruction(inst);
         case OPCODE_ADDI:
-            if (inst.rt == 0)
-                return "// NOP (addi to $zero)";
             return fmt::format(
-                "{{ uint32_t tmp; bool ov; "
-                "ADD32_OV(GPR_U32(ctx, {}), (int32_t){}, tmp, ov); "
+                "{{ uint32_t a = GPR_U32(ctx, {}), b = (uint32_t)(int32_t){}; "
+                "uint32_t tmp = a + b; bool ov = (~(a ^ b) & (a ^ tmp) & 0x80000000u) != 0; "
                 "if (ov) runtime->SignalException(ctx, EXCEPTION_INTEGER_OVERFLOW); "
                 "else SET_GPR_S32(ctx, {}, (int32_t)tmp); }}",
                 inst.rs, signedImmediate, inst.rt);
@@ -257,16 +255,16 @@ namespace ps2recomp
             return genWrite(128, fmt::format("ADD32(GPR_U32(ctx, {}), {})", inst.rs, signedImmediate), fmt::format("_mm_castps_si128(ctx->vu0_vf[{}])", inst.rt)) + ";";
         case OPCODE_DADDI:
             return fmt::format(
-                "{{ int64_t src = (int64_t)GPR_S64(ctx, {}); "
-                "int64_t imm = (int64_t)(int32_t){}; "
-                "int64_t res = src + imm; "
-                "if (((src ^ imm) >= 0) && ((src ^ res) < 0)) "
+                "{{ uint64_t src = GPR_U64(ctx, {}); "
+                "uint64_t imm = (uint64_t)(int64_t)(int32_t){}; "
+                "uint64_t res = src + imm; "
+                "if ((~(src ^ imm) & (src ^ res) & 0x8000000000000000ull) != 0) "
                 "    runtime->SignalException(ctx, EXCEPTION_INTEGER_OVERFLOW); "
-                "else SET_GPR_S64(ctx, {}, res); }}",
+                "else SET_GPR_U64(ctx, {}, res); }}",
                 inst.rs, signedImmediate, inst.rt);
         case OPCODE_DADDIU:
             return fmt::format(
-                "SET_GPR_S64(ctx, {}, (int64_t)GPR_S64(ctx, {}) + (int64_t)(int32_t){});",
+                "SET_GPR_U64(ctx, {}, GPR_U64(ctx, {}) + (uint64_t)(int64_t)(int32_t){});",
                 inst.rt, inst.rs, signedImmediate);
         case OPCODE_J:
             return fmt::format("// J 0x{:X} - Handled by branch logic", buildAbsoluteJumpTarget(inst.address, inst.target));

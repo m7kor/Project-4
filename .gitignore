@@ -33,3 +33,13 @@ __pycache__/
 *.ps2
 /core/ps2xRuntime/src/lib/vu/generated/*.inc
 !/core/ps2xRuntime/src/lib/vu/generated/vu1_compiled_programs.inc
+
+# Source snapshots and patches held out of this public upload after review.
+/compatibility/engines/
+/compatibility/source-archives/
+/compatibility/reference-tools/tools/bios_mine/
+/compatibility/patches/
+/docs/compatibility/reports/*.patch
+/docs/compatibility/reports/*.diff
+
+/compatibility/tests/patches/

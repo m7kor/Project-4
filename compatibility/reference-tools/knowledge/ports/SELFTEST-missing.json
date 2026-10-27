@@ -1,0 +1,30 @@
+{
+  "port": "SELFTEST-missing",
+  "created": "x",
+  "iterations": [
+    {
+      "step": 1,
+      "exit": 0,
+      "signatures": [
+        "missing-override-handler"
+      ],
+      "spin": null,
+      "syscall_ids": {}
+    }
+  ],
+  "hypotheses": {
+    "the port is missing a function the guest registered": {
+      "key": "the port is missing a function the guest registered",
+      "title": "the port is missing a function the guest registered",
+      "first_seen": "2026-10-27T08:24:42",
+      "evidence": [
+        "[syscall-override:missing-handler] id=0x83 handler=0x2a1c88"
+      ],
+      "status": "proposed",
+      "attempts": 1,
+      "ruled_out_by": "",
+      "signature": "missing-override-handler",
+      "notes": ""
+    }
+  }
+}

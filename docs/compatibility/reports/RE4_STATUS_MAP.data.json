@@ -1,0 +1,179 @@
+{
+  "as_of": "2026-10-24",
+  "game": "Resident Evil 4 USA",
+  "serial": "SLUS-211.34",
+  "accepted_runner_sha256": "e17998c7099f3bff2892529d7726836d9689b9af1d6cd091bfa5b29c9a88542a",
+  "completion_percentage": null,
+  "reference_svg_serial": "SCUS_973.99",
+  "median_scene_speed": 0.21461605858053207,
+  "median_scene_improvement_percent": 48.81918656140937,
+  "cpp_unit_passed": 633,
+  "python_cases": 403,
+  "python_skipped": 7,
+  "components": [
+    {
+      "name": "EE / R5900",
+      "status": "partial",
+      "evidence": "إقلاع ولعب فعليان",
+      "gap": "قبول الحملة أوسع من الإقلاع"
+    },
+    {
+      "name": "MMI / FPU",
+      "status": "partial",
+      "evidence": "تنفيذ واختبارات قائمة",
+      "gap": "تغطية عتاد أوسع مطلوبة"
+    },
+    {
+      "name": "VU0",
+      "status": "partial",
+      "evidence": "مسارات واختبارات وحدة",
+      "gap": "حدود النقل والحواف تحتاج قبولًا"
+    },
+    {
+      "name": "VU1",
+      "status": "gap",
+      "evidence": "أكبر اختناق في العينة",
+      "gap": "نحو 74% شاملًا من خيط اللعبة"
+    },
+    {
+      "name": "VIF",
+      "status": "partial",
+      "evidence": "UNPACK وتكامل مع VU",
+      "gap": "حدود التجزئة والتوقيت مفتوحة"
+    },
+    {
+      "name": "GIF / IMAGE2",
+      "status": "verified",
+      "evidence": "تصحيح مثبت في خمسة مسارات",
+      "gap": "هذا ليس قبول GIF كله"
+    },
+    {
+      "name": "GS / Textures",
+      "status": "partial",
+      "evidence": "عالم وشخصية وواجهة ظاهرة",
+      "gap": "مزامنة GPU ومشاهد أوسع"
+    },
+    {
+      "name": "DMAC / SPR",
+      "status": "partial",
+      "evidence": "نقل وسلاسل DMA عاملة",
+      "gap": "اختبارات الحواف والتداخل"
+    },
+    {
+      "name": "IOP / SIF",
+      "status": "partial",
+      "evidence": "وحدات وتحكم وصوت فعلي",
+      "gap": "قبول أوسع عبر الانتقالات"
+    },
+    {
+      "name": "IPU / Video",
+      "status": "partial",
+      "evidence": "مقاطع ومسار فك قائم",
+      "gap": "تخطي وتزامن عبر مشاهد أكثر"
+    },
+    {
+      "name": "SPU2 / Audio",
+      "status": "gap",
+      "evidence": "مسار الصوت موجود ويعمل",
+      "gap": "نقص عينات؛ القبول السمعي ناقص"
+    },
+    {
+      "name": "Streaming",
+      "status": "partial",
+      "evidence": "أصول أصلية للقراءة فقط",
+      "gap": "عبور الغرف وتحميل الاعتماديات"
+    },
+    {
+      "name": "Controllers",
+      "status": "partial",
+      "evidence": "يد فعلية وإدخال مرصود",
+      "gap": "تأخر الشاشة وأجهزة أوسع"
+    },
+    {
+      "name": "Memory Cards",
+      "status": "verified",
+      "evidence": "حفظ ثم تحميل فعليان",
+      "gap": "الخانة 01 ضمن الفصل 1-1"
+    },
+    {
+      "name": "Timing",
+      "status": "partial",
+      "evidence": "عداد ضيف وتوقيت مقترن",
+      "gap": "pacing وتزامن أشمل مطلوبان"
+    }
+  ],
+  "stages": [
+    {
+      "number": 1,
+      "name": "الإقلاع",
+      "status": "verified",
+      "scope": "مثبت: الملف التنفيذي الصحيح"
+    },
+    {
+      "number": 2,
+      "name": "القائمة الرئيسية",
+      "status": "verified",
+      "scope": "مثبت: صور ومدخلات فعلية"
+    },
+    {
+      "number": 3,
+      "name": "بدء اللعبة",
+      "status": "partial",
+      "scope": "جزئي: مسار البداية غير موثق كاملًا"
+    },
+    {
+      "number": 4,
+      "name": "المقدمة السينمائية",
+      "status": "partial",
+      "scope": "جزئي: ظهرت مقاطع وتُخطي بعضها"
+    },
+    {
+      "number": 5,
+      "name": "اتصال Hunnigan",
+      "status": "verified",
+      "scope": "مثبت: اتصال ما بعد المنزل"
+    },
+    {
+      "number": 6,
+      "name": "الغابة",
+      "status": "verified",
+      "scope": "مثبت: عالم وشخصية وواجهة"
+    },
+    {
+      "number": 7,
+      "name": "حركة الشخصية",
+      "status": "verified",
+      "scope": "مثبت: يد فعلية وقراءات موضع"
+    },
+    {
+      "number": 8,
+      "name": "التصويب وإطلاق النار",
+      "status": "verified",
+      "scope": "مثبت: ذخيرة وإصابة وظرف طلقة"
+    },
+    {
+      "number": 9,
+      "name": "انتقال غرفة مستقلة",
+      "status": "verified",
+      "scope": "مثبت: 0x100 → 0x101 بيد المستخدم"
+    },
+    {
+      "number": 10,
+      "name": "تفاعل الأعداء",
+      "status": "verified",
+      "scope": "مثبت ضمن المواجهات المرصودة"
+    },
+    {
+      "number": 11,
+      "name": "الحفظ ثم التحميل",
+      "status": "verified",
+      "scope": "مثبت: نجاح ثم استعادة في تشغيل آخر"
+    }
+  ],
+  "limits": [
+    "One stationary scene for speed claim",
+    "Hardware reference has eight mismatches",
+    "Flag coalescing passed correctness but was rejected after seven slower benchmark pairs",
+    "Combat evidence and latest optimized-run evidence have different scopes"
+  ]
+}

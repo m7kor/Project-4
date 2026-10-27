@@ -1,0 +1,15 @@
+{
+  "reason": "release-smoke",
+  "hypothesis": "The pinned accepted runner must load the private chapter1-1 test card and render the typewriter scene in room100, consume the scripted inputs, and preserve the card.",
+  "seconds": 180,
+  "runner": "lab/shared-link/ps2EntryRunner.exe",
+  "runner_sha256": "e17998c7099f3bff2892529d7726836d9689b9af1d6cd091bfa5b29c9a88542a",
+  "input": "artifacts/navigation-inputs/load-private-save-v3.csv",
+  "input_sha256": "aec99d9acc93551f5fdfe562c1bfd12fb1515bd268230931436555d6cf465264",
+  "fixture": "artifacts/runs/manual-20261024-112541-942897/guest/saves",
+  "card_sha256": "ae9c30f7ec60b2cba2363fe38de568f9f6fcad61e204e65a82ad9e15619554d6",
+  "success": {
+    "minimum_ee_vsync": 3300,
+    "room": 256
+  }
+}
